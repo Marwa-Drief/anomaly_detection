@@ -1,0 +1,1087 @@
+[2024-10-23T11:26:09.670+0000] {processor.py:186} INFO - Started process (PID=327) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:26:09.673+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:26:09.679+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:26:09.678+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:26:10.721+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:26:10.871+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:26:10.870+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:26:10.939+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:26:10.939+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:25:00+00:00, run_after=2024-10-23 11:30:00+00:00
+[2024-10-23T11:26:10.974+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.314 seconds
+[2024-10-23T11:26:41.888+0000] {processor.py:186} INFO - Started process (PID=422) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:26:41.893+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:26:41.896+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:26:41.895+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:26:42.729+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:26:42.845+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:26:42.843+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:26:42.900+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:26:42.900+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:25:00+00:00, run_after=2024-10-23 11:30:00+00:00
+[2024-10-23T11:26:42.953+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.077 seconds
+[2024-10-23T11:27:13.789+0000] {processor.py:186} INFO - Started process (PID=509) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:27:13.791+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:27:13.793+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:27:13.793+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:27:14.758+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:27:14.873+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:27:14.873+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:27:14.935+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:27:14.934+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:25:00+00:00, run_after=2024-10-23 11:30:00+00:00
+[2024-10-23T11:27:14.986+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.205 seconds
+[2024-10-23T11:27:45.093+0000] {processor.py:186} INFO - Started process (PID=594) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:27:45.094+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:27:45.096+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:27:45.096+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:27:46.067+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:27:46.201+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:27:46.200+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:27:46.249+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:27:46.249+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:25:00+00:00, run_after=2024-10-23 11:30:00+00:00
+[2024-10-23T11:27:46.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.199 seconds
+[2024-10-23T11:28:16.841+0000] {processor.py:186} INFO - Started process (PID=679) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:28:16.844+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:28:16.847+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:28:16.846+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:28:17.672+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:28:17.766+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:28:17.766+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:28:17.812+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:28:17.812+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:25:00+00:00, run_after=2024-10-23 11:30:00+00:00
+[2024-10-23T11:28:17.856+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.022 seconds
+[2024-10-23T11:28:48.150+0000] {processor.py:186} INFO - Started process (PID=764) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:28:48.151+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:28:48.153+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:28:48.153+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:28:48.990+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:28:49.067+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:28:49.066+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:28:49.099+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:28:49.099+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:25:00+00:00, run_after=2024-10-23 11:30:00+00:00
+[2024-10-23T11:28:49.126+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.984 seconds
+[2024-10-23T11:29:19.449+0000] {processor.py:186} INFO - Started process (PID=849) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:29:19.452+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:29:19.454+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:29:19.453+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:29:20.495+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:29:20.760+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:29:20.759+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:29:20.850+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:29:20.849+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:25:00+00:00, run_after=2024-10-23 11:30:00+00:00
+[2024-10-23T11:29:20.911+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.471 seconds
+[2024-10-23T11:29:51.358+0000] {processor.py:186} INFO - Started process (PID=934) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:29:51.359+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:29:51.362+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:29:51.361+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:29:52.181+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:29:52.300+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:29:52.300+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:29:52.353+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:29:52.352+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:25:00+00:00, run_after=2024-10-23 11:30:00+00:00
+[2024-10-23T11:29:52.398+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.050 seconds
+[2024-10-23T11:30:23.056+0000] {processor.py:186} INFO - Started process (PID=1069) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:30:23.057+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:30:23.059+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:30:23.059+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:30:24.168+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:30:24.314+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:30:24.313+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:30:24.407+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:30:24.406+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:30:00+00:00, run_after=2024-10-23 11:35:00+00:00
+[2024-10-23T11:30:24.507+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.459 seconds
+[2024-10-23T11:30:54.709+0000] {processor.py:186} INFO - Started process (PID=1154) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:30:54.711+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:30:54.713+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:30:54.713+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:30:56.707+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:30:57.190+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:30:57.189+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:30:57.260+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:30:57.260+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:30:00+00:00, run_after=2024-10-23 11:35:00+00:00
+[2024-10-23T11:30:57.325+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 2.625 seconds
+[2024-10-23T11:31:59.658+0000] {processor.py:186} INFO - Started process (PID=1279) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:31:59.660+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:31:59.662+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:31:59.662+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:32:00.469+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:32:00.588+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:32:00.587+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:32:00.654+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:32:00.654+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:30:00+00:00, run_after=2024-10-23 11:35:00+00:00
+[2024-10-23T11:32:00.713+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.062 seconds
+[2024-10-23T11:32:36.247+0000] {processor.py:186} INFO - Started process (PID=1364) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:32:36.249+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:32:36.251+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:32:36.251+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:32:37.421+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:32:37.623+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:32:37.619+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:32:37.697+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:32:37.696+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:30:00+00:00, run_after=2024-10-23 11:35:00+00:00
+[2024-10-23T11:32:37.752+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.514 seconds
+[2024-10-23T11:33:54.845+0000] {processor.py:186} INFO - Started process (PID=1494) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:33:54.848+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:33:54.850+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:33:54.850+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:33:55.863+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:33:56.096+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:33:56.092+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:33:56.274+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:33:56.273+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:30:00+00:00, run_after=2024-10-23 11:35:00+00:00
+[2024-10-23T11:33:56.381+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.545 seconds
+[2024-10-23T11:34:26.962+0000] {processor.py:186} INFO - Started process (PID=1584) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:34:26.967+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:34:26.970+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:34:26.970+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:34:27.804+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:34:27.923+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:34:27.922+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:34:27.979+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:34:27.979+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:30:00+00:00, run_after=2024-10-23 11:35:00+00:00
+[2024-10-23T11:34:28.021+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.068 seconds
+[2024-10-23T11:34:58.600+0000] {processor.py:186} INFO - Started process (PID=1670) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:34:58.602+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:34:58.605+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:34:58.604+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:34:59.829+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:34:59.981+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:34:59.979+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:35:00.066+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:35:00.065+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:30:00+00:00, run_after=2024-10-23 11:35:00+00:00
+[2024-10-23T11:35:00.120+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.538 seconds
+[2024-10-23T11:36:08.174+0000] {processor.py:186} INFO - Started process (PID=1781) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:36:08.176+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:36:08.180+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:36:08.179+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:36:09.122+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:36:09.262+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:36:09.261+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:36:09.332+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:36:09.332+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:35:00+00:00, run_after=2024-10-23 11:40:00+00:00
+[2024-10-23T11:36:09.393+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.232 seconds
+[2024-10-23T11:36:39.534+0000] {processor.py:186} INFO - Started process (PID=1866) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:36:39.536+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:36:39.538+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:36:39.537+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:36:40.550+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:36:40.790+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:36:40.789+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:36:40.877+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:36:40.877+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:35:00+00:00, run_after=2024-10-23 11:40:00+00:00
+[2024-10-23T11:36:40.935+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.431 seconds
+[2024-10-23T11:37:11.417+0000] {processor.py:186} INFO - Started process (PID=1953) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:37:11.419+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:37:11.422+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:37:11.421+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:37:12.214+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:37:12.373+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:37:12.373+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:37:12.419+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:37:12.418+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:35:00+00:00, run_after=2024-10-23 11:40:00+00:00
+[2024-10-23T11:37:12.468+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.062 seconds
+[2024-10-23T11:37:42.944+0000] {processor.py:186} INFO - Started process (PID=2038) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:37:42.945+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:37:42.947+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:37:42.947+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:37:43.715+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:37:43.884+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:37:43.882+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:37:43.964+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:37:43.964+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:35:00+00:00, run_after=2024-10-23 11:40:00+00:00
+[2024-10-23T11:37:44.029+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.091 seconds
+[2024-10-23T11:38:14.498+0000] {processor.py:186} INFO - Started process (PID=2123) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:38:14.500+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:38:14.503+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:38:14.502+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:38:15.301+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:38:15.431+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:38:15.430+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:38:15.496+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:38:15.496+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:35:00+00:00, run_after=2024-10-23 11:40:00+00:00
+[2024-10-23T11:38:15.544+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.058 seconds
+[2024-10-23T11:38:46.017+0000] {processor.py:186} INFO - Started process (PID=2208) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:38:46.019+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:38:46.024+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:38:46.023+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:38:46.933+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:38:47.065+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:38:47.063+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:38:47.116+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:38:47.116+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:35:00+00:00, run_after=2024-10-23 11:40:00+00:00
+[2024-10-23T11:38:47.160+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.153 seconds
+[2024-10-23T11:39:17.566+0000] {processor.py:186} INFO - Started process (PID=2293) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:39:17.567+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:39:17.569+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:39:17.569+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:39:18.249+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:39:18.393+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:39:18.393+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:39:18.435+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:39:18.435+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:35:00+00:00, run_after=2024-10-23 11:40:00+00:00
+[2024-10-23T11:39:18.475+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.916 seconds
+[2024-10-23T11:39:49.286+0000] {processor.py:186} INFO - Started process (PID=2378) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:39:49.288+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:39:49.295+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:39:49.294+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:39:49.880+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:39:49.975+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:39:49.974+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:39:50.025+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:39:50.025+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:35:00+00:00, run_after=2024-10-23 11:40:00+00:00
+[2024-10-23T11:39:50.056+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.777 seconds
+[2024-10-23T11:40:20.322+0000] {processor.py:186} INFO - Started process (PID=2503) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:40:20.323+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:40:20.326+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:40:20.325+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:40:21.242+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:40:21.341+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:40:21.339+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:40:21.392+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:40:21.391+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:40:00+00:00, run_after=2024-10-23 11:45:00+00:00
+[2024-10-23T11:40:21.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.115 seconds
+[2024-10-23T11:40:52.112+0000] {processor.py:186} INFO - Started process (PID=2588) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:40:52.114+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:40:52.116+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:40:52.115+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:40:52.762+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:40:52.894+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:40:52.893+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:40:52.953+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:40:52.953+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:40:00+00:00, run_after=2024-10-23 11:45:00+00:00
+[2024-10-23T11:40:52.998+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.893 seconds
+[2024-10-23T11:41:23.232+0000] {processor.py:186} INFO - Started process (PID=2701) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:41:23.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:41:23.236+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:41:23.236+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:41:24.045+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:41:24.177+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:41:24.177+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:41:24.224+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:41:24.224+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:40:00+00:00, run_after=2024-10-23 11:45:00+00:00
+[2024-10-23T11:41:24.269+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.044 seconds
+[2024-10-23T11:41:54.418+0000] {processor.py:186} INFO - Started process (PID=2786) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:41:54.420+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:41:54.423+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:41:54.422+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:41:55.318+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:41:55.455+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:41:55.455+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:41:55.524+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:41:55.524+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:40:00+00:00, run_after=2024-10-23 11:45:00+00:00
+[2024-10-23T11:41:55.562+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.151 seconds
+[2024-10-23T11:42:25.894+0000] {processor.py:186} INFO - Started process (PID=2871) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:42:25.896+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:42:25.899+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:42:25.898+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:42:26.792+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:42:26.907+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:42:26.906+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:42:26.954+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:42:26.954+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:40:00+00:00, run_after=2024-10-23 11:45:00+00:00
+[2024-10-23T11:42:26.991+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.109 seconds
+[2024-10-23T11:42:57.184+0000] {processor.py:186} INFO - Started process (PID=2956) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:42:57.185+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:42:57.189+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:42:57.189+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:42:58.031+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:42:58.167+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:42:58.166+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:42:58.215+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:42:58.215+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:40:00+00:00, run_after=2024-10-23 11:45:00+00:00
+[2024-10-23T11:42:58.250+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.076 seconds
+[2024-10-23T11:43:28.636+0000] {processor.py:186} INFO - Started process (PID=3039) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:43:28.637+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:43:28.639+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:43:28.639+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:43:29.557+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:43:29.702+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:43:29.701+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:43:29.764+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:43:29.764+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:40:00+00:00, run_after=2024-10-23 11:45:00+00:00
+[2024-10-23T11:43:29.822+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.193 seconds
+[2024-10-23T11:44:00.179+0000] {processor.py:186} INFO - Started process (PID=3128) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:44:00.185+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:44:00.188+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:44:00.188+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:44:01.083+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:44:01.295+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:44:01.294+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:44:01.362+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:44:01.362+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:40:00+00:00, run_after=2024-10-23 11:45:00+00:00
+[2024-10-23T11:44:01.417+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.244 seconds
+[2024-10-23T11:44:31.716+0000] {processor.py:186} INFO - Started process (PID=3215) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:44:31.718+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:44:31.720+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:44:31.720+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:44:32.728+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:44:32.860+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:44:32.859+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:44:32.956+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:44:32.956+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:40:00+00:00, run_after=2024-10-23 11:45:00+00:00
+[2024-10-23T11:44:33.017+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.308 seconds
+[2024-10-23T11:45:04.143+0000] {processor.py:186} INFO - Started process (PID=3322) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:45:04.158+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:45:04.192+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:45:04.191+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:45:09.818+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:45:10.646+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:45:10.639+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:45:10.900+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:45:10.900+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:45:11.066+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 7.024 seconds
+[2024-10-23T11:45:41.831+0000] {processor.py:186} INFO - Started process (PID=3446) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:45:41.832+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:45:41.834+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:45:41.834+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:45:42.544+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:45:42.662+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:45:42.661+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:45:42.711+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:45:42.711+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:45:42.744+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.924 seconds
+[2024-10-23T11:46:13.663+0000] {processor.py:186} INFO - Started process (PID=3534) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:46:13.665+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:46:13.667+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:46:13.667+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:46:14.752+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:46:14.923+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:46:14.922+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:46:14.983+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:46:14.982+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:46:15.036+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.384 seconds
+[2024-10-23T11:46:45.395+0000] {processor.py:186} INFO - Started process (PID=3624) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:46:45.397+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:46:45.399+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:46:45.398+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:46:46.317+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:46:46.450+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:46:46.450+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:46:46.494+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:46:46.493+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:46:46.530+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.144 seconds
+[2024-10-23T11:47:16.768+0000] {processor.py:186} INFO - Started process (PID=3714) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:47:16.769+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:47:16.771+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:47:16.771+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:47:17.480+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:47:17.613+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:47:17.613+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:47:17.675+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:47:17.675+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:47:17.835+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.076 seconds
+[2024-10-23T11:47:48.603+0000] {processor.py:186} INFO - Started process (PID=3804) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:47:48.604+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:47:48.606+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:47:48.606+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:47:49.407+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:47:49.516+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:47:49.515+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:47:49.562+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:47:49.562+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:47:49.599+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.005 seconds
+[2024-10-23T11:48:20.524+0000] {processor.py:186} INFO - Started process (PID=3892) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:48:20.526+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:48:20.529+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:48:20.528+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:48:21.512+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:48:21.696+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:48:21.695+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:48:21.763+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:48:21.762+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:48:21.820+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.305 seconds
+[2024-10-23T11:48:52.017+0000] {processor.py:186} INFO - Started process (PID=3977) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:48:52.018+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:48:52.021+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:48:52.020+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:48:52.796+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:48:52.878+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:48:52.878+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:48:52.916+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:48:52.916+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:48:52.949+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.943 seconds
+[2024-10-23T11:49:23.347+0000] {processor.py:186} INFO - Started process (PID=4062) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:49:23.350+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:49:23.353+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:49:23.352+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:49:24.095+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:49:24.307+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:49:24.307+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:49:24.385+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:49:24.384+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:49:24.428+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.094 seconds
+[2024-10-23T11:49:54.800+0000] {processor.py:186} INFO - Started process (PID=4147) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:49:54.802+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:49:54.804+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:49:54.804+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:49:55.500+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:49:55.612+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:49:55.612+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:49:55.657+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:49:55.657+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:45:00+00:00, run_after=2024-10-23 11:50:00+00:00
+[2024-10-23T11:49:55.717+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.924 seconds
+[2024-10-23T11:50:26.011+0000] {processor.py:186} INFO - Started process (PID=4270) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:50:26.014+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:50:26.017+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:50:26.017+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:50:26.851+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:50:26.967+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:50:26.966+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:50:27.017+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:50:27.017+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:50:00+00:00, run_after=2024-10-23 11:55:00+00:00
+[2024-10-23T11:50:27.058+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.058 seconds
+[2024-10-23T11:50:57.364+0000] {processor.py:186} INFO - Started process (PID=4355) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:50:57.366+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:50:57.368+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:50:57.367+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:50:58.213+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:50:58.297+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:50:58.297+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:50:58.335+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:50:58.335+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:50:00+00:00, run_after=2024-10-23 11:55:00+00:00
+[2024-10-23T11:50:58.553+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.198 seconds
+[2024-10-23T11:51:29.235+0000] {processor.py:186} INFO - Started process (PID=4440) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:51:29.237+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:51:29.239+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:51:29.238+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:51:29.991+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:51:30.069+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:51:30.068+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:51:30.113+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:51:30.113+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:50:00+00:00, run_after=2024-10-23 11:55:00+00:00
+[2024-10-23T11:51:30.139+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.914 seconds
+[2024-10-23T11:52:00.963+0000] {processor.py:186} INFO - Started process (PID=4525) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:52:00.965+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:52:00.968+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:52:00.967+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:52:01.665+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:52:01.855+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:52:01.854+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:52:02.081+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:52:02.080+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:50:00+00:00, run_after=2024-10-23 11:55:00+00:00
+[2024-10-23T11:52:02.133+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.181 seconds
+[2024-10-23T11:52:32.498+0000] {processor.py:186} INFO - Started process (PID=4610) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:52:32.499+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:52:32.501+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:52:32.501+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:52:33.444+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:52:33.612+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:52:33.612+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:52:33.671+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:52:33.671+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:50:00+00:00, run_after=2024-10-23 11:55:00+00:00
+[2024-10-23T11:52:33.883+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.394 seconds
+[2024-10-23T11:53:04.182+0000] {processor.py:186} INFO - Started process (PID=4695) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:53:04.184+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:53:04.187+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:53:04.186+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:53:05.272+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:53:05.520+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:53:05.520+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:53:05.586+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:53:05.586+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:50:00+00:00, run_after=2024-10-23 11:55:00+00:00
+[2024-10-23T11:53:05.616+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.445 seconds
+[2024-10-23T11:53:36.345+0000] {processor.py:186} INFO - Started process (PID=4780) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:53:36.347+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:53:36.349+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:53:36.349+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:53:37.070+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:53:37.376+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:53:37.197+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:53:37.444+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:53:37.444+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:50:00+00:00, run_after=2024-10-23 11:55:00+00:00
+[2024-10-23T11:53:37.479+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.144 seconds
+[2024-10-23T11:54:08.026+0000] {processor.py:186} INFO - Started process (PID=4865) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:54:08.028+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:54:08.030+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:54:08.030+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:54:08.948+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:54:09.100+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:54:09.098+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:54:09.374+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:54:09.374+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:50:00+00:00, run_after=2024-10-23 11:55:00+00:00
+[2024-10-23T11:54:09.432+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.413 seconds
+[2024-10-23T11:54:40.169+0000] {processor.py:186} INFO - Started process (PID=4950) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:54:40.171+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:54:40.173+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:54:40.172+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:54:41.237+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:54:41.493+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:54:41.492+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:54:41.540+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:54:41.540+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:50:00+00:00, run_after=2024-10-23 11:55:00+00:00
+[2024-10-23T11:54:41.578+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.418 seconds
+[2024-10-23T11:55:12.353+0000] {processor.py:186} INFO - Started process (PID=5075) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:55:12.355+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:55:12.357+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:55:12.357+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:55:13.592+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:55:13.733+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:55:13.732+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:55:13.804+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:55:13.804+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T11:55:13.861+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.516 seconds
+[2024-10-23T11:55:44.238+0000] {processor.py:186} INFO - Started process (PID=5162) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:55:44.240+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:55:44.242+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:55:44.241+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:55:45.306+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:55:45.384+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:55:45.383+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:55:45.418+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:55:45.418+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T11:55:45.460+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.231 seconds
+[2024-10-23T11:56:15.742+0000] {processor.py:186} INFO - Started process (PID=5245) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:56:15.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:56:15.745+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:56:15.745+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:56:16.722+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:56:16.798+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:56:16.797+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:56:16.829+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:56:16.829+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T11:56:16.852+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.117 seconds
+[2024-10-23T11:56:47.694+0000] {processor.py:186} INFO - Started process (PID=5330) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:56:47.696+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:56:47.699+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:56:47.698+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:56:49.192+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:56:49.315+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:56:49.315+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:56:49.360+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:56:49.360+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T11:56:49.397+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.715 seconds
+[2024-10-23T11:57:20.423+0000] {processor.py:186} INFO - Started process (PID=5417) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:57:20.425+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:57:20.427+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:57:20.426+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:57:21.710+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:57:21.914+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:57:21.914+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:57:21.957+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:57:21.956+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T11:57:21.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.582 seconds
+[2024-10-23T11:57:52.283+0000] {processor.py:186} INFO - Started process (PID=5502) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:57:52.286+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:57:52.289+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:57:52.288+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:57:53.064+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:57:53.264+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:57:53.260+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:57:53.325+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:57:53.324+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T11:57:53.373+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.102 seconds
+[2024-10-23T11:58:23.710+0000] {processor.py:186} INFO - Started process (PID=5587) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:58:23.711+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:58:23.713+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:58:23.712+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:58:24.663+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:58:24.803+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:58:24.802+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:58:24.842+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:58:24.842+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T11:58:24.866+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.166 seconds
+[2024-10-23T11:58:54.965+0000] {processor.py:186} INFO - Started process (PID=5672) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:58:54.966+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:58:54.968+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:58:54.968+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:58:55.929+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:58:56.062+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:58:56.061+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:58:56.125+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:58:56.124+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T11:58:56.190+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.232 seconds
+[2024-10-23T11:59:26.551+0000] {processor.py:186} INFO - Started process (PID=5757) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:59:26.552+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:59:26.555+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:59:26.554+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:59:27.601+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:59:27.724+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:59:27.724+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:59:27.779+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:59:27.779+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T11:59:27.828+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.286 seconds
+[2024-10-23T11:59:58.696+0000] {processor.py:186} INFO - Started process (PID=5842) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:59:58.698+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T11:59:58.700+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:59:58.700+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:59:59.736+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T11:59:59.899+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:59:59.897+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T11:59:59.957+0000] {logging_mixin.py:190} INFO - [2024-10-23T11:59:59.956+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 11:55:00+00:00, run_after=2024-10-23 12:00:00+00:00
+[2024-10-23T12:00:00.000+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.315 seconds
+[2024-10-23T12:01:20.393+0000] {processor.py:186} INFO - Started process (PID=6113) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:01:20.400+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:01:20.410+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:01:20.407+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:01:22.160+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:01:22.353+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:01:22.350+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:01:22.417+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:01:22.417+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:00:00+00:00, run_after=2024-10-23 12:05:00+00:00
+[2024-10-23T12:01:22.470+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 2.103 seconds
+[2024-10-23T12:01:52.930+0000] {processor.py:186} INFO - Started process (PID=6204) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:01:52.931+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:01:52.933+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:01:52.933+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:01:53.855+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:01:53.965+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:01:53.964+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:01:54.010+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:01:54.010+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:00:00+00:00, run_after=2024-10-23 12:05:00+00:00
+[2024-10-23T12:01:54.041+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.120 seconds
+[2024-10-23T12:02:24.943+0000] {processor.py:186} INFO - Started process (PID=6295) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:02:24.944+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:02:24.946+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:02:24.946+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:02:25.984+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:02:26.097+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:02:26.096+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:02:26.137+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:02:26.136+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:00:00+00:00, run_after=2024-10-23 12:05:00+00:00
+[2024-10-23T12:02:26.182+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.248 seconds
+[2024-10-23T12:02:56.318+0000] {processor.py:186} INFO - Started process (PID=6380) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:02:56.320+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:02:56.323+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:02:56.322+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:02:57.247+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:02:57.381+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:02:57.381+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:02:57.428+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:02:57.428+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:00:00+00:00, run_after=2024-10-23 12:05:00+00:00
+[2024-10-23T12:02:57.469+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.160 seconds
+[2024-10-23T12:03:27.989+0000] {processor.py:186} INFO - Started process (PID=6465) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:03:27.992+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:03:27.995+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:03:27.994+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:03:29.224+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:03:29.437+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:03:29.436+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:03:29.509+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:03:29.508+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:00:00+00:00, run_after=2024-10-23 12:05:00+00:00
+[2024-10-23T12:03:29.571+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.597 seconds
+[2024-10-23T12:04:00.306+0000] {processor.py:186} INFO - Started process (PID=6557) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:04:00.308+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:04:00.311+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:04:00.310+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:04:01.298+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:04:01.448+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:04:01.445+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:04:01.494+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:04:01.493+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:00:00+00:00, run_after=2024-10-23 12:05:00+00:00
+[2024-10-23T12:04:01.541+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.242 seconds
+[2024-10-23T12:04:31.700+0000] {processor.py:186} INFO - Started process (PID=6642) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:04:31.703+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:04:31.706+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:04:31.705+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:04:32.829+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:04:32.980+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:04:32.979+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:04:33.042+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:04:33.042+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:00:00+00:00, run_after=2024-10-23 12:05:00+00:00
+[2024-10-23T12:04:33.085+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.402 seconds
+[2024-10-23T12:05:04.377+0000] {processor.py:186} INFO - Started process (PID=6757) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:05:04.379+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:05:04.383+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:05:04.382+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:05:13.301+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:05:13.577+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:05:13.576+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:05:13.654+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:05:13.653+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:05:00+00:00, run_after=2024-10-23 12:10:00+00:00
+[2024-10-23T12:05:13.712+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 9.350 seconds
+[2024-10-23T12:05:43.848+0000] {processor.py:186} INFO - Started process (PID=6862) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:05:43.853+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:05:43.856+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:05:43.855+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:05:44.890+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:05:45.044+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:05:45.043+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:05:45.084+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:05:45.084+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:05:00+00:00, run_after=2024-10-23 12:10:00+00:00
+[2024-10-23T12:05:45.122+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.286 seconds
+[2024-10-23T12:06:15.612+0000] {processor.py:186} INFO - Started process (PID=6964) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:06:15.614+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:06:15.616+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:06:15.615+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:06:16.730+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:06:16.841+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:06:16.841+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:06:16.881+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:06:16.880+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:05:00+00:00, run_after=2024-10-23 12:10:00+00:00
+[2024-10-23T12:06:16.910+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.307 seconds
+[2024-10-23T12:06:47.166+0000] {processor.py:186} INFO - Started process (PID=7049) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:06:47.168+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:06:47.171+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:06:47.170+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:06:48.230+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:06:48.342+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:06:48.341+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:06:48.394+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:06:48.394+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:05:00+00:00, run_after=2024-10-23 12:10:00+00:00
+[2024-10-23T12:06:48.453+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.300 seconds
+[2024-10-23T12:07:18.880+0000] {processor.py:186} INFO - Started process (PID=7134) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:07:18.883+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:07:18.885+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:07:18.885+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:07:20.168+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:07:20.317+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:07:20.316+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:07:20.393+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:07:20.392+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:05:00+00:00, run_after=2024-10-23 12:10:00+00:00
+[2024-10-23T12:07:20.460+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.590 seconds
+[2024-10-23T12:07:50.852+0000] {processor.py:186} INFO - Started process (PID=7219) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:07:50.871+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:07:50.894+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:07:50.887+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:07:55.976+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:07:56.139+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:07:56.138+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:07:56.222+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:07:56.222+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:05:00+00:00, run_after=2024-10-23 12:10:00+00:00
+[2024-10-23T12:07:56.303+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 5.593 seconds
+[2024-10-23T12:37:43.547+0000] {processor.py:186} INFO - Started process (PID=7465) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:37:43.550+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:37:43.553+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:37:43.552+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:37:45.149+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:37:45.294+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:37:45.294+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:37:45.355+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:37:45.354+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:35:00+00:00, run_after=2024-10-23 12:40:00+00:00
+[2024-10-23T12:37:45.394+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.858 seconds
+[2024-10-23T12:38:15.584+0000] {processor.py:186} INFO - Started process (PID=7554) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:38:15.585+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:38:15.588+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:38:15.587+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:38:16.579+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:38:16.699+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:38:16.699+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:38:16.768+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:38:16.768+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:35:00+00:00, run_after=2024-10-23 12:40:00+00:00
+[2024-10-23T12:38:16.812+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.236 seconds
+[2024-10-23T12:38:47.900+0000] {processor.py:186} INFO - Started process (PID=7645) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:38:47.902+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:38:47.905+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:38:47.904+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:38:49.129+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:38:49.294+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:38:49.293+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:38:49.354+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:38:49.354+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:35:00+00:00, run_after=2024-10-23 12:40:00+00:00
+[2024-10-23T12:38:49.393+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.506 seconds
+[2024-10-23T12:39:22.183+0000] {processor.py:186} INFO - Started process (PID=7736) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:39:22.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:39:22.200+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:39:22.199+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:39:24.745+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:39:24.930+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:39:24.929+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:39:25.029+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:39:25.028+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:35:00+00:00, run_after=2024-10-23 12:40:00+00:00
+[2024-10-23T12:39:25.085+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 2.935 seconds
+[2024-10-23T12:39:55.950+0000] {processor.py:186} INFO - Started process (PID=7826) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:39:55.951+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:39:55.953+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:39:55.953+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:39:57.176+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:39:57.336+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:39:57.335+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:39:57.391+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:39:57.391+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:35:00+00:00, run_after=2024-10-23 12:40:00+00:00
+[2024-10-23T12:39:57.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.498 seconds
+[2024-10-23T12:40:28.361+0000] {processor.py:186} INFO - Started process (PID=7958) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:40:28.363+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:40:28.365+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:40:28.365+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:40:29.354+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:40:29.448+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:40:29.447+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:40:29.495+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:40:29.494+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:40:00+00:00, run_after=2024-10-23 12:45:00+00:00
+[2024-10-23T12:40:29.532+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.182 seconds
+[2024-10-23T12:41:00.314+0000] {processor.py:186} INFO - Started process (PID=8060) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:41:00.315+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:41:00.317+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:41:00.317+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:41:01.306+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:41:01.428+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:41:01.427+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:41:01.482+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:41:01.482+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:40:00+00:00, run_after=2024-10-23 12:45:00+00:00
+[2024-10-23T12:41:01.518+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.214 seconds
+[2024-10-23T12:41:31.951+0000] {processor.py:186} INFO - Started process (PID=8150) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:41:31.953+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:41:31.955+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:41:31.955+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:41:32.883+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:41:33.045+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:41:33.044+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:41:33.088+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:41:33.088+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:40:00+00:00, run_after=2024-10-23 12:45:00+00:00
+[2024-10-23T12:41:33.122+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.181 seconds
+[2024-10-23T12:42:03.833+0000] {processor.py:186} INFO - Started process (PID=8254) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:42:03.835+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:42:03.837+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:42:03.836+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:42:04.641+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:42:04.767+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:42:04.766+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:42:04.814+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:42:04.814+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:40:00+00:00, run_after=2024-10-23 12:45:00+00:00
+[2024-10-23T12:42:04.851+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.025 seconds
+[2024-10-23T12:42:34.927+0000] {processor.py:186} INFO - Started process (PID=8362) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:42:34.928+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:42:34.930+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:42:34.930+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:42:36.010+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:42:36.126+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:42:36.125+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:42:36.175+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:42:36.175+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:40:00+00:00, run_after=2024-10-23 12:45:00+00:00
+[2024-10-23T12:42:36.216+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.299 seconds
+[2024-10-23T12:43:06.824+0000] {processor.py:186} INFO - Started process (PID=8474) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:43:06.825+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:43:06.828+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:43:06.827+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:43:07.642+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:43:07.781+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:43:07.780+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:43:07.823+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:43:07.823+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:40:00+00:00, run_after=2024-10-23 12:45:00+00:00
+[2024-10-23T12:43:07.899+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.082 seconds
+[2024-10-23T12:43:38.509+0000] {processor.py:186} INFO - Started process (PID=8559) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:43:38.511+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:43:38.513+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:43:38.512+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:43:39.199+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:43:39.294+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:43:39.294+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:43:39.336+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:43:39.336+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:40:00+00:00, run_after=2024-10-23 12:45:00+00:00
+[2024-10-23T12:43:39.367+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.864 seconds
+[2024-10-23T12:44:09.753+0000] {processor.py:186} INFO - Started process (PID=8647) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:44:09.754+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:44:09.757+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:44:09.756+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:44:10.560+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:44:10.656+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:44:10.655+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:44:10.702+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:44:10.702+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:40:00+00:00, run_after=2024-10-23 12:45:00+00:00
+[2024-10-23T12:44:10.735+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.989 seconds
+[2024-10-23T12:44:41.403+0000] {processor.py:186} INFO - Started process (PID=8732) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:44:41.405+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:44:41.407+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:44:41.407+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:44:42.195+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:44:42.386+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:44:42.385+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:44:42.442+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:44:42.442+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:40:00+00:00, run_after=2024-10-23 12:45:00+00:00
+[2024-10-23T12:44:42.480+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.085 seconds
+[2024-10-23T12:45:15.844+0000] {processor.py:186} INFO - Started process (PID=8870) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:45:15.848+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:45:15.851+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:45:15.850+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:45:16.866+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:45:17.006+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:45:17.005+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:45:17.070+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:45:17.070+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:45:00+00:00, run_after=2024-10-23 12:50:00+00:00
+[2024-10-23T12:45:17.138+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.306 seconds
+[2024-10-23T12:45:47.457+0000] {processor.py:186} INFO - Started process (PID=8957) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:45:47.458+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:45:47.460+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:45:47.460+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:45:48.392+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:45:48.520+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:45:48.518+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:45:48.570+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:45:48.570+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:45:00+00:00, run_after=2024-10-23 12:50:00+00:00
+[2024-10-23T12:45:48.603+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.158 seconds
+[2024-10-23T12:46:19.366+0000] {processor.py:186} INFO - Started process (PID=9042) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:46:19.368+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:46:19.370+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:46:19.369+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:46:19.964+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:46:20.043+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:46:20.042+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:46:20.127+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:46:20.126+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:45:00+00:00, run_after=2024-10-23 12:50:00+00:00
+[2024-10-23T12:46:20.179+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.831 seconds
+[2024-10-23T12:46:50.724+0000] {processor.py:186} INFO - Started process (PID=9127) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:46:50.727+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:46:50.730+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:46:50.729+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:46:51.747+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:46:51.955+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:46:51.954+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:46:52.041+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:46:52.040+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:45:00+00:00, run_after=2024-10-23 12:50:00+00:00
+[2024-10-23T12:46:52.098+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.395 seconds
+[2024-10-23T12:47:22.553+0000] {processor.py:186} INFO - Started process (PID=9212) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:47:22.555+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:47:22.559+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:47:22.558+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:47:23.609+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:47:23.738+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:47:23.737+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:47:23.787+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:47:23.787+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:45:00+00:00, run_after=2024-10-23 12:50:00+00:00
+[2024-10-23T12:47:23.823+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.278 seconds
+[2024-10-23T12:47:54.058+0000] {processor.py:186} INFO - Started process (PID=9297) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:47:54.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:47:54.064+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:47:54.063+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:47:54.839+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:47:54.956+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:47:54.955+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:47:54.995+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:47:54.995+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:45:00+00:00, run_after=2024-10-23 12:50:00+00:00
+[2024-10-23T12:47:55.035+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.991 seconds
+[2024-10-23T12:48:25.192+0000] {processor.py:186} INFO - Started process (PID=9382) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:48:25.193+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:48:25.195+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:48:25.195+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:48:25.786+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:48:25.853+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:48:25.852+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:48:25.886+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:48:25.886+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:45:00+00:00, run_after=2024-10-23 12:50:00+00:00
+[2024-10-23T12:48:25.915+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.732 seconds
+[2024-10-23T12:48:56.011+0000] {processor.py:186} INFO - Started process (PID=9467) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:48:56.013+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:48:56.015+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:48:56.015+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:48:56.792+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:48:56.871+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:48:56.870+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:48:56.903+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:48:56.903+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:45:00+00:00, run_after=2024-10-23 12:50:00+00:00
+[2024-10-23T12:48:56.933+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.932 seconds
+[2024-10-23T12:49:27.242+0000] {processor.py:186} INFO - Started process (PID=9550) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:49:27.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T12:49:27.244+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:49:27.244+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:49:28.103+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T12:49:28.238+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:49:28.238+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T12:49:28.290+0000] {logging_mixin.py:190} INFO - [2024-10-23T12:49:28.290+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 12:45:00+00:00, run_after=2024-10-23 12:50:00+00:00
+[2024-10-23T12:49:28.330+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.096 seconds
+[2024-10-23T13:00:12.028+0000] {processor.py:186} INFO - Started process (PID=9717) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:00:12.078+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:00:12.129+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:00:12.105+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:00:19.684+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:00:22.305+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:00:22.282+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:00:22.808+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:00:22.807+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:00:00+00:00, run_after=2024-10-23 13:05:00+00:00
+[2024-10-23T13:00:23.302+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 11.984 seconds
+[2024-10-23T13:00:55.471+0000] {processor.py:186} INFO - Started process (PID=9894) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:00:55.475+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:00:55.487+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:00:55.485+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:01:00.194+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:01:01.169+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:01:01.150+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:01:01.502+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:01:01.495+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:00:00+00:00, run_after=2024-10-23 13:05:00+00:00
+[2024-10-23T13:01:01.651+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 6.202 seconds
+[2024-10-23T13:01:32.361+0000] {processor.py:186} INFO - Started process (PID=10048) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:01:32.366+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:01:32.368+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:01:32.368+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:01:32.919+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:01:33.006+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:01:33.005+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:01:33.044+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:01:33.044+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:00:00+00:00, run_after=2024-10-23 13:05:00+00:00
+[2024-10-23T13:01:33.072+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.721 seconds
+[2024-10-23T13:02:03.182+0000] {processor.py:186} INFO - Started process (PID=10133) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:02:03.184+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:02:03.186+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:02:03.185+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:02:03.739+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:02:03.819+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:02:03.819+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:02:03.864+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:02:03.863+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:00:00+00:00, run_after=2024-10-23 13:05:00+00:00
+[2024-10-23T13:02:03.893+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.718 seconds
+[2024-10-23T13:02:34.347+0000] {processor.py:186} INFO - Started process (PID=10220) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:02:34.349+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:02:34.350+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:02:34.350+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:02:34.880+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:02:34.957+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:02:34.957+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:02:35.015+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:02:35.015+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:00:00+00:00, run_after=2024-10-23 13:05:00+00:00
+[2024-10-23T13:02:35.060+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.718 seconds
+[2024-10-23T13:03:05.725+0000] {processor.py:186} INFO - Started process (PID=10305) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:03:05.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:03:05.754+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:03:05.753+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:03:06.324+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:03:06.412+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:03:06.411+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:03:06.461+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:03:06.461+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:00:00+00:00, run_after=2024-10-23 13:05:00+00:00
+[2024-10-23T13:03:06.510+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.805 seconds
+[2024-10-23T13:03:36.909+0000] {processor.py:186} INFO - Started process (PID=10393) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:03:36.910+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:03:36.913+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:03:36.912+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:03:37.467+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:03:37.546+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:03:37.546+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:03:37.600+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:03:37.600+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:00:00+00:00, run_after=2024-10-23 13:05:00+00:00
+[2024-10-23T13:03:37.647+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.747 seconds
+[2024-10-23T13:04:08.332+0000] {processor.py:186} INFO - Started process (PID=10480) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:04:08.334+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:04:08.336+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:04:08.335+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:04:08.932+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:04:09.013+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:04:09.013+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:04:09.060+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:04:09.060+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:00:00+00:00, run_after=2024-10-23 13:05:00+00:00
+[2024-10-23T13:04:09.102+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.777 seconds
+[2024-10-23T13:04:39.449+0000] {processor.py:186} INFO - Started process (PID=10565) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:04:39.450+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:04:39.452+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:04:39.451+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:04:40.055+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:04:40.147+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:04:40.146+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:04:40.212+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:04:40.212+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:00:00+00:00, run_after=2024-10-23 13:05:00+00:00
+[2024-10-23T13:04:40.267+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.825 seconds
+[2024-10-23T13:05:11.160+0000] {processor.py:186} INFO - Started process (PID=10688) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:05:11.174+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:05:11.193+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:05:11.192+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:05:19.673+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:05:22.282+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:05:22.281+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:05:22.722+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:05:22.720+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:05:00+00:00, run_after=2024-10-23 13:10:00+00:00
+[2024-10-23T13:05:23.110+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 11.996 seconds
+[2024-10-23T13:05:56.994+0000] {processor.py:186} INFO - Started process (PID=10835) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:05:56.997+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:05:57.000+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:05:56.999+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:05:57.976+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:05:58.079+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:05:58.079+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:05:58.132+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:05:58.131+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:05:00+00:00, run_after=2024-10-23 13:10:00+00:00
+[2024-10-23T13:05:58.186+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.205 seconds
+[2024-10-23T13:06:28.283+0000] {processor.py:186} INFO - Started process (PID=10922) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:06:28.285+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T13:06:28.288+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:06:28.287+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:06:28.972+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T13:06:29.056+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:06:29.056+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T13:06:29.094+0000] {logging_mixin.py:190} INFO - [2024-10-23T13:06:29.094+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 13:05:00+00:00, run_after=2024-10-23 13:10:00+00:00
+[2024-10-23T13:06:29.125+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.850 seconds
+[2024-10-23T14:59:39.724+0000] {processor.py:186} INFO - Started process (PID=11119) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T14:59:39.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T14:59:39.729+0000] {logging_mixin.py:190} INFO - [2024-10-23T14:59:39.728+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T14:59:40.856+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T14:59:40.979+0000] {logging_mixin.py:190} INFO - [2024-10-23T14:59:40.978+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T14:59:41.052+0000] {logging_mixin.py:190} INFO - [2024-10-23T14:59:41.052+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 14:55:00+00:00, run_after=2024-10-23 15:00:00+00:00
+[2024-10-23T14:59:41.094+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.384 seconds
+[2024-10-23T15:00:14.688+0000] {processor.py:186} INFO - Started process (PID=11274) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:00:14.696+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:00:14.706+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:00:14.705+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:00:18.430+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:00:19.235+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:00:19.233+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:00:19.598+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:00:19.597+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:00:00+00:00, run_after=2024-10-23 15:05:00+00:00
+[2024-10-23T15:00:19.784+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 5.132 seconds
+[2024-10-23T15:00:52.684+0000] {processor.py:186} INFO - Started process (PID=11460) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:00:52.688+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:00:52.693+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:00:52.692+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:00:58.245+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:00:59.657+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:00:59.656+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:01:00.069+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:01:00.068+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:00:00+00:00, run_after=2024-10-23 15:05:00+00:00
+[2024-10-23T15:01:00.281+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 7.649 seconds
+[2024-10-23T15:01:30.907+0000] {processor.py:186} INFO - Started process (PID=11589) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:01:30.909+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:01:30.911+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:01:30.911+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:01:31.978+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:01:32.301+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:01:32.300+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:01:32.353+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:01:32.352+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:00:00+00:00, run_after=2024-10-23 15:05:00+00:00
+[2024-10-23T15:01:32.391+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.493 seconds
+[2024-10-23T15:02:03.159+0000] {processor.py:186} INFO - Started process (PID=11682) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:02:03.160+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:02:03.163+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:02:03.162+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:02:04.409+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:02:04.628+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:02:04.627+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:02:04.678+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:02:04.677+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:00:00+00:00, run_after=2024-10-23 15:05:00+00:00
+[2024-10-23T15:02:04.720+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.573 seconds
+[2024-10-23T15:02:34.987+0000] {processor.py:186} INFO - Started process (PID=11769) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:02:34.990+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:02:34.995+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:02:34.994+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:02:36.125+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:02:36.353+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:02:36.353+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:02:36.405+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:02:36.405+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:00:00+00:00, run_after=2024-10-23 15:05:00+00:00
+[2024-10-23T15:02:36.444+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.467 seconds
+[2024-10-23T15:03:06.722+0000] {processor.py:186} INFO - Started process (PID=11854) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:03:06.724+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:03:06.728+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:03:06.727+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:03:07.715+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:03:07.851+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:03:07.851+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:03:07.903+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:03:07.902+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:00:00+00:00, run_after=2024-10-23 15:05:00+00:00
+[2024-10-23T15:03:11.352+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 4.643 seconds
+[2024-10-23T15:03:41.947+0000] {processor.py:186} INFO - Started process (PID=11953) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:03:41.949+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:03:41.951+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:03:41.950+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:03:42.661+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:03:42.832+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:03:42.831+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:03:42.916+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:03:42.915+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:00:00+00:00, run_after=2024-10-23 15:05:00+00:00
+[2024-10-23T15:03:43.275+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.338 seconds
+[2024-10-23T15:04:13.388+0000] {processor.py:186} INFO - Started process (PID=12039) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:04:13.390+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:04:13.393+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:04:13.392+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:04:14.540+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:04:14.683+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:04:14.682+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:04:14.747+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:04:14.747+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:00:00+00:00, run_after=2024-10-23 15:05:00+00:00
+[2024-10-23T15:04:14.804+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.429 seconds
+[2024-10-23T15:06:43.359+0000] {processor.py:186} INFO - Started process (PID=12272) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:06:43.362+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:06:43.367+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:43.366+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:06:45.268+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:06:45.537+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:45.535+0000] {taskinstance.py:3312} ERROR - {'DAG Id': 'Dag_Non-numeric-Quantity', 'Task Id': 'run_anomaly_detection', 'Run Id': 'scheduled__2024-10-23T13:05:00+00:00', 'Hostname': '696ca67245ce'}
+[2024-10-23T15:06:45.697+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:45.696+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=Dag_Non-numeric-Quantity, task_id=run_anomaly_detection, run_id=scheduled__2024-10-23T13:05:00+00:00, execution_date=20241023T130500, start_date=20241023T150453, end_date=20241023T150645
+[2024-10-23T15:06:45.748+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:45.747+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: Dag_Non-numeric-Quantity.run_anomaly_detection scheduled__2024-10-23T13:05:00+00:00 [failed]> in state failed
+[2024-10-23T15:06:45.756+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:45.755+0000] {taskinstance.py:3312} ERROR - {'DAG Id': 'Dag_Non-numeric-Quantity', 'Task Id': 'run_anomaly_detection', 'Run Id': 'scheduled__2024-10-23T13:05:00+00:00', 'Hostname': '696ca67245ce'}
+[2024-10-23T15:06:45.794+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:45.793+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=Dag_Non-numeric-Quantity, task_id=run_anomaly_detection, run_id=scheduled__2024-10-23T13:05:00+00:00, execution_date=20241023T130500, start_date=20241023T150453, end_date=20241023T150645
+[2024-10-23T15:06:45.812+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:45.812+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: Dag_Non-numeric-Quantity.run_anomaly_detection scheduled__2024-10-23T13:05:00+00:00 [failed]> in state failed
+[2024-10-23T15:06:45.823+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:45.821+0000] {taskinstance.py:3312} ERROR - {'DAG Id': 'Dag_Non-numeric-Quantity', 'Task Id': 'run_anomaly_detection', 'Run Id': 'scheduled__2024-10-23T13:05:00+00:00', 'Hostname': '696ca67245ce'}
+[2024-10-23T15:06:45.858+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:45.857+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=Dag_Non-numeric-Quantity, task_id=run_anomaly_detection, run_id=scheduled__2024-10-23T13:05:00+00:00, execution_date=20241023T130500, start_date=20241023T150453, end_date=20241023T150645
+[2024-10-23T15:06:45.872+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:45.871+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: Dag_Non-numeric-Quantity.run_anomaly_detection scheduled__2024-10-23T13:05:00+00:00 [failed]> in state failed
+[2024-10-23T15:06:46.382+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:46.381+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:06:46.468+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:06:46.467+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:05:00+00:00, run_after=2024-10-23 15:10:00+00:00
+[2024-10-23T15:06:46.522+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 3.186 seconds
+[2024-10-23T15:07:17.745+0000] {processor.py:186} INFO - Started process (PID=12375) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:07:17.746+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:07:17.748+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:07:17.748+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:07:18.390+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:07:18.493+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:07:18.492+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:07:18.537+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:07:18.537+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:05:00+00:00, run_after=2024-10-23 15:10:00+00:00
+[2024-10-23T15:07:18.575+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.837 seconds
+[2024-10-23T15:07:48.903+0000] {processor.py:186} INFO - Started process (PID=12465) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:07:48.904+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:07:48.906+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:07:48.906+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:07:49.553+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:07:49.944+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:07:49.943+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:07:49.998+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:07:49.998+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:05:00+00:00, run_after=2024-10-23 15:10:00+00:00
+[2024-10-23T15:07:50.035+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.141 seconds
+[2024-10-23T15:08:20.217+0000] {processor.py:186} INFO - Started process (PID=12550) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:08:20.218+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:08:20.221+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:08:20.220+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:08:22.369+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:08:22.802+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:08:22.800+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:08:23.746+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:08:23.742+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:05:00+00:00, run_after=2024-10-23 15:10:00+00:00
+[2024-10-23T15:08:23.997+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 3.792 seconds
+[2024-10-23T15:08:54.522+0000] {processor.py:186} INFO - Started process (PID=12642) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:08:54.525+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:08:54.530+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:08:54.529+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:08:55.966+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:08:56.182+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:08:56.180+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:08:56.330+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:08:56.329+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:05:00+00:00, run_after=2024-10-23 15:10:00+00:00
+[2024-10-23T15:08:56.399+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.892 seconds
+[2024-10-23T15:09:26.929+0000] {processor.py:186} INFO - Started process (PID=12730) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:09:26.931+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:09:26.934+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:09:26.934+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:09:27.739+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:09:27.836+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:09:27.836+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:09:27.873+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:09:27.873+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:05:00+00:00, run_after=2024-10-23 15:10:00+00:00
+[2024-10-23T15:09:27.904+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.985 seconds
+[2024-10-23T15:09:58.472+0000] {processor.py:186} INFO - Started process (PID=12817) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:09:58.474+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:09:58.476+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:09:58.475+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:09:59.292+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:09:59.577+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:09:59.576+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:09:59.621+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:09:59.621+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:05:00+00:00, run_after=2024-10-23 15:10:00+00:00
+[2024-10-23T15:09:59.669+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.206 seconds
+[2024-10-23T15:10:32.358+0000] {processor.py:186} INFO - Started process (PID=12940) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:10:32.360+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:10:32.363+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:10:32.362+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:10:33.134+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:10:33.258+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:10:33.257+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:10:33.323+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:10:33.323+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:10:00+00:00, run_after=2024-10-23 15:15:00+00:00
+[2024-10-23T15:10:33.371+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.024 seconds
+[2024-10-23T15:11:04.010+0000] {processor.py:186} INFO - Started process (PID=13027) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:11:04.012+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:11:04.013+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:11:04.013+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:11:04.775+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:11:04.960+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:11:04.960+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:11:05.021+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:11:05.021+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:10:00+00:00, run_after=2024-10-23 15:15:00+00:00
+[2024-10-23T15:11:05.069+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.065 seconds
+[2024-10-23T15:11:35.706+0000] {processor.py:186} INFO - Started process (PID=13112) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:11:35.709+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:11:35.711+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:11:35.710+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:11:36.440+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:11:36.578+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:11:36.578+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:11:36.634+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:11:36.633+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:10:00+00:00, run_after=2024-10-23 15:15:00+00:00
+[2024-10-23T15:11:36.688+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.992 seconds
+[2024-10-23T15:12:06.860+0000] {processor.py:186} INFO - Started process (PID=13197) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:12:06.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:12:06.863+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:12:06.863+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:12:07.517+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:12:07.643+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:12:07.643+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:12:07.693+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:12:07.693+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:10:00+00:00, run_after=2024-10-23 15:15:00+00:00
+[2024-10-23T15:12:07.736+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.882 seconds
+[2024-10-23T15:12:38.086+0000] {processor.py:186} INFO - Started process (PID=13282) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:12:38.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:12:38.090+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:12:38.089+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:12:38.954+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:12:39.062+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:12:39.061+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:12:39.095+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:12:39.094+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:10:00+00:00, run_after=2024-10-23 15:15:00+00:00
+[2024-10-23T15:12:39.140+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.059 seconds
+[2024-10-23T15:13:09.534+0000] {processor.py:186} INFO - Started process (PID=13367) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:13:09.536+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:13:09.538+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:13:09.537+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:13:10.273+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:13:10.348+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:13:10.348+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:13:10.397+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:13:10.397+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:10:00+00:00, run_after=2024-10-23 15:15:00+00:00
+[2024-10-23T15:13:10.445+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.917 seconds
+[2024-10-23T15:13:40.875+0000] {processor.py:186} INFO - Started process (PID=13452) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:13:40.877+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:13:40.879+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:13:40.879+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:13:41.565+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:13:41.663+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:13:41.662+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:13:41.716+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:13:41.716+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:10:00+00:00, run_after=2024-10-23 15:15:00+00:00
+[2024-10-23T15:13:41.756+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.887 seconds
+[2024-10-23T15:14:11.828+0000] {processor.py:186} INFO - Started process (PID=13537) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:14:11.830+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:14:11.832+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:14:11.832+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:14:12.581+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:14:12.717+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:14:12.716+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:14:12.773+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:14:12.773+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:10:00+00:00, run_after=2024-10-23 15:15:00+00:00
+[2024-10-23T15:14:12.805+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.984 seconds
+[2024-10-23T15:14:43.396+0000] {processor.py:186} INFO - Started process (PID=13622) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:14:43.398+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:14:43.401+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:14:43.401+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:14:44.278+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:14:44.382+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:14:44.382+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:14:44.435+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:14:44.434+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:10:00+00:00, run_after=2024-10-23 15:15:00+00:00
+[2024-10-23T15:14:44.484+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.095 seconds
+[2024-10-23T15:15:18.286+0000] {processor.py:186} INFO - Started process (PID=13769) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:15:18.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:15:18.295+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:15:18.295+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:15:19.229+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:15:19.323+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:15:19.323+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:15:19.381+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:15:19.381+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:15:00+00:00, run_after=2024-10-23 15:20:00+00:00
+[2024-10-23T15:15:19.428+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.150 seconds
+[2024-10-23T15:15:49.996+0000] {processor.py:186} INFO - Started process (PID=13856) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:15:49.997+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:15:49.999+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:15:49.999+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:15:50.774+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:15:50.888+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:15:50.888+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:15:50.945+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:15:50.944+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:15:00+00:00, run_after=2024-10-23 15:20:00+00:00
+[2024-10-23T15:15:51.005+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.015 seconds
+[2024-10-23T15:16:21.519+0000] {processor.py:186} INFO - Started process (PID=13939) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:16:21.521+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:16:21.524+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:16:21.523+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:16:22.397+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:16:22.544+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:16:22.543+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:16:22.604+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:16:22.604+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:15:00+00:00, run_after=2024-10-23 15:20:00+00:00
+[2024-10-23T15:16:22.637+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.125 seconds
+[2024-10-23T15:16:53.017+0000] {processor.py:186} INFO - Started process (PID=14026) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:16:53.019+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:16:53.021+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:16:53.021+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:16:53.770+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:16:53.877+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:16:53.876+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:16:53.930+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:16:53.930+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:15:00+00:00, run_after=2024-10-23 15:20:00+00:00
+[2024-10-23T15:16:53.977+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.967 seconds
+[2024-10-23T15:17:24.158+0000] {processor.py:186} INFO - Started process (PID=14111) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:17:24.160+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:17:24.162+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:17:24.162+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:17:24.914+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:17:24.995+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:17:24.994+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:17:25.049+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:17:25.049+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:15:00+00:00, run_after=2024-10-23 15:20:00+00:00
+[2024-10-23T15:17:25.106+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.953 seconds
+[2024-10-23T15:17:55.314+0000] {processor.py:186} INFO - Started process (PID=14196) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:17:55.316+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:17:55.318+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:17:55.317+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:17:56.032+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:17:56.205+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:17:56.205+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:17:56.257+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:17:56.257+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:15:00+00:00, run_after=2024-10-23 15:20:00+00:00
+[2024-10-23T15:17:56.304+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.995 seconds
+[2024-10-23T15:18:26.485+0000] {processor.py:186} INFO - Started process (PID=14279) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:18:26.486+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:18:26.489+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:18:26.488+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:18:27.222+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:18:27.432+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:18:27.432+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:18:27.491+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:18:27.491+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:15:00+00:00, run_after=2024-10-23 15:20:00+00:00
+[2024-10-23T15:18:27.547+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.074 seconds
+[2024-10-23T15:18:58.221+0000] {processor.py:186} INFO - Started process (PID=14366) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:18:58.223+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:18:58.225+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:18:58.224+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:18:59.214+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:18:59.338+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:18:59.338+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:18:59.398+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:18:59.398+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:15:00+00:00, run_after=2024-10-23 15:20:00+00:00
+[2024-10-23T15:18:59.452+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.236 seconds
+[2024-10-23T15:19:29.787+0000] {processor.py:186} INFO - Started process (PID=14451) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:19:29.788+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:19:29.791+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:19:29.790+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:19:30.451+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:19:30.597+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:19:30.597+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:19:30.653+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:19:30.653+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:15:00+00:00, run_after=2024-10-23 15:20:00+00:00
+[2024-10-23T15:19:30.704+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.924 seconds
+[2024-10-23T15:20:01.441+0000] {processor.py:186} INFO - Started process (PID=14547) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:20:01.442+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:20:01.445+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:20:01.444+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:20:02.742+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:20:02.891+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:20:02.890+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:20:02.956+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:20:02.956+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:20:03.027+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.600 seconds
+[2024-10-23T15:20:33.724+0000] {processor.py:186} INFO - Started process (PID=14661) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:20:33.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:20:33.728+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:20:33.727+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:20:34.454+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:20:34.588+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:20:34.587+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:20:34.645+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:20:34.645+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:20:34.696+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.979 seconds
+[2024-10-23T15:21:04.880+0000] {processor.py:186} INFO - Started process (PID=14746) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:21:04.882+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:21:04.884+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:21:04.884+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:21:05.599+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:21:05.692+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:21:05.691+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:21:05.752+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:21:05.752+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:21:05.800+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.927 seconds
+[2024-10-23T15:21:36.440+0000] {processor.py:186} INFO - Started process (PID=14831) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:21:36.441+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:21:36.443+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:21:36.443+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:21:37.141+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:21:37.276+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:21:37.276+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:21:37.324+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:21:37.324+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:21:37.373+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.940 seconds
+[2024-10-23T15:22:07.808+0000] {processor.py:186} INFO - Started process (PID=14916) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:22:07.809+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:22:07.812+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:22:07.811+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:22:08.536+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:22:08.632+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:22:08.631+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:22:08.694+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:22:08.693+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:22:08.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.944 seconds
+[2024-10-23T15:22:39.234+0000] {processor.py:186} INFO - Started process (PID=15001) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:22:39.235+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:22:39.237+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:22:39.237+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:22:39.916+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:22:40.007+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:22:40.006+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:22:40.062+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:22:40.062+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:22:40.115+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.887 seconds
+[2024-10-23T15:23:10.561+0000] {processor.py:186} INFO - Started process (PID=15086) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:23:10.563+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:23:10.565+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:23:10.564+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:23:11.277+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:23:11.381+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:23:11.381+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:23:11.433+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:23:11.433+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:23:11.478+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.923 seconds
+[2024-10-23T15:23:41.953+0000] {processor.py:186} INFO - Started process (PID=15171) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:23:41.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:23:41.956+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:23:41.956+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:23:42.673+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:23:42.923+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:23:42.921+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:23:42.987+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:23:42.986+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:23:43.026+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.081 seconds
+[2024-10-23T15:24:13.240+0000] {processor.py:186} INFO - Started process (PID=15256) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:24:13.241+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:24:13.243+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:24:13.243+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:24:13.926+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:24:14.147+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:24:14.146+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:24:14.210+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:24:14.210+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:24:14.268+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.034 seconds
+[2024-10-23T15:24:44.716+0000] {processor.py:186} INFO - Started process (PID=15341) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:24:44.717+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:24:44.720+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:24:44.720+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:24:45.461+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:24:45.585+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:24:45.585+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:24:45.643+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:24:45.643+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:20:00+00:00, run_after=2024-10-23 15:25:00+00:00
+[2024-10-23T15:24:45.688+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 0.978 seconds
+[2024-10-23T15:25:16.401+0000] {processor.py:186} INFO - Started process (PID=15466) to work on /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:25:16.402+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag_Non-numeric-Quantity.py for tasks to queue
+[2024-10-23T15:25:16.404+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:25:16.404+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:25:17.228+0000] {processor.py:925} INFO - DAG(s) 'Dag_Non-numeric-Quantity' retrieved from /opt/airflow/dags/Dag_Non-numeric-Quantity.py
+[2024-10-23T15:25:17.349+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:25:17.349+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-23T15:25:17.415+0000] {logging_mixin.py:190} INFO - [2024-10-23T15:25:17.415+0000] {dag.py:4156} INFO - Setting next_dagrun for Dag_Non-numeric-Quantity to 2024-10-23 15:25:00+00:00, run_after=2024-10-23 15:30:00+00:00
+[2024-10-23T15:25:17.464+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag_Non-numeric-Quantity.py took 1.069 seconds

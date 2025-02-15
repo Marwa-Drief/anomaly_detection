@@ -1,0 +1,138 @@
+[2024-09-08T15:07:05.233+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-08T15:07:05.317+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-08T14:45:00+00:00 [queued]>
+[2024-09-08T15:07:05.329+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-08T14:45:00+00:00 [queued]>
+[2024-09-08T15:07:05.335+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2024-09-08T15:07:05.366+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): detect_1nf_and_insert_anomalies> on 2024-09-08 14:45:00+00:00
+[2024-09-08T15:07:05.383+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=33219) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-08T15:07:05.383+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'detect_1fn_anomalies_dag', 'detect_1nf_and_insert_anomalies', 'scheduled__2024-09-08T14:45:00+00:00', '--job-id', '1302', '--raw', '--subdir', 'DAGS_FOLDER/Dag_detect_1FN_anomaly.py', '--cfg-path', '/tmp/tmpz2vs5aev']
+[2024-09-08T15:07:05.386+0000] {standard_task_runner.py:72} INFO - Started process 33221 to run task
+[2024-09-08T15:07:05.387+0000] {standard_task_runner.py:105} INFO - Job 1302: Subtask detect_1nf_and_insert_anomalies
+[2024-09-08T15:07:05.636+0000] {task_command.py:467} INFO - Running <TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-08T14:45:00+00:00 [running]> on host 13d1dadf4f15
+[2024-09-08T15:07:06.031+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='detect_1fn_anomalies_dag' AIRFLOW_CTX_TASK_ID='detect_1nf_and_insert_anomalies' AIRFLOW_CTX_EXECUTION_DATE='2024-09-08T14:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-08T14:45:00+00:00'
+[2024-09-08T15:07:06.032+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-08T15:07:06.126+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: customers
+[2024-09-08T15:07:06.289+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table customers
+[2024-09-08T15:07:06.291+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: transactions
+[2024-09-08T15:07:06.505+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table transactions
+[2024-09-08T15:07:06.506+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: products
+[2024-09-08T15:07:06.662+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table products
+[2024-09-08T15:07:06.663+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: orderdetails
+[2024-09-08T15:07:06.810+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table orderdetails
+[2024-09-08T15:07:06.811+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: productsuppliers
+[2024-09-08T15:07:06.987+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table productsuppliers
+[2024-09-08T15:07:06.988+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: anomalies
+[2024-09-08T15:07:07.164+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Inserting 2 anomalies for table anomalies
+[2024-09-08T15:07:07.638+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: log
+[2024-09-08T15:07:08.083+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Inserting 3341 anomalies for table log
+[2024-09-08T15:07:32.394+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_priority_parsing_request
+[2024-09-08T15:07:32.693+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dag_priority_parsing_request
+[2024-09-08T15:07:32.694+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: job
+[2024-09-08T15:07:33.025+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table job
+[2024-09-08T15:07:33.026+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: anomalies1
+[2024-09-08T15:07:33.307+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Inserting 2 anomalies for table anomalies1
+[2024-09-08T15:07:33.537+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: slot_pool
+[2024-09-08T15:07:33.807+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table slot_pool
+[2024-09-08T15:07:33.808+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: callback_request
+[2024-09-08T15:07:34.086+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table callback_request
+[2024-09-08T15:07:34.087+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_code
+[2024-09-08T15:07:34.332+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Inserting 16 anomalies for table dag_code
+[2024-09-08T15:07:34.846+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_pickle
+[2024-09-08T15:07:35.105+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dag_pickle
+[2024-09-08T15:07:35.106+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: ab_user
+[2024-09-08T15:07:35.443+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_detect_1FN_anomaly.py:39 SAWarning: Skipped unsupported reflection of expression-based index idx_ab_user_username
+[2024-09-08T15:07:35.488+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table ab_user
+[2024-09-08T15:07:35.489+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: ab_register_user
+[2024-09-08T15:07:35.769+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_detect_1FN_anomaly.py:39 SAWarning: Skipped unsupported reflection of expression-based index idx_ab_register_user_username
+[2024-09-08T15:07:35.790+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table ab_register_user
+[2024-09-08T15:07:35.790+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: connection
+[2024-09-08T15:07:36.071+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table connection
+[2024-09-08T15:07:36.072+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: sla_miss
+[2024-09-08T15:07:36.314+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table sla_miss
+[2024-09-08T15:07:36.315+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: variable
+[2024-09-08T15:07:36.679+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table variable
+[2024-09-08T15:07:36.681+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: import_error
+[2024-09-08T15:07:36.975+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table import_error
+[2024-09-08T15:07:36.977+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: serialized_dag
+[2024-09-08T15:07:37.260+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table serialized_dag
+[2024-09-08T15:07:37.261+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dataset_alias
+[2024-09-08T15:07:37.560+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dataset_alias
+[2024-09-08T15:07:37.561+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dataset_alias_dataset
+[2024-09-08T15:07:37.866+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dataset_alias_dataset
+[2024-09-08T15:07:37.867+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dataset
+[2024-09-08T15:07:38.146+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dataset
+[2024-09-08T15:07:38.147+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dataset_alias_dataset_event
+[2024-09-08T15:07:38.445+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dataset_alias_dataset_event
+[2024-09-08T15:07:38.446+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dataset_event
+[2024-09-08T15:07:38.681+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dataset_event
+[2024-09-08T15:07:38.682+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_schedule_dataset_alias_reference
+[2024-09-08T15:07:38.924+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dag_schedule_dataset_alias_reference
+[2024-09-08T15:07:38.925+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag
+[2024-09-08T15:07:39.187+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Inserting 5 anomalies for table dag
+[2024-09-08T15:07:39.445+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_schedule_dataset_reference
+[2024-09-08T15:07:39.671+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dag_schedule_dataset_reference
+[2024-09-08T15:07:39.672+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: task_outlet_dataset_reference
+[2024-09-08T15:07:39.890+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table task_outlet_dataset_reference
+[2024-09-08T15:07:39.891+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dataset_dag_run_queue
+[2024-09-08T15:07:40.151+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dataset_dag_run_queue
+[2024-09-08T15:07:40.152+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: log_template
+[2024-09-08T15:07:40.460+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table log_template
+[2024-09-08T15:07:40.461+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_run
+[2024-09-08T15:07:40.728+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dag_run
+[2024-09-08T15:07:40.729+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_tag
+[2024-09-08T15:07:40.955+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dag_tag
+[2024-09-08T15:07:40.956+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_owner_attributes
+[2024-09-08T15:07:41.206+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dag_owner_attributes
+[2024-09-08T15:07:41.208+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: ab_permission
+[2024-09-08T15:07:41.426+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table ab_permission
+[2024-09-08T15:07:41.427+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: ab_permission_view
+[2024-09-08T15:07:41.684+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table ab_permission_view
+[2024-09-08T15:07:41.685+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: ab_view_menu
+[2024-09-08T15:07:41.876+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table ab_view_menu
+[2024-09-08T15:07:41.878+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: ab_user_role
+[2024-09-08T15:07:42.199+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_detect_1FN_anomaly.py:39 SAWarning: Skipped unsupported reflection of expression-based index idx_ab_user_username
+[2024-09-08T15:07:42.226+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table ab_user_role
+[2024-09-08T15:07:42.227+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: ab_role
+[2024-09-08T15:07:42.460+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table ab_role
+[2024-09-08T15:07:42.461+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_warning
+[2024-09-08T15:07:42.669+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dag_warning
+[2024-09-08T15:07:42.670+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dagrun_dataset_event
+[2024-09-08T15:07:42.889+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dagrun_dataset_event
+[2024-09-08T15:07:42.890+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: trigger
+[2024-09-08T15:07:43.075+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table trigger
+[2024-09-08T15:07:43.076+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: task_instance
+[2024-09-08T15:07:43.389+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table task_instance
+[2024-09-08T15:07:43.390+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: dag_run_note
+[2024-09-08T15:07:43.629+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_detect_1FN_anomaly.py:39 SAWarning: Skipped unsupported reflection of expression-based index idx_ab_user_username
+[2024-09-08T15:07:43.651+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table dag_run_note
+[2024-09-08T15:07:43.652+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: ab_permission_view_role
+[2024-09-08T15:07:43.894+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table ab_permission_view_role
+[2024-09-08T15:07:43.895+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: rendered_task_instance_fields
+[2024-09-08T15:07:44.156+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table rendered_task_instance_fields
+[2024-09-08T15:07:44.157+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: task_fail
+[2024-09-08T15:07:44.455+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table task_fail
+[2024-09-08T15:07:44.456+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: task_map
+[2024-09-08T15:07:44.753+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table task_map
+[2024-09-08T15:07:44.754+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: task_reschedule
+[2024-09-08T15:07:45.072+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table task_reschedule
+[2024-09-08T15:07:45.073+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: xcom
+[2024-09-08T15:07:45.366+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table xcom
+[2024-09-08T15:07:45.367+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: task_instance_note
+[2024-09-08T15:07:45.636+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_detect_1FN_anomaly.py:39 SAWarning: Skipped unsupported reflection of expression-based index idx_ab_user_username
+[2024-09-08T15:07:45.661+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table task_instance_note
+[2024-09-08T15:07:45.661+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: task_instance_history
+[2024-09-08T15:07:45.957+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table task_instance_history
+[2024-09-08T15:07:45.958+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: session
+[2024-09-08T15:07:46.228+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table session
+[2024-09-08T15:07:46.229+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: alembic_version
+[2024-09-08T15:07:46.491+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table alembic_version
+[2024-09-08T15:07:46.492+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: orders
+[2024-09-08T15:07:46.828+0000] {Dag_detect_1FN_anomaly.py:98} INFO - No anomalies detected for table orders
+[2024-09-08T15:07:46.829+0000] {Dag_detect_1FN_anomaly.py:91} INFO - Processing table: anomalieDetected
+[2024-09-08T15:07:47.674+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Inserting 20344 anomalies for table anomalieDetected
+[2024-09-08T15:11:20.845+0000] {Dag_detect_1FN_anomaly.py:99} INFO - Détection et insertion des anomalies terminées avec succès.
+[2024-09-08T15:11:21.579+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-08T15:11:21.941+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-08T15:11:21.950+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=detect_1fn_anomalies_dag, task_id=detect_1nf_and_insert_anomalies, run_id=scheduled__2024-09-08T14:45:00+00:00, execution_date=20240908T144500, start_date=20240908T150705, end_date=20240908T151121
+[2024-09-08T15:11:22.198+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-08T15:11:22.435+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-08T15:11:22.444+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

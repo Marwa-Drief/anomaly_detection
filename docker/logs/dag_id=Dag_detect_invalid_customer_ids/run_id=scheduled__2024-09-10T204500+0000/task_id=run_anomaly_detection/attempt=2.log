@@ -1,0 +1,23 @@
+[2024-09-10T21:05:39.707+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T21:05:39.933+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Dag_detect_invalid_customer_ids.run_anomaly_detection scheduled__2024-09-10T20:45:00+00:00 [queued]>
+[2024-09-10T21:05:39.952+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Dag_detect_invalid_customer_ids.run_anomaly_detection scheduled__2024-09-10T20:45:00+00:00 [queued]>
+[2024-09-10T21:05:39.953+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2024-09-10T21:05:39.984+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_anomaly_detection> on 2024-09-10 20:45:00+00:00
+[2024-09-10T21:05:40.006+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=5222) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T21:05:40.008+0000] {standard_task_runner.py:72} INFO - Started process 5236 to run task
+[2024-09-10T21:05:40.014+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'Dag_detect_invalid_customer_ids', 'run_anomaly_detection', 'scheduled__2024-09-10T20:45:00+00:00', '--job-id', '3449', '--raw', '--subdir', 'DAGS_FOLDER/dag_detect_invalid_customer_ids.py', '--cfg-path', '/tmp/tmpg5xnrugz']
+[2024-09-10T21:05:40.019+0000] {standard_task_runner.py:105} INFO - Job 3449: Subtask run_anomaly_detection
+[2024-09-10T21:05:40.602+0000] {task_command.py:467} INFO - Running <TaskInstance: Dag_detect_invalid_customer_ids.run_anomaly_detection scheduled__2024-09-10T20:45:00+00:00 [running]> on host f0946a6cef1f
+[2024-09-10T21:05:41.294+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Dag_detect_invalid_customer_ids' AIRFLOW_CTX_TASK_ID='run_anomaly_detection' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T20:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T20:45:00+00:00'
+[2024-09-10T21:05:41.297+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T21:05:41.326+0000] {dag_detect_invalid_customer_ids.py:101} INFO - Starting anomaly detection process
+[2024-09-10T21:05:41.749+0000] {dag_detect_invalid_customer_ids.py:105} INFO - Loaded 15 transactions
+[2024-09-10T21:05:41.758+0000] {dag_detect_invalid_customer_ids.py:108} INFO - Detected 1 anomalies
+[2024-09-10T21:05:46.697+0000] {dag_detect_invalid_customer_ids.py:94} INFO - Inserted 1 new anomalies.
+[2024-09-10T21:05:46.698+0000] {dag_detect_invalid_customer_ids.py:111} INFO - Anomaly detection process completed successfully
+[2024-09-10T21:05:46.699+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-10T21:05:46.840+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-10T21:05:46.841+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Dag_detect_invalid_customer_ids, task_id=run_anomaly_detection, run_id=scheduled__2024-09-10T20:45:00+00:00, execution_date=20240910T204500, start_date=20240910T210539, end_date=20240910T210546
+[2024-09-10T21:05:46.912+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-10T21:05:47.124+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T21:05:47.132+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

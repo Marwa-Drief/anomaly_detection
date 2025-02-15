@@ -1,0 +1,24 @@
+[2024-09-10T19:15:03.926+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T19:15:05.865+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: correction_Dag_1FN.correct_1nf_violations scheduled__2024-09-10T19:10:00+00:00 [queued]>
+[2024-09-10T19:15:06.003+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: correction_Dag_1FN.correct_1nf_violations scheduled__2024-09-10T19:10:00+00:00 [queued]>
+[2024-09-10T19:15:06.006+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-10T19:15:06.373+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): correct_1nf_violations> on 2024-09-10 19:10:00+00:00
+[2024-09-10T19:15:07.363+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=11909) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T19:15:07.380+0000] {standard_task_runner.py:72} INFO - Started process 11923 to run task
+[2024-09-10T19:15:07.261+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'correction_Dag_1FN', 'correct_1nf_violations', 'scheduled__2024-09-10T19:10:00+00:00', '--job-id', '3280', '--raw', '--subdir', 'DAGS_FOLDER/Correction_dag_1FN.py', '--cfg-path', '/tmp/tmpf9cyioye']
+[2024-09-10T19:15:07.391+0000] {standard_task_runner.py:105} INFO - Job 3280: Subtask correct_1nf_violations
+[2024-09-10T19:15:10.636+0000] {task_command.py:467} INFO - Running <TaskInstance: correction_Dag_1FN.correct_1nf_violations scheduled__2024-09-10T19:10:00+00:00 [running]> on host 5f241b76205c
+[2024-09-10T19:15:13.447+0000] {job.py:229} INFO - Heartbeat recovered after 11.16 seconds
+[2024-09-10T19:15:14.078+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='correction_Dag_1FN' AIRFLOW_CTX_TASK_ID='correct_1nf_violations' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T19:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T19:10:00+00:00'
+[2024-09-10T19:15:14.089+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T19:15:15.268+0000] {logging_mixin.py:190} INFO - Erreur lors de la correction des anomalies : column "product_ids" does not exist
+LINE 2:         SELECT customer_id, product_ids, order_date, total_a...
+                                    ^
+HINT:  Perhaps you meant to reference the column "orders.product_id".
+[2024-09-10T19:15:15.270+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-10T19:15:16.274+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-10T19:15:16.285+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=correction_Dag_1FN, task_id=correct_1nf_violations, run_id=scheduled__2024-09-10T19:10:00+00:00, execution_date=20240910T191000, start_date=20240910T191505, end_date=20240910T191516
+[2024-09-10T19:15:16.766+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-10T19:15:17.410+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T19:15:17.462+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-09-10T19:15:17.493+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics

@@ -1,0 +1,23 @@
+[2024-09-14T16:50:00.245+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-14T16:50:01.779+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: correction_Dag_Negative_Value.correct_negative_values scheduled__2024-09-14T10:50:00+00:00 [queued]>
+[2024-09-14T16:50:02.007+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: correction_Dag_Negative_Value.correct_negative_values scheduled__2024-09-14T10:50:00+00:00 [queued]>
+[2024-09-14T16:50:02.010+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-14T16:50:02.964+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): correct_negative_values> on 2024-09-14 10:50:00+00:00
+[2024-09-14T16:50:05.474+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=87316) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-14T16:50:06.702+0000] {standard_task_runner.py:72} INFO - Started process 87359 to run task
+[2024-09-14T16:50:07.649+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'correction_Dag_Negative_Value', 'correct_negative_values', 'scheduled__2024-09-14T10:50:00+00:00', '--job-id', '3995', '--raw', '--subdir', 'DAGS_FOLDER/Correction_dag_Negative_Value.py', '--cfg-path', '/tmp/tmpw4b_svsi']
+[2024-09-14T16:50:08.531+0000] {standard_task_runner.py:105} INFO - Job 3995: Subtask correct_negative_values
+[2024-09-14T16:50:16.953+0000] {job.py:229} INFO - Heartbeat recovered after 28.46 seconds
+[2024-09-14T16:50:24.465+0000] {task_command.py:467} INFO - Running <TaskInstance: correction_Dag_Negative_Value.correct_negative_values scheduled__2024-09-14T10:50:00+00:00 [running]> on host 7403e816bcf5
+[2024-09-14T16:50:30.419+0000] {job.py:229} INFO - Heartbeat recovered after 13.97 seconds
+[2024-09-14T16:50:38.417+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='correction_Dag_Negative_Value' AIRFLOW_CTX_TASK_ID='correct_negative_values' AIRFLOW_CTX_EXECUTION_DATE='2024-09-14T10:50:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-14T10:50:00+00:00'
+[2024-09-14T16:50:38.559+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-14T16:50:41.561+0000] {logging_mixin.py:190} INFO - Anomalies corrigées avec succès.
+[2024-09-14T16:50:41.579+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-14T16:51:07.240+0000] {job.py:229} INFO - Heartbeat recovered after 27.22 seconds
+[2024-09-14T16:51:08.114+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-14T16:51:08.735+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=correction_Dag_Negative_Value, task_id=correct_negative_values, run_id=scheduled__2024-09-14T10:50:00+00:00, execution_date=20240914T105000, start_date=20240914T165001, end_date=20240914T165108
+[2024-09-14T16:51:12.029+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-14T16:51:15.450+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-14T16:51:15.513+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-09-14T16:51:16.775+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics

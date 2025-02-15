@@ -1,0 +1,19 @@
+[2024-09-13T17:04:56.956+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-13T17:04:57.217+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: welcome_dag.print_date scheduled__2024-09-13T17:00:58+00:00 [queued]>
+[2024-09-13T17:04:57.242+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: welcome_dag.print_date scheduled__2024-09-13T17:00:58+00:00 [queued]>
+[2024-09-13T17:04:57.255+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-09-13T17:04:57.445+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): print_date> on 2024-09-13 17:00:58+00:00
+[2024-09-13T17:04:57.467+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'welcome_dag', 'print_date', 'scheduled__2024-09-13T17:00:58+00:00', '--job-id', '2910', '--raw', '--subdir', 'DAGS_FOLDER/Awelcome_dags.py', '--cfg-path', '/tmp/tmpfvgrf_s8']
+[2024-09-13T17:04:57.474+0000] {standard_task_runner.py:105} INFO - Job 2910: Subtask print_date
+[2024-09-13T17:04:57.630+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=27980) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-13T17:04:57.631+0000] {standard_task_runner.py:72} INFO - Started process 27998 to run task
+[2024-09-13T17:04:58.359+0000] {task_command.py:467} INFO - Running <TaskInstance: welcome_dag.print_date scheduled__2024-09-13T17:00:58+00:00 [running]> on host 7403e816bcf5
+[2024-09-13T17:04:59.135+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='welcome_dag' AIRFLOW_CTX_TASK_ID='print_date' AIRFLOW_CTX_EXECUTION_DATE='2024-09-13T17:00:58+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-13T17:00:58+00:00'
+[2024-09-13T17:04:59.140+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-13T17:04:59.211+0000] {logging_mixin.py:190} INFO - Today is 2024-09-13
+[2024-09-13T17:04:59.212+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-13T17:04:59.419+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-13T17:04:59.420+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=welcome_dag, task_id=print_date, run_id=scheduled__2024-09-13T17:00:58+00:00, execution_date=20240913T170058, start_date=20240913T170457, end_date=20240913T170459
+[2024-09-13T17:04:59.503+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-13T17:04:59.706+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-13T17:04:59.714+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

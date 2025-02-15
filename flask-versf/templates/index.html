@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Anomalies Dashboard</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .container-xxl {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px; /* Increased to push content further down */
+        }
+
+        .header, .sidebar {
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            transition: transform 0.3s ease;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            padding-top: 100px; /* Added padding to push links down */
+        }
+
+        .sidebar.hidden {
+            transform: translateX(-250px);
+        }
+
+        .content {
+            transition: margin-left 0.3s ease;
+            margin-left: 250px;
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .content.expanded {
+            margin-left: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            z-index: 1000;
+        }
+
+        .header .logo-container {
+            flex: 0 0 auto;
+        }
+
+        .header .logo-container img {
+            height: 47px;
+            width: auto;
+        }
+
+        .header .search-container {
+            flex: 0 1 400px;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container input {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .header .toggle-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .filter-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 80px; /* Adjusted to avoid overlap with header */
+            flex-wrap: nowrap; /* Allow filters to wrap on smaller screens */
+        }
+
+        .filter-container select,
+        .filter-container button {
+            margin-right: 10px;
+            margin-bottom: 10px; /* Add some bottom margin for wrapping */
+        }
+
+        .footer {
+            background-color: #ffffff;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        /* Modal Styles */
+        .modal-content {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-body {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .modal-footer {
+            border-top: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl position-relative bg-white d-flex p-0">
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <div class="navbar-nav w-100">
+                    <a href="{{ url_for('index') }}" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url_for('statistiques') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Statistics</a>
+                    <a href="{{ url_for('about_anomalies') }}" class="nav-item nav-link"><i class="fa fa-info-circle me-2"></i>About&nbsp;Anomalies</a>
+                    
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Header with Logo, Toggle, and Search Bar -->
+            <div class="header">
+                <div class="logo-container">
+                    <img src="/static/img/ntt_data.png" alt="NTT DATA Logo" />
+                </div>
+                
+                <div></div> <!-- Empty div for spacing -->
+            </div>
+
+            <div class="container-fluid pt-4 px-4">
+                <!-- Filters -->
+                <div class="filter-container">
+                    <label for="categoryFilter">Category:</label>
+                    <select id="categoryFilter" class="form-select">
+                        <option value="">All Categories</option>
+                        <option value="point anomalies">Point Anomalies</option>
+                        <option value="contextual anomaly">Contextual Anomaly</option>
+                        <option value="collective anomaly">Collective Anomaly</option>
+                        <option value="1NF Violation">1NF Violation	</option>
+
+
+                    </select>
+
+                    <label for="typeFilter">Anomaly Type:</label>
+                    <select id="typeFilter" class="form-select">
+                        <option value="">All Types</option>
+                        <option class="anomaly_type" value="negative value">Negative value</option>
+                        
+                        <option value="excessively high total amount">Excessively High Total Amount</option>
+                        <option value="Customer ID is not valid or missing">Customer ID is not valid or missing</option>
+                        <option value="transaction date in the past">Transaction Date in the Past</option>
+                        <option value="Non-Atomic Values">Non-Atomic Values</option>
+                        <option value="Multiple Transactions in a Short Timeframe">Multiple Transactions in a Short Timeframe</option>
+                        <option value="Non-numeric Quantity">Non-numeric Quantity</option>
+                        <option value="Null Value">Null Value</option>
+
+
+
+
+
+
+
+                    </select>
+
+                    <button class="btn btn-primary" onclick="applyFilters()">Apply Filter</button>
+                </div>
+
+                <!-- Download CSV Button -->
+                <div style="display: flex; justify-content: flex-end; margin-top: 20px;">
+                    <button style="display: flex; align-items: center; padding: 8px 16px; background-color: #28a745; color: white; border: none; border-radius: 4px;" onclick="window.location.href='/download_csv'">
+                        <span style="margin-right: 8px;"></span>
+                        <i class="fa fa-download" style="font-size: 16px;"></i>
+                    </button>
+                </div
+
+                <!-- Anomalies Table -->
+                <div class="container-fluid pt-4 px-4">
+                    <div class="bg-light text-center rounded p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h6 class="mb-0">Anomalies Table</h6>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table text-start align-middle table-bordered table-hover mb-0">
+                                <thead>
+                                <tr class="text-dark">
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Anomaly Type</th>
+                                    <th scope="col">Details</th>
+                                    <th scope="col">Related Record(s)</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for anomaly in anomalies %}
+                                <tr>
+                                    <td>{{ anomaly[1] }}</td>
+                                    <td>{{ anomaly[2] }}</td>
+                                    <td>{{ anomaly[3] }}</td>
+                                    <td>{{ anomaly[4] }}</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#suggestionModal" onclick="loadSuggestions('{{ anomaly[2] }}')">suggestions</button>
+
+
+                                    </td>
+                                    
+                    
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content End -->
+    </div>
+
+    <!-- Suggestion Modal -->
+<div class="modal fade" id="suggestionModal" tabindex="-1" aria-labelledby="suggestionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="suggestionModalLabel">Correction Suggestions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="suggestionModalBody">
+                <!-- Suggestions will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer style="background-color: #f0f8ff; color: #003366; padding: 10px; text-align: center; bottom: 0; width: 100%;">
+        <p>&copy; 2024 NTT DATA.All Rights Reserved</p>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
+    <script>
+   function applySearch() {
+    // Retrieve the search input value and convert it to lowercase
+    var searchValue = document.getElementById('searchBar').value.toLowerCase();
+
+    // Get all the rows in the table body
+    var rows = document.querySelectorAll('#anomaliesTable tbody tr');
+
+    // Loop through each row
+    rows.forEach(row => {
+        // Get the text content of the row and convert it to lowercase
+        var text = row.textContent.toLowerCase();
+
+        // Check if the search value is found in the text content
+        if (text.includes(searchValue)) {
+            // If found, display the row
+            row.style.display = '';
+        } else {
+            // If not found, hide the row
+            row.style.display = 'none';
+        }
+    });
+}
+
+
+
+
+        function applyFilters() {
+    var category = document.getElementById("categoryFilter").value.toLowerCase();
+    var type = document.getElementById("typeFilter").value.toLowerCase();
+    var table = document.querySelector("table tbody"); // Update to target tbody of the anomalies table
+    var rows = table.getElementsByTagName("tr");
+
+    for (var i = 0; i < rows.length; i++) {
+        var categoryCell = rows[i].getElementsByTagName("td")[0];
+        var typeCell = rows[i].getElementsByTagName("td")[1];
+        var categoryText = categoryCell.textContent.toLowerCase();
+        var typeText = typeCell.textContent.toLowerCase();
+        var showRow = true;
+
+        if (category && categoryText !== category) {
+            showRow = false;
+        }
+
+        if (type && typeText !== type) {
+            showRow = false;
+        }
+
+        rows[i].style.display = showRow ? "" : "none";
+    }
+}
+
+
+
+function loadSuggestions(anomalyType) {
+    fetch(`/get_suggestions?anomaly_type=${encodeURIComponent(anomalyType)}`)
+        .then(response => response.json())
+        .then(data => {
+            const modalBody = document.getElementById('suggestionModalBody');
+            modalBody.innerHTML = data.suggestions.map(suggestion => `<p>${suggestion}</p>`).join('');
+        })
+        .catch(error => console.error('Error fetching suggestions:', error));
+}
+
+        $('#toggleSidebar').on('click', function() {
+            var sidebar = $('.sidebar');
+            var content = $('.content');
+            if (sidebar.hasClass('hidden')) {
+                sidebar.removeClass('hidden');
+                content.removeClass('expanded');
+                $('.header').css('background-color', '#f8f9fa');
+                $('#toggleSidebar').css('border', 'none');
+            } else {
+                sidebar.addClass('hidden');
+                content.addClass('expanded');
+                $('.header').css('background-color', '#d6eaf8');
+                $('#toggleSidebar').css('border', '1px solid white');
+            }
+        });
+        
+        document.addEventListener('DOMContentLoaded', () => {
+    // Sélectionner le tableau
+    const tableBody = document.querySelector('table tbody');
+
+    // Obtenez toutes les lignes du tableau
+    const rows = tableBody.querySelectorAll('tr');
+
+    // Parcourir chaque ligne du tableau
+    rows.forEach(row => {
+        // Sélectionner la cellule contenant le type d'anomalie (supposons que c'est la 2ème cellule, à adapter selon votre structure)
+        const anomalyTypeCell = row.querySelector('td:nth-child(2)');
+
+        // Vérifier si le type d'anomalie est "Negative Value"
+        if (anomalyTypeCell && anomalyTypeCell.textContent.trim() === 'Negative Value') {
+            // Ajouter une nouvelle cellule avec le bouton correction
+            const correctionCell = row.insertCell(-1);
+
+            // Créer le bouton de correction
+            const correctionButton = document.createElement('button');
+            correctionButton.textContent = 'Corriger';
+            correctionButton.className = 'btn btn-primary'; // Classe Bootstrap pour le style
+
+            // Ajouter un événement de clic pour le bouton
+            correctionButton.addEventListener('click', async () => {
+                try {
+                    const response = await fetch('/correct_anomaly', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        },
+                        body: new URLSearchParams({
+                            'anomaly_type': 'Negative Value'
+                        })
+                    });
+
+                    const result = await response.json();
+                    if (result.success) {
+                        alert('Corrections appliquées avec succès.');
+                    } else {
+                        alert('Erreur lors de la correction des anomalies: ' + result.message);
+                    }
+                } catch (error) {
+                    console.error('Erreur de réseau:', error);
+                    alert('Erreur de réseau');
+                }
+            });
+
+            // Ajouter le bouton dans la cellule
+            correctionCell.appendChild(correctionButton);
+        }
+    });
+});
+
+
+
+    async function correctAnomalies() {
+        try {
+            const response = await fetch('/correct_anomaly', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({
+                    'anomaly_type': 'Negative' // Vous pouvez définir un type d'anomalie spécifique si nécessaire
+                })
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                console.log('Anomalies corrigées avec succès');
+                alert(result.message);
+            } else {
+                console.error('Erreur lors de la correction des anomalies:', result.message);
+                alert('Erreur lors de la correction des anomalies');
+            }
+        } catch (error) {
+            console.error('Erreur de réseau:', error);
+            alert('Erreur de réseau');
+        }
+    }
+</script>
+
+<!-- Le bouton sera inséré automatiquement après le chargement de la page -->
+
+</body>
+
+</html>

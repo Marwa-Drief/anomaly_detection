@@ -1,0 +1,14 @@
+[2024-10-23T16:10:08.923+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-23T16:10:11.713+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: correction_Dag_Valeu_NULL.correct_transactions_anomalies scheduled__2024-10-23T15:30:00+00:00 [queued]>
+[2024-10-23T16:10:12.209+0000] {local_task_job_runner.py:127} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-23T16:10:12.308+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 143
+[2024-10-23T16:10:12.862+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-23T16:10:15.220+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: correction_Dag_Valeu_NULL.correct_transactions_anomalies scheduled__2024-10-23T15:30:00+00:00 [queued]>
+[2024-10-23T16:10:15.223+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-23T16:10:15.582+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): correct_transactions_anomalies> on 2024-10-23 15:30:00+00:00
+[2024-10-23T16:10:15.876+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=15542) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-23T16:10:15.903+0000] {standard_task_runner.py:72} INFO - Started process 15574 to run task
+[2024-10-23T16:10:16.072+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-10-23T16:10:16.135+0000] {process_utils.py:132} INFO - Sending 15 to group 15574. PIDs of all processes in the group: [15574]
+[2024-10-23T16:10:16.146+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 15574
+[2024-10-23T16:10:16.161+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=15574, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='16:10:15') (15574) terminated with exit code -15

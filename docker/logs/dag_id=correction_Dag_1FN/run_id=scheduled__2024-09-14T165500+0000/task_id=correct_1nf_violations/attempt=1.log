@@ -1,0 +1,23 @@
+[2024-09-14T17:00:17.345+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-14T17:00:19.961+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: correction_Dag_1FN.correct_1nf_violations scheduled__2024-09-14T16:55:00+00:00 [queued]>
+[2024-09-14T17:00:20.305+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: correction_Dag_1FN.correct_1nf_violations scheduled__2024-09-14T16:55:00+00:00 [queued]>
+[2024-09-14T17:00:20.314+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-14T17:00:22.862+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): correct_1nf_violations> on 2024-09-14 16:55:00+00:00
+[2024-09-14T17:00:23.200+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=88589) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-14T17:00:23.236+0000] {standard_task_runner.py:72} INFO - Started process 88635 to run task
+[2024-09-14T17:00:23.426+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'correction_Dag_1FN', 'correct_1nf_violations', 'scheduled__2024-09-14T16:55:00+00:00', '--job-id', '4038', '--raw', '--subdir', 'DAGS_FOLDER/Correction_dag_1FN.py', '--cfg-path', '/tmp/tmpd48c83rx']
+[2024-09-14T17:00:23.831+0000] {standard_task_runner.py:105} INFO - Job 4038: Subtask correct_1nf_violations
+[2024-09-14T17:00:30.989+0000] {task_command.py:467} INFO - Running <TaskInstance: correction_Dag_1FN.correct_1nf_violations scheduled__2024-09-14T16:55:00+00:00 [running]> on host 7403e816bcf5
+[2024-09-14T17:00:30.837+0000] {job.py:229} INFO - Heartbeat recovered after 19.44 seconds
+[2024-09-14T17:00:43.340+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='correction_Dag_1FN' AIRFLOW_CTX_TASK_ID='correct_1nf_violations' AIRFLOW_CTX_EXECUTION_DATE='2024-09-14T16:55:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-14T16:55:00+00:00'
+[2024-09-14T17:00:43.721+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-14T17:00:49.668+0000] {logging_mixin.py:190} INFO - Erreur lors de la correction des anomalies : cannot drop table orders because other objects depend on it
+DETAIL:  constraint orderdetails_order_id_fkey on table orderdetails depends on table orders
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+[2024-09-14T17:00:49.680+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-14T17:00:50.593+0000] {job.py:229} INFO - Heartbeat recovered after 10.57 seconds
+[2024-09-14T17:00:52.458+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-14T17:00:52.467+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=correction_Dag_1FN, task_id=correct_1nf_violations, run_id=scheduled__2024-09-14T16:55:00+00:00, execution_date=20240914T165500, start_date=20240914T170020, end_date=20240914T170052
+[2024-09-14T17:00:53.392+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-14T17:00:53.470+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2024-09-14T17:00:56.632+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

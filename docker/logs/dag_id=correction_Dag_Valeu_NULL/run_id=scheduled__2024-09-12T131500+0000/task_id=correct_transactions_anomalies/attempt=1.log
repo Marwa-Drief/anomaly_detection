@@ -1,0 +1,19 @@
+[2024-09-12T13:20:04.556+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-12T13:20:05.549+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: correction_Dag_Valeu_NULL.correct_transactions_anomalies scheduled__2024-09-12T13:15:00+00:00 [queued]>
+[2024-09-12T13:20:05.678+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: correction_Dag_Valeu_NULL.correct_transactions_anomalies scheduled__2024-09-12T13:15:00+00:00 [queued]>
+[2024-09-12T13:20:05.690+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-12T13:20:06.011+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): correct_transactions_anomalies> on 2024-09-12 13:15:00+00:00
+[2024-09-12T13:20:10.093+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=21409) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-12T13:20:10.165+0000] {standard_task_runner.py:72} INFO - Started process 21430 to run task
+[2024-09-12T13:20:08.782+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'correction_Dag_Valeu_NULL', 'correct_transactions_anomalies', 'scheduled__2024-09-12T13:15:00+00:00', '--job-id', '1970', '--raw', '--subdir', 'DAGS_FOLDER/Correction_dag_Valeur_NULL.py', '--cfg-path', '/tmp/tmpad850khq']
+[2024-09-12T13:20:10.174+0000] {standard_task_runner.py:105} INFO - Job 1970: Subtask correct_transactions_anomalies
+[2024-09-12T13:20:15.953+0000] {job.py:229} INFO - Heartbeat recovered after 13.10 seconds
+[2024-09-12T13:20:17.176+0000] {task_command.py:467} INFO - Running <TaskInstance: correction_Dag_Valeu_NULL.correct_transactions_anomalies scheduled__2024-09-12T13:15:00+00:00 [running]> on host 7403e816bcf5
+[2024-09-12T13:20:19.502+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='correction_Dag_Valeu_NULL' AIRFLOW_CTX_TASK_ID='correct_transactions_anomalies' AIRFLOW_CTX_EXECUTION_DATE='2024-09-12T13:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-12T13:15:00+00:00'
+[2024-09-12T13:20:19.518+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-12T13:20:20.719+0000] {logging_mixin.py:190} INFO - Correction des anomalies dans la table Transactions réussie.
+[2024-09-12T13:20:20.737+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-12T13:20:21.775+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-12T13:20:21.779+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=correction_Dag_Valeu_NULL, task_id=correct_transactions_anomalies, run_id=scheduled__2024-09-12T13:15:00+00:00, execution_date=20240912T131500, start_date=20240912T132005, end_date=20240912T132021
+[2024-09-12T13:20:21.994+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-12T13:20:22.559+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,20 @@
+[2024-09-10T22:25:14.398+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T22:25:15.473+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Correction_dag_high_total_amount.Correction_dag_high_total_amount scheduled__2024-09-10T22:20:00+00:00 [queued]>
+[2024-09-10T22:25:15.605+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Correction_dag_high_total_amount.Correction_dag_high_total_amount scheduled__2024-09-10T22:20:00+00:00 [queued]>
+[2024-09-10T22:25:15.644+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-10T22:25:15.928+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): Correction_dag_high_total_amount> on 2024-09-10 22:20:00+00:00
+[2024-09-10T22:25:16.457+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'Correction_dag_high_total_amount', 'Correction_dag_high_total_amount', 'scheduled__2024-09-10T22:20:00+00:00', '--job-id', '3731', '--raw', '--subdir', 'DAGS_FOLDER/Correction_dag_high_total_amount.py', '--cfg-path', '/tmp/tmpnsh0yulo']
+[2024-09-10T22:25:16.564+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=915) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T22:25:16.575+0000] {standard_task_runner.py:105} INFO - Job 3731: Subtask Correction_dag_high_total_amount
+[2024-09-10T22:25:16.586+0000] {standard_task_runner.py:72} INFO - Started process 933 to run task
+[2024-09-10T22:25:23.406+0000] {job.py:229} INFO - Heartbeat recovered after 15.30 seconds
+[2024-09-10T22:25:23.766+0000] {task_command.py:467} INFO - Running <TaskInstance: Correction_dag_high_total_amount.Correction_dag_high_total_amount scheduled__2024-09-10T22:20:00+00:00 [running]> on host f0946a6cef1f
+[2024-09-10T22:25:27.612+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Correction_dag_high_total_amount' AIRFLOW_CTX_TASK_ID='Correction_dag_high_total_amount' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T22:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T22:20:00+00:00'
+[2024-09-10T22:25:27.680+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T22:25:28.314+0000] {logging_mixin.py:190} INFO - Les anomalies ont été corrigées dans la base de données.
+[2024-09-10T22:25:28.331+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-10T22:25:29.374+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-10T22:25:29.376+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Correction_dag_high_total_amount, task_id=Correction_dag_high_total_amount, run_id=scheduled__2024-09-10T22:20:00+00:00, execution_date=20240910T222000, start_date=20240910T222515, end_date=20240910T222529
+[2024-09-10T22:25:29.516+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-10T22:25:30.254+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T22:25:30.300+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

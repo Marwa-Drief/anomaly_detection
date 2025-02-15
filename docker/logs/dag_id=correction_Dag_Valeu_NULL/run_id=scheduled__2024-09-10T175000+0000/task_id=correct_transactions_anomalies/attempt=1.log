@@ -1,0 +1,135 @@
+[2024-09-10T17:55:10.854+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T17:55:11.530+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: correction_Dag_Valeu_NULL.correct_transactions_anomalies scheduled__2024-09-10T17:50:00+00:00 [queued]>
+[2024-09-10T17:55:11.594+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: correction_Dag_Valeu_NULL.correct_transactions_anomalies scheduled__2024-09-10T17:50:00+00:00 [queued]>
+[2024-09-10T17:55:11.596+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-10T17:55:11.731+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): correct_transactions_anomalies> on 2024-09-10 17:50:00+00:00
+[2024-09-10T17:55:11.774+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'correction_Dag_Valeu_NULL', 'correct_transactions_anomalies', 'scheduled__2024-09-10T17:50:00+00:00', '--job-id', '2986', '--raw', '--subdir', 'DAGS_FOLDER/Correction_dag_Valeur_NULL.py', '--cfg-path', '/tmp/tmpwnvhaud7']
+[2024-09-10T17:55:11.795+0000] {standard_task_runner.py:105} INFO - Job 2986: Subtask correct_transactions_anomalies
+[2024-09-10T17:55:11.912+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2468) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T17:55:11.918+0000] {standard_task_runner.py:72} INFO - Started process 2504 to run task
+[2024-09-10T17:55:13.959+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 2986 for task correct_transactions_anomalies ((psycopg2.errors.IoError) could not open file "base/16384/98967": Input/output error
+
+[SQL: SELECT dag_run.state, dag_run.id, dag_run.dag_id, dag_run.queued_at, dag_run.execution_date, dag_run.start_date, dag_run.end_date, dag_run.run_id, dag_run.creating_job_id, dag_run.external_trigger, dag_run.run_type, dag_run.conf, dag_run.data_interval_start, dag_run.data_interval_end, dag_run.last_scheduling_decision, dag_run.dag_hash, dag_run.log_template_id, dag_run.updated_at, dag_run.clear_number 
+FROM dag_run 
+WHERE dag_run.dag_id = %(dag_id_1)s AND dag_run.execution_date < %(execution_date_1)s AND dag_run.state = %(state_1)s ORDER BY dag_run.execution_date DESC 
+ LIMIT %(param_1)s]
+[parameters: {'dag_id_1': 'correction_Dag_Valeu_NULL', 'execution_date_1': datetime.datetime(2024, 9, 10, 17, 50, tzinfo=Timezone('UTC')), 'state_1': <DagRunState.SUCCESS: 'success'>, 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 2504)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.IoError: could not open file "base/16384/98967": Input/output error
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 463, in task_run
+    ti.init_run_context(raw=args.raw)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3720, in init_run_context
+    self._set_context(self)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/log/logging_mixin.py", line 129, in _set_context
+    set_context(self.log, context)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/log/logging_mixin.py", line 276, in set_context
+    flag = cast(FileTaskHandler, handler).set_context(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/log/file_task_handler.py", line 239, in set_context
+    local_loc = self._init_file(ti, identifier=identifier)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/log/file_task_handler.py", line 540, in _init_file
+    local_relative_path = self._render_filename(ti, ti.try_number)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/log/file_task_handler.py", line 306, in _render_filename
+    dag_run, ti, str_tpl, filename = self._render_filename_db_access(ti=ti, try_number=try_number)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/log/file_task_handler.py", line 297, in _render_filename_db_access
+    context = ti.get_template_context(session=session)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3455, in get_template_context
+    return _get_template_context(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1130, in _get_template_context
+    "prev_data_interval_start_success": get_prev_data_interval_start_success(),
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 993, in get_prev_data_interval_start_success
+    data_interval = _get_previous_dagrun_data_interval_success()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 987, in _get_previous_dagrun_data_interval_success
+    dagrun = _get_previous_dagrun_success()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 984, in _get_previous_dagrun_success
+    return task_instance.get_previous_dagrun(state=DagRunState.SUCCESS, session=session)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2490, in get_previous_dagrun
+    return _get_previous_dagrun(task_instance=self, state=state, session=session)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1379, in _get_previous_dagrun
+    last_dagrun = DagRun.get_previous_dagrun(dag_run=dr, session=session, state=state)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagrun.py", line 707, in get_previous_dagrun
+    return session.scalar(select(DagRun).where(*filters).order_by(DagRun.execution_date.desc()).limit(1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.errors.IoError) could not open file "base/16384/98967": Input/output error
+
+[SQL: SELECT dag_run.state, dag_run.id, dag_run.dag_id, dag_run.queued_at, dag_run.execution_date, dag_run.start_date, dag_run.end_date, dag_run.run_id, dag_run.creating_job_id, dag_run.external_trigger, dag_run.run_type, dag_run.conf, dag_run.data_interval_start, dag_run.data_interval_end, dag_run.last_scheduling_decision, dag_run.dag_hash, dag_run.log_template_id, dag_run.updated_at, dag_run.clear_number 
+FROM dag_run 
+WHERE dag_run.dag_id = %(dag_id_1)s AND dag_run.execution_date < %(execution_date_1)s AND dag_run.state = %(state_1)s ORDER BY dag_run.execution_date DESC 
+ LIMIT %(param_1)s]
+[parameters: {'dag_id_1': 'correction_Dag_Valeu_NULL', 'execution_date_1': datetime.datetime(2024, 9, 10, 17, 50, tzinfo=Timezone('UTC')), 'state_1': <DagRunState.SUCCESS: 'success'>, 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:55:14.037+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-09-10T17:55:14.783+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

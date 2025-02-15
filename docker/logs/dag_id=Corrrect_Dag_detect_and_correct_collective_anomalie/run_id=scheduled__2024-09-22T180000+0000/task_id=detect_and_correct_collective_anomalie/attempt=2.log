@@ -1,0 +1,20 @@
+[2024-09-22T18:17:20.031+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-22T18:17:21.520+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Corrrect_Dag_detect_and_correct_collective_anomalie.detect_and_correct_collective_anomalie scheduled__2024-09-22T18:00:00+00:00 [queued]>
+[2024-09-22T18:17:21.619+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Corrrect_Dag_detect_and_correct_collective_anomalie.detect_and_correct_collective_anomalie scheduled__2024-09-22T18:00:00+00:00 [queued]>
+[2024-09-22T18:17:21.620+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2024-09-22T18:17:38.601+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): detect_and_correct_collective_anomalie> on 2024-09-22 18:00:00+00:00
+[2024-09-22T18:17:38.881+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1116) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-22T18:17:38.887+0000] {standard_task_runner.py:72} INFO - Started process 1199 to run task
+[2024-09-22T18:17:38.891+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'Corrrect_Dag_detect_and_correct_collective_anomalie', 'detect_and_correct_collective_anomalie', 'scheduled__2024-09-22T18:00:00+00:00', '--job-id', '5773', '--raw', '--subdir', 'DAGS_FOLDER/Corrrect_Dag_detect_and_correct_collective_anomalie.py', '--cfg-path', '/tmp/tmpp6c_ixtd']
+[2024-09-22T18:17:38.960+0000] {standard_task_runner.py:105} INFO - Job 5773: Subtask detect_and_correct_collective_anomalie
+[2024-09-22T18:17:41.191+0000] {task_command.py:467} INFO - Running <TaskInstance: Corrrect_Dag_detect_and_correct_collective_anomalie.detect_and_correct_collective_anomalie scheduled__2024-09-22T18:00:00+00:00 [running]> on host 4000165cea79
+[2024-09-22T18:17:43.118+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Corrrect_Dag_detect_and_correct_collective_anomalie' AIRFLOW_CTX_TASK_ID='detect_and_correct_collective_anomalie' AIRFLOW_CTX_EXECUTION_DATE='2024-09-22T18:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-22T18:00:00+00:00'
+[2024-09-22T18:17:43.130+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-22T18:17:43.596+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Corrrect_Dag_detect_and_correct_collective_anomalie.py:15 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2024-09-22T18:17:44.113+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-22T18:17:44.192+0000] {job.py:229} INFO - Heartbeat recovered after 29.80 seconds
+[2024-09-22T18:17:44.313+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-22T18:17:44.316+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Corrrect_Dag_detect_and_correct_collective_anomalie, task_id=detect_and_correct_collective_anomalie, run_id=scheduled__2024-09-22T18:00:00+00:00, execution_date=20240922T180000, start_date=20240922T181721, end_date=20240922T181744
+[2024-09-22T18:17:44.443+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-22T18:17:44.674+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-22T18:17:44.679+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

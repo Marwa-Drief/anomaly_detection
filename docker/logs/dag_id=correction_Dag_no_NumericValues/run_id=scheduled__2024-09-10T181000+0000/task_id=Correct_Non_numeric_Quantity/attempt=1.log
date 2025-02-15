@@ -1,0 +1,20 @@
+[2024-09-10T18:15:30.614+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T18:15:31.309+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: correction_Dag_no_NumericValues.Correct_Non_numeric_Quantity scheduled__2024-09-10T18:10:00+00:00 [queued]>
+[2024-09-10T18:15:31.333+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: correction_Dag_no_NumericValues.Correct_Non_numeric_Quantity scheduled__2024-09-10T18:10:00+00:00 [queued]>
+[2024-09-10T18:15:31.335+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-10T18:15:31.405+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): Correct_Non_numeric_Quantity> on 2024-09-10 18:10:00+00:00
+[2024-09-10T18:15:31.435+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2307) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T18:15:31.437+0000] {standard_task_runner.py:72} INFO - Started process 2381 to run task
+[2024-09-10T18:15:31.433+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'correction_Dag_no_NumericValues', 'Correct_Non_numeric_Quantity', 'scheduled__2024-09-10T18:10:00+00:00', '--job-id', '3099', '--raw', '--subdir', 'DAGS_FOLDER/correction_Dag_no_NumericValues.py', '--cfg-path', '/tmp/tmpnawq1j3u']
+[2024-09-10T18:15:31.456+0000] {standard_task_runner.py:105} INFO - Job 3099: Subtask Correct_Non_numeric_Quantity
+[2024-09-10T18:15:33.122+0000] {task_command.py:467} INFO - Running <TaskInstance: correction_Dag_no_NumericValues.Correct_Non_numeric_Quantity scheduled__2024-09-10T18:10:00+00:00 [running]> on host 5f241b76205c
+[2024-09-10T18:15:35.480+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='correction_Dag_no_NumericValues' AIRFLOW_CTX_TASK_ID='Correct_Non_numeric_Quantity' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T18:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T18:10:00+00:00'
+[2024-09-10T18:15:35.483+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T18:15:35.853+0000] {logging_mixin.py:190} INFO - Anomalies textuelles corrigées avec succès dans la table Transactions.
+[2024-09-10T18:15:35.854+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-10T18:15:36.305+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-10T18:15:36.307+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=correction_Dag_no_NumericValues, task_id=Correct_Non_numeric_Quantity, run_id=scheduled__2024-09-10T18:10:00+00:00, execution_date=20240910T181000, start_date=20240910T181531, end_date=20240910T181536
+[2024-09-10T18:15:36.428+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-10T18:15:36.443+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2024-09-10T18:15:37.084+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T18:15:37.102+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

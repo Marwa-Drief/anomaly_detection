@@ -1,0 +1,339 @@
+[2024-09-10T13:51:11.460+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T13:51:11.855+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-10T13:30:00+00:00 [queued]>
+[2024-09-10T13:51:11.896+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-10T13:30:00+00:00 [queued]>
+[2024-09-10T13:51:11.902+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2024-09-10T13:51:11.949+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): detect_1nf_and_insert_anomalies> on 2024-09-10 13:30:00+00:00
+[2024-09-10T13:51:11.970+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=3847) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T13:51:11.974+0000] {standard_task_runner.py:72} INFO - Started process 3865 to run task
+[2024-09-10T13:51:11.972+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'detect_1fn_anomalies_dag', 'detect_1nf_and_insert_anomalies', 'scheduled__2024-09-10T13:30:00+00:00', '--job-id', '2344', '--raw', '--subdir', 'DAGS_FOLDER/Dag_detect_1FN_anomaly.py', '--cfg-path', '/tmp/tmp4npmlt7h']
+[2024-09-10T13:51:11.978+0000] {standard_task_runner.py:105} INFO - Job 2344: Subtask detect_1nf_and_insert_anomalies
+[2024-09-10T13:51:13.176+0000] {task_command.py:467} INFO - Running <TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-10T13:30:00+00:00 [running]> on host 5f241b76205c
+[2024-09-10T13:51:14.088+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='detect_1fn_anomalies_dag' AIRFLOW_CTX_TASK_ID='detect_1nf_and_insert_anomalies' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T13:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T13:30:00+00:00'
+[2024-09-10T13:51:14.094+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T13:51:14.311+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: customers
+[2024-09-10T13:51:14.313+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: transactions
+[2024-09-10T13:51:14.321+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: orderdetails
+[2024-09-10T13:51:14.319+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: products
+[2024-09-10T13:51:14.322+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: productsuppliers
+[2024-09-10T13:51:14.762+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table transactions
+[2024-09-10T13:51:14.775+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table productsuppliers
+[2024-09-10T13:51:14.777+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table customers
+[2024-09-10T13:51:14.803+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_priority_parsing_request
+[2024-09-10T13:51:14.791+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: anomalies
+[2024-09-10T13:51:14.799+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table orderdetails
+[2024-09-10T13:51:14.800+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: log
+[2024-09-10T13:51:14.790+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table products
+[2024-09-10T13:51:14.811+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: job
+[2024-09-10T13:51:14.814+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: anomalies1
+[2024-09-10T13:51:15.105+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dag_priority_parsing_request
+[2024-09-10T13:51:15.109+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: slot_pool
+[2024-09-10T13:51:15.121+0000] {Dag_detect_1FN_anomaly.py:82} INFO - Detected 2 anomalies for table anomalies
+[2024-09-10T13:51:15.197+0000] {Dag_detect_1FN_anomaly.py:82} INFO - Detected 2 anomalies for table anomalies1
+[2024-09-10T13:51:15.366+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table job
+[2024-09-10T13:51:15.368+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: callback_request
+[2024-09-10T13:51:15.404+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table slot_pool
+[2024-09-10T13:51:15.405+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_code
+[2024-09-10T13:51:16.025+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table callback_request
+[2024-09-10T13:51:16.033+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_pickle
+[2024-09-10T13:51:16.035+0000] {Dag_detect_1FN_anomaly.py:82} INFO - Detected 15 anomalies for table dag_code
+[2024-09-10T13:51:16.060+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: ab_user
+[2024-09-10T13:51:16.061+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: ab_register_user
+[2024-09-10T13:51:16.244+0000] {Dag_detect_1FN_anomaly.py:82} INFO - Detected 5877 anomalies for table log
+[2024-09-10T13:51:16.291+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dag_pickle
+[2024-09-10T13:51:16.293+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: connection
+[2024-09-10T13:51:16.348+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table ab_user
+[2024-09-10T13:51:16.349+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: sla_miss
+[2024-09-10T13:51:16.453+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table ab_register_user
+[2024-09-10T13:51:16.454+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: variable
+[2024-09-10T13:51:16.706+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table connection
+[2024-09-10T13:51:16.707+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: import_error
+[2024-09-10T13:51:16.720+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: serialized_dag
+[2024-09-10T13:51:16.825+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table sla_miss
+[2024-09-10T13:51:16.827+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dataset_alias
+[2024-09-10T13:51:16.895+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table variable
+[2024-09-10T13:51:16.897+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dataset_alias_dataset
+[2024-09-10T13:51:17.118+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table import_error
+[2024-09-10T13:51:17.121+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dataset
+[2024-09-10T13:51:17.121+0000] {Dag_detect_1FN_anomaly.py:82} INFO - Detected 15 anomalies for table serialized_dag
+[2024-09-10T13:51:17.177+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dataset_alias
+[2024-09-10T13:51:17.181+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dataset_alias_dataset
+[2024-09-10T13:51:17.183+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dataset_alias_dataset_event
+[2024-09-10T13:51:17.186+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dataset_event
+[2024-09-10T13:51:17.525+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dataset
+[2024-09-10T13:51:17.528+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_schedule_dataset_alias_reference
+[2024-09-10T13:51:17.565+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag
+[2024-09-10T13:51:17.572+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dataset_alias_dataset_event
+[2024-09-10T13:51:17.581+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dataset_event
+[2024-09-10T13:51:17.584+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_schedule_dataset_reference
+[2024-09-10T13:51:17.585+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: task_outlet_dataset_reference
+[2024-09-10T13:51:17.847+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dataset_dag_run_queue
+[2024-09-10T13:51:17.870+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dag_schedule_dataset_alias_reference
+[2024-09-10T13:51:17.872+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: log_template
+[2024-09-10T13:51:17.926+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table task_outlet_dataset_reference
+[2024-09-10T13:51:17.933+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_run
+[2024-09-10T13:51:18.007+0000] {Dag_detect_1FN_anomaly.py:82} INFO - Detected 7 anomalies for table dag
+[2024-09-10T13:51:18.023+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dag_schedule_dataset_reference
+[2024-09-10T13:51:18.025+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_tag
+[2024-09-10T13:51:18.119+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dataset_dag_run_queue
+[2024-09-10T13:51:18.121+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_owner_attributes
+[2024-09-10T13:51:18.228+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table log_template
+[2024-09-10T13:51:18.230+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: ab_permission
+[2024-09-10T13:51:18.471+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dag_tag
+[2024-09-10T13:51:18.495+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: ab_permission_view
+[2024-09-10T13:51:18.700+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dag_owner_attributes
+[2024-09-10T13:51:18.703+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: ab_view_menu
+[2024-09-10T13:51:18.704+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: ab_user_role
+[2024-09-10T13:51:18.732+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table ab_permission
+[2024-09-10T13:51:18.734+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: ab_role
+[2024-09-10T13:51:18.833+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dag_run
+[2024-09-10T13:51:18.836+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_warning
+[2024-09-10T13:51:18.858+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table ab_permission_view
+[2024-09-10T13:51:18.859+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dagrun_dataset_event
+[2024-09-10T13:51:18.918+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table ab_view_menu
+[2024-09-10T13:51:18.919+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: trigger
+[2024-09-10T13:51:18.946+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table ab_user_role
+[2024-09-10T13:51:18.948+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: task_instance
+[2024-09-10T13:51:18.972+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table ab_role
+[2024-09-10T13:51:18.974+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: dag_run_note
+[2024-09-10T13:51:19.080+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dag_warning
+[2024-09-10T13:51:19.081+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: ab_permission_view_role
+[2024-09-10T13:51:19.116+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dagrun_dataset_event
+[2024-09-10T13:51:19.117+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: rendered_task_instance_fields
+[2024-09-10T13:51:19.216+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table trigger
+[2024-09-10T13:51:19.226+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: task_fail
+[2024-09-10T13:51:19.286+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table dag_run_note
+[2024-09-10T13:51:19.289+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: task_map
+[2024-09-10T13:51:19.772+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table ab_permission_view_role
+[2024-09-10T13:51:19.776+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: task_reschedule
+[2024-09-10T13:51:19.964+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table task_map
+[2024-09-10T13:51:19.984+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: xcom
+[2024-09-10T13:51:20.068+0000] {Dag_detect_1FN_anomaly.py:82} INFO - Detected 556 anomalies for table rendered_task_instance_fields
+[2024-09-10T13:51:20.217+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table task_fail
+[2024-09-10T13:51:20.221+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table task_reschedule
+[2024-09-10T13:51:20.241+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: task_instance_note
+[2024-09-10T13:51:20.249+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: task_instance_history
+[2024-09-10T13:51:20.264+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table task_instance
+[2024-09-10T13:51:20.277+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: session
+[2024-09-10T13:51:20.299+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table xcom
+[2024-09-10T13:51:20.302+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: alembic_version
+[2024-09-10T13:51:20.523+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table task_instance_note
+[2024-09-10T13:51:20.548+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: orders
+[2024-09-10T13:51:20.727+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table alembic_version
+[2024-09-10T13:51:20.729+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table session
+[2024-09-10T13:51:20.730+0000] {Dag_detect_1FN_anomaly.py:78} INFO - Processing table: anomalieDetected
+[2024-09-10T13:51:20.753+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table task_instance_history
+[2024-09-10T13:51:20.789+0000] {Dag_detect_1FN_anomaly.py:85} INFO - No anomalies detected for table orders
+[2024-09-10T13:51:20.971+0000] {Dag_detect_1FN_anomaly.py:96} ERROR - An error occurred: (psycopg2.errors.UndefinedTable) relation "anomaliedetected" does not exist
+LINE 1: SELECT * FROM anomalieDetected
+                      ^
+
+[SQL: SELECT * FROM anomalieDetected]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2024-09-10T13:51:20.973+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "anomaliedetected" does not exist
+LINE 1: SELECT * FROM anomalieDetected
+                      ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 93, in detect_and_insert_anomalies
+    future.result()  # This will raise an exception if the task failed
+    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 79, in process_table
+    df = table_to_dataframe(table_name)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 40, in table_to_dataframe
+    return pd.read_sql(query, connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 682, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1776, in read_query
+    result = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1599, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1770, in exec_driver_sql
+    return self._exec_driver_sql(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1674, in _exec_driver_sql
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "anomaliedetected" does not exist
+LINE 1: SELECT * FROM anomalieDetected
+                      ^
+
+[SQL: SELECT * FROM anomalieDetected]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2024-09-10T13:51:21.137+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=detect_1fn_anomalies_dag, task_id=detect_1nf_and_insert_anomalies, run_id=scheduled__2024-09-10T13:30:00+00:00, execution_date=20240910T133000, start_date=20240910T135111, end_date=20240910T135121
+[2024-09-10T13:51:21.163+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-10T13:51:21.167+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 2344 for task detect_1nf_and_insert_anomalies ((psycopg2.errors.UndefinedTable) relation "anomaliedetected" does not exist
+LINE 1: SELECT * FROM anomalieDetected
+                      ^
+
+[SQL: SELECT * FROM anomalieDetected]
+(Background on this error at: https://sqlalche.me/e/14/f405); 3865)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "anomaliedetected" does not exist
+LINE 1: SELECT * FROM anomalieDetected
+                      ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 93, in detect_and_insert_anomalies
+    future.result()  # This will raise an exception if the task failed
+    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 79, in process_table
+    df = table_to_dataframe(table_name)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 40, in table_to_dataframe
+    return pd.read_sql(query, connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 682, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1776, in read_query
+    result = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/sql.py", line 1599, in execute
+    return self.con.exec_driver_sql(sql, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1770, in exec_driver_sql
+    return self._exec_driver_sql(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1674, in _exec_driver_sql
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "anomaliedetected" does not exist
+LINE 1: SELECT * FROM anomalieDetected
+                      ^
+
+[SQL: SELECT * FROM anomalieDetected]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2024-09-10T13:51:21.252+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-09-10T13:51:21.411+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T13:51:21.419+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

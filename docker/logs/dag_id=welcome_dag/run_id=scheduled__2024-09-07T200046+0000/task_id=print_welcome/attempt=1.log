@@ -1,0 +1,19 @@
+[2024-09-07T20:00:53.727+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-07T20:00:54.193+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: welcome_dag.print_welcome scheduled__2024-09-07T20:00:46+00:00 [queued]>
+[2024-09-07T20:00:54.250+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: welcome_dag.print_welcome scheduled__2024-09-07T20:00:46+00:00 [queued]>
+[2024-09-07T20:00:54.252+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-09-07T20:00:54.335+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): print_welcome> on 2024-09-07 20:00:46+00:00
+[2024-09-07T20:00:54.349+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=506) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-07T20:00:54.352+0000] {standard_task_runner.py:72} INFO - Started process 525 to run task
+[2024-09-07T20:00:54.350+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'welcome_dag', 'print_welcome', 'scheduled__2024-09-07T20:00:46+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/Awelcome_dags.py', '--cfg-path', '/tmp/tmp2jn12eeb']
+[2024-09-07T20:00:54.361+0000] {standard_task_runner.py:105} INFO - Job 84: Subtask print_welcome
+[2024-09-07T20:00:55.918+0000] {task_command.py:467} INFO - Running <TaskInstance: welcome_dag.print_welcome scheduled__2024-09-07T20:00:46+00:00 [running]> on host 13d1dadf4f15
+[2024-09-07T20:00:58.353+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='welcome_dag' AIRFLOW_CTX_TASK_ID='print_welcome' AIRFLOW_CTX_EXECUTION_DATE='2024-09-07T20:00:46+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-07T20:00:46+00:00'
+[2024-09-07T20:00:58.357+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-07T20:00:58.408+0000] {logging_mixin.py:190} INFO - Welcome to Airflow!
+[2024-09-07T20:00:58.414+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-07T20:00:58.949+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-07T20:00:58.957+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=welcome_dag, task_id=print_welcome, run_id=scheduled__2024-09-07T20:00:46+00:00, execution_date=20240907T200046, start_date=20240907T200054, end_date=20240907T200058
+[2024-09-07T20:00:59.119+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-07T20:00:59.358+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2024-09-07T20:00:59.868+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

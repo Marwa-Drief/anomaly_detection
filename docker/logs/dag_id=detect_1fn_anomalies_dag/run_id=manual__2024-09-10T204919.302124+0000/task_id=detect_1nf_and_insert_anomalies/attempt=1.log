@@ -1,0 +1,230 @@
+[2024-09-10T20:49:22.949+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T20:49:23.072+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies manual__2024-09-10T20:49:19.302124+00:00 [queued]>
+[2024-09-10T20:49:23.089+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies manual__2024-09-10T20:49:19.302124+00:00 [queued]>
+[2024-09-10T20:49:23.091+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 4
+[2024-09-10T20:49:23.126+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): detect_1nf_and_insert_anomalies> on 2024-09-10 20:49:19.302124+00:00
+[2024-09-10T20:49:23.142+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=2415) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T20:49:23.144+0000] {standard_task_runner.py:72} INFO - Started process 2417 to run task
+[2024-09-10T20:49:23.143+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'detect_1fn_anomalies_dag', 'detect_1nf_and_insert_anomalies', 'manual__2024-09-10T20:49:19.302124+00:00', '--job-id', '3367', '--raw', '--subdir', 'DAGS_FOLDER/Dag_detect_1FN_anomaly.py', '--cfg-path', '/tmp/tmpsstjdx2x']
+[2024-09-10T20:49:23.146+0000] {standard_task_runner.py:105} INFO - Job 3367: Subtask detect_1nf_and_insert_anomalies
+[2024-09-10T20:49:23.597+0000] {task_command.py:467} INFO - Running <TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies manual__2024-09-10T20:49:19.302124+00:00 [running]> on host f0946a6cef1f
+[2024-09-10T20:49:24.040+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='detect_1fn_anomalies_dag' AIRFLOW_CTX_TASK_ID='detect_1nf_and_insert_anomalies' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T20:49:19.302124+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-09-10T20:49:19.302124+00:00'
+[2024-09-10T20:49:24.042+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T20:49:24.167+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: customers
+[2024-09-10T20:49:24.169+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: products
+[2024-09-10T20:49:24.171+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table customers: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.168+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: transactions
+[2024-09-10T20:49:24.175+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table products: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.176+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: orderdetails
+[2024-09-10T20:49:24.179+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table transactions: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.180+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: productsuppliers
+[2024-09-10T20:49:24.182+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table orderdetails: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.184+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: anomalies
+[2024-09-10T20:49:24.186+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table productsuppliers: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.188+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: log
+[2024-09-10T20:49:24.190+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table anomalies: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.191+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_priority_parsing_request
+[2024-09-10T20:49:24.193+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table log: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.194+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: job
+[2024-09-10T20:49:24.196+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_priority_parsing_request: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.197+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: anomalies1
+[2024-09-10T20:49:24.198+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table job: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.200+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: slot_pool
+[2024-09-10T20:49:24.202+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table anomalies1: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.203+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: callback_request
+[2024-09-10T20:49:24.204+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table slot_pool: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.206+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_code
+[2024-09-10T20:49:24.208+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table callback_request: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.209+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_pickle
+[2024-09-10T20:49:24.210+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_code: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.211+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: ab_user
+[2024-09-10T20:49:24.213+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_pickle: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.215+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: ab_register_user
+[2024-09-10T20:49:24.217+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table ab_user: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.218+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: connection
+[2024-09-10T20:49:24.219+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table ab_register_user: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.220+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: sla_miss
+[2024-09-10T20:49:24.221+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table connection: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.222+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: variable
+[2024-09-10T20:49:24.224+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table sla_miss: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.224+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: import_error
+[2024-09-10T20:49:24.225+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table variable: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.226+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: serialized_dag
+[2024-09-10T20:49:24.227+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table import_error: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.229+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dataset_alias_dataset
+[2024-09-10T20:49:24.229+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table serialized_dag: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.227+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dataset_alias
+[2024-09-10T20:49:24.232+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dataset_alias_dataset: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.233+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dataset
+[2024-09-10T20:49:24.235+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dataset_alias: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.236+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dataset_alias_dataset_event
+[2024-09-10T20:49:24.238+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dataset: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.239+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dataset_event
+[2024-09-10T20:49:24.241+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dataset_alias_dataset_event: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.242+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_schedule_dataset_alias_reference
+[2024-09-10T20:49:24.243+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dataset_event: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.244+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag
+[2024-09-10T20:49:24.245+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_schedule_dataset_alias_reference: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.246+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_schedule_dataset_reference
+[2024-09-10T20:49:24.247+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.249+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: task_outlet_dataset_reference
+[2024-09-10T20:49:24.250+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_schedule_dataset_reference: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.251+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dataset_dag_run_queue
+[2024-09-10T20:49:24.254+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table task_outlet_dataset_reference: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.255+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: log_template
+[2024-09-10T20:49:24.256+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dataset_dag_run_queue: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.257+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_run
+[2024-09-10T20:49:24.259+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table log_template: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.260+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_tag
+[2024-09-10T20:49:24.262+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_run: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.263+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_owner_attributes
+[2024-09-10T20:49:24.264+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_tag: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.264+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: ab_permission
+[2024-09-10T20:49:24.266+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_owner_attributes: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.266+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: ab_permission_view
+[2024-09-10T20:49:24.267+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table ab_permission: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.268+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: ab_view_menu
+[2024-09-10T20:49:24.270+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table ab_permission_view: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.271+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: ab_user_role
+[2024-09-10T20:49:24.293+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table ab_view_menu: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.294+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: ab_role
+[2024-09-10T20:49:24.296+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table ab_user_role: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.298+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_warning
+[2024-09-10T20:49:24.299+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table ab_role: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.300+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dagrun_dataset_event
+[2024-09-10T20:49:24.301+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_warning: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.302+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: trigger
+[2024-09-10T20:49:24.303+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dagrun_dataset_event: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.304+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: task_instance
+[2024-09-10T20:49:24.305+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table trigger: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.305+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: dag_run_note
+[2024-09-10T20:49:24.306+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table task_instance: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.307+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: ab_permission_view_role
+[2024-09-10T20:49:24.308+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table dag_run_note: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.308+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: rendered_task_instance_fields
+[2024-09-10T20:49:24.309+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table ab_permission_view_role: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.310+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: task_fail
+[2024-09-10T20:49:24.311+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table rendered_task_instance_fields: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.311+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: task_map
+[2024-09-10T20:49:24.312+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table task_fail: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.313+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: task_reschedule
+[2024-09-10T20:49:24.313+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table task_map: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.314+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: xcom
+[2024-09-10T20:49:24.315+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table task_reschedule: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.316+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: task_instance_note
+[2024-09-10T20:49:24.317+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table xcom: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.318+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: task_instance_history
+[2024-09-10T20:49:24.320+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table task_instance_note: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.320+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: session
+[2024-09-10T20:49:24.322+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table task_instance_history: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.322+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: alembic_version
+[2024-09-10T20:49:24.323+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table session: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.324+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: orders
+[2024-09-10T20:49:24.325+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table alembic_version: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.326+0000] {Dag_detect_1FN_anomaly.py:95} INFO - Processing table: anomalieDetected
+[2024-09-10T20:49:24.327+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table orders: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.329+0000] {Dag_detect_1FN_anomaly.py:106} ERROR - Error processing table anomalieDetected: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.330+0000] {Dag_detect_1FN_anomaly.py:119} ERROR - Une erreur s'est produite : type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.331+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 762, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 116, in detect_and_insert_anomalies
+    heartbeat(task_instance)  # Émettre un heartbeat après chaque table traitée
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 90, in heartbeat
+    ).update({TaskInstance.latest_heartbeat: datetime.utcnow()})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.485+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=detect_1fn_anomalies_dag, task_id=detect_1nf_and_insert_anomalies, run_id=manual__2024-09-10T20:49:19.302124+00:00, execution_date=20240910T204919, start_date=20240910T204923, end_date=20240910T204924
+[2024-09-10T20:49:24.533+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-10T20:49:24.534+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 3367 for task detect_1nf_and_insert_anomalies (type object 'TaskInstance' has no attribute 'latest_heartbeat'; 2417)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 762, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 116, in detect_and_insert_anomalies
+    heartbeat(task_instance)  # Émettre un heartbeat après chaque table traitée
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 90, in heartbeat
+    ).update({TaskInstance.latest_heartbeat: datetime.utcnow()})
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'TaskInstance' has no attribute 'latest_heartbeat'
+[2024-09-10T20:49:24.566+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-09-10T20:49:24.676+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T20:49:24.683+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

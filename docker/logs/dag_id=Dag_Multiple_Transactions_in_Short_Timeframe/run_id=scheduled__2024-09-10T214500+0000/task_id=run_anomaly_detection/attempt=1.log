@@ -1,0 +1,79 @@
+[2024-09-10T21:50:13.573+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T21:50:14.218+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Dag_Multiple_Transactions_in_Short_Timeframe.run_anomaly_detection scheduled__2024-09-10T21:45:00+00:00 [queued]>
+[2024-09-10T21:50:14.274+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Dag_Multiple_Transactions_in_Short_Timeframe.run_anomaly_detection scheduled__2024-09-10T21:45:00+00:00 [queued]>
+[2024-09-10T21:50:14.277+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-10T21:50:14.353+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_anomaly_detection> on 2024-09-10 21:45:00+00:00
+[2024-09-10T21:50:14.432+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=762) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T21:50:14.440+0000] {standard_task_runner.py:72} INFO - Started process 800 to run task
+[2024-09-10T21:50:14.423+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'Dag_Multiple_Transactions_in_Short_Timeframe', 'run_anomaly_detection', 'scheduled__2024-09-10T21:45:00+00:00', '--job-id', '3625', '--raw', '--subdir', 'DAGS_FOLDER/Dag_MultipleTransactions-in-a-ShortTimeframe.py', '--cfg-path', '/tmp/tmpn7tubc1y']
+[2024-09-10T21:50:14.463+0000] {standard_task_runner.py:105} INFO - Job 3625: Subtask run_anomaly_detection
+[2024-09-10T21:50:16.403+0000] {task_command.py:467} INFO - Running <TaskInstance: Dag_Multiple_Transactions_in_Short_Timeframe.run_anomaly_detection scheduled__2024-09-10T21:45:00+00:00 [running]> on host f0946a6cef1f
+[2024-09-10T21:50:17.785+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='Dag_Multiple_Transactions_in_Short_Timeframe' AIRFLOW_CTX_TASK_ID='run_anomaly_detection' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T21:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T21:45:00+00:00'
+[2024-09-10T21:50:17.789+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T21:50:18.702+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.724+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.742+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.755+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.770+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.786+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.800+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.810+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.823+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.830+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.844+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.866+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_MultipleTransactions-in-a-ShortTimeframe.py:59 SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+[2024-09-10T21:50:18.871+0000] {Dag_MultipleTransactions-in-a-ShortTimeframe.py:123} INFO - No anomalies detected.
+[2024-09-10T21:50:18.872+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-10T21:50:19.379+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-10T21:50:19.382+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Dag_Multiple_Transactions_in_Short_Timeframe, task_id=run_anomaly_detection, run_id=scheduled__2024-09-10T21:45:00+00:00, execution_date=20240910T214500, start_date=20240910T215014, end_date=20240910T215019
+[2024-09-10T21:50:20.273+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-10T21:50:20.583+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T21:50:20.589+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,2 @@
+[2024-09-11T00:06:49.017+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-11T00:06:49.543+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: detect_transaction_date_anomalies_dag.run_anomaly_detection scheduled__2024-09-10T23:55:00+00:00 [queued]>

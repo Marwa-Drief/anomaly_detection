@@ -1,0 +1,4 @@
+[2024-10-23T16:10:11.287+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-23T16:10:12.569+0000] {local_task_job_runner.py:127} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-23T16:10:12.573+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 143
+[2024-10-23T16:10:15.258+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check

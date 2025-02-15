@@ -1,0 +1,18 @@
+[2024-09-14T21:26:12.148+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-14T21:26:12.502+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-14T21:15:00+00:00 [queued]>
+[2024-09-14T21:26:12.535+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-14T21:15:00+00:00 [queued]>
+[2024-09-14T21:26:12.539+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2024-09-14T21:26:12.595+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): detect_1nf_and_insert_anomalies> on 2024-09-14 21:15:00+00:00
+[2024-09-14T21:26:12.618+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=5131) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-14T21:26:12.620+0000] {standard_task_runner.py:72} INFO - Started process 5151 to run task
+[2024-09-14T21:26:12.618+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'detect_1fn_anomalies_dag', 'detect_1nf_and_insert_anomalies', 'scheduled__2024-09-14T21:15:00+00:00', '--job-id', '4703', '--raw', '--subdir', 'DAGS_FOLDER/Dag_detect_1FN_anomaly.py', '--cfg-path', '/tmp/tmpfwla5ce2']
+[2024-09-14T21:26:12.623+0000] {standard_task_runner.py:105} INFO - Job 4703: Subtask detect_1nf_and_insert_anomalies
+[2024-09-14T21:26:13.290+0000] {task_command.py:467} INFO - Running <TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-14T21:15:00+00:00 [running]> on host 7403e816bcf5
+[2024-09-14T21:26:14.144+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='detect_1fn_anomalies_dag' AIRFLOW_CTX_TASK_ID='detect_1nf_and_insert_anomalies' AIRFLOW_CTX_EXECUTION_DATE='2024-09-14T21:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-14T21:15:00+00:00'
+[2024-09-14T21:26:14.147+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-14T21:26:14.268+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-14T21:26:14.441+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-14T21:26:14.443+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=detect_1fn_anomalies_dag, task_id=detect_1nf_and_insert_anomalies, run_id=scheduled__2024-09-14T21:15:00+00:00, execution_date=20240914T211500, start_date=20240914T212612, end_date=20240914T212614
+[2024-09-14T21:26:14.492+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-14T21:26:14.639+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-14T21:26:14.646+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

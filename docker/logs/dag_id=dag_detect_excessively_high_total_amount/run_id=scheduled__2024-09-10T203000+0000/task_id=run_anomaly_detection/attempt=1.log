@@ -1,0 +1,23 @@
+[2024-09-10T20:45:16.597+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T20:45:16.842+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_detect_excessively_high_total_amount.run_anomaly_detection scheduled__2024-09-10T20:30:00+00:00 [queued]>
+[2024-09-10T20:45:16.863+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_detect_excessively_high_total_amount.run_anomaly_detection scheduled__2024-09-10T20:30:00+00:00 [queued]>
+[2024-09-10T20:45:16.865+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-10T20:45:16.897+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_anomaly_detection> on 2024-09-10 20:30:00+00:00
+[2024-09-10T20:45:16.920+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1683) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T20:45:16.923+0000] {standard_task_runner.py:72} INFO - Started process 1710 to run task
+[2024-09-10T20:45:16.926+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'dag_detect_excessively_high_total_amount', 'run_anomaly_detection', 'scheduled__2024-09-10T20:30:00+00:00', '--job-id', '3360', '--raw', '--subdir', 'DAGS_FOLDER/dag_detect_excessively_high_total_amount.py', '--cfg-path', '/tmp/tmpby0_4tlt']
+[2024-09-10T20:45:16.941+0000] {standard_task_runner.py:105} INFO - Job 3360: Subtask run_anomaly_detection
+[2024-09-10T20:45:17.724+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_detect_excessively_high_total_amount.run_anomaly_detection scheduled__2024-09-10T20:30:00+00:00 [running]> on host f0946a6cef1f
+[2024-09-10T20:45:18.687+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dag_detect_excessively_high_total_amount' AIRFLOW_CTX_TASK_ID='run_anomaly_detection' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T20:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T20:30:00+00:00'
+[2024-09-10T20:45:18.689+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T20:45:18.727+0000] {dag_detect_excessively_high_total_amount.py:118} INFO - Starting anomaly detection process
+[2024-09-10T20:45:19.991+0000] {dag_detect_excessively_high_total_amount.py:124} INFO - Loaded 15 transactions and 54 products
+[2024-09-10T20:45:20.019+0000] {dag_detect_excessively_high_total_amount.py:127} INFO - Detected 0 anomalies
+[2024-09-10T20:45:20.713+0000] {dag_detect_excessively_high_total_amount.py:111} INFO - Inserted 0 new anomalies.
+[2024-09-10T20:45:20.714+0000] {dag_detect_excessively_high_total_amount.py:130} INFO - Anomaly detection process completed successfully
+[2024-09-10T20:45:20.716+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-10T20:45:20.952+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-10T20:45:20.954+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_detect_excessively_high_total_amount, task_id=run_anomaly_detection, run_id=scheduled__2024-09-10T20:30:00+00:00, execution_date=20240910T203000, start_date=20240910T204516, end_date=20240910T204520
+[2024-09-10T20:45:21.064+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-10T20:45:21.352+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T20:45:21.360+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

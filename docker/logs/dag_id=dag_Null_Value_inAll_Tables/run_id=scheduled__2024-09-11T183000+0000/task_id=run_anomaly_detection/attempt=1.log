@@ -1,0 +1,18 @@
+[2024-09-11T18:45:10.461+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-11T18:45:10.754+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_Null_Value_inAll_Tables.run_anomaly_detection scheduled__2024-09-11T18:30:00+00:00 [queued]>
+[2024-09-11T18:45:10.781+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_Null_Value_inAll_Tables.run_anomaly_detection scheduled__2024-09-11T18:30:00+00:00 [queued]>
+[2024-09-11T18:45:10.783+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-11T18:45:10.822+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): run_anomaly_detection> on 2024-09-11 18:30:00+00:00
+[2024-09-11T18:45:10.875+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=27708) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-11T18:45:10.877+0000] {standard_task_runner.py:72} INFO - Started process 27742 to run task
+[2024-09-11T18:45:10.903+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'dag_Null_Value_inAll_Tables', 'run_anomaly_detection', 'scheduled__2024-09-11T18:30:00+00:00', '--job-id', '1443', '--raw', '--subdir', 'DAGS_FOLDER/dag_Null_Value_inAll_Tables.py', '--cfg-path', '/tmp/tmp5ju7vf61']
+[2024-09-11T18:45:10.909+0000] {standard_task_runner.py:105} INFO - Job 1443: Subtask run_anomaly_detection
+[2024-09-11T18:45:12.251+0000] {task_command.py:467} INFO - Running <TaskInstance: dag_Null_Value_inAll_Tables.run_anomaly_detection scheduled__2024-09-11T18:30:00+00:00 [running]> on host b8b5351e8a6b
+[2024-09-11T18:45:13.861+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dag_Null_Value_inAll_Tables' AIRFLOW_CTX_TASK_ID='run_anomaly_detection' AIRFLOW_CTX_EXECUTION_DATE='2024-09-11T18:30:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-11T18:30:00+00:00'
+[2024-09-11T18:45:13.866+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-11T18:45:20.811+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-09-11T18:45:20.968+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-11T18:45:20.969+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_Null_Value_inAll_Tables, task_id=run_anomaly_detection, run_id=scheduled__2024-09-11T18:30:00+00:00, execution_date=20240911T183000, start_date=20240911T184510, end_date=20240911T184520
+[2024-09-11T18:45:21.027+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-11T18:45:21.181+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-11T18:45:21.190+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

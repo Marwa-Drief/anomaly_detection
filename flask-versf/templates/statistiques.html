@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Anomalies Dashboard</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .container-xxl {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-top: 80px; /* Adjusted for header */
+        }
+
+        .header, .sidebar {
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            transition: transform 0.3s ease;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 300px; /* Fixed width */
+            padding-top: 80px; /* Adjusted for header height */
+        }
+
+        .sidebar.hidden {
+            transform: translateX(-250px);
+        }
+
+        .content {
+            transition: margin-left 0.3s ease;
+            margin-left: 250px; /* Fixed width of sidebar */
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .content.expanded {
+            margin-left: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            z-index: 1000;
+        }
+
+        .header .logo-container {
+            flex: 0 0 auto;
+        }
+
+        .header .logo-container img {
+            height: 47px;
+            width: auto;
+        }
+
+        .header .search-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-container input {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .header .toggle-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #ffffff;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .chart-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Spacing between charts */
+        }
+
+        .chart-container {
+            background-color: #e8ecf1; /* Light blue background */
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            height: 400px; /* Fixed height for the container */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .chart-title {
+            margin-bottom: 15px; /* Spacing between title and chart */
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+        }
+
+        .chart-container canvas {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .stats-cards {
+            margin-top: 100px; /* Adjust this value according to your header height */
+        }
+
+        .stats-card {
+            max-width: 100%; /* Ensure the card does not overflow */
+            margin-bottom: 10px;
+            margin-left: 100px /* Space between cards */
+        }
+
+        .stats-card-inner {
+            height: 120px; /* Reduced height */
+            display: flex;
+            align-items: center;
+            padding: 50px;
+        }
+        .modal-footer {
+            border-top: none;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='img/ntt_data.png') }}" alt="Logo de l'entreprise" />
+        </div>
+    </header>
+
+    <div class="container-xxl position-relative bg-white d-flex p-0">
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-light navbar-light">
+                <div class="navbar-nav w-100">
+                    <a href="{{ url_for('index') }}" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="{{ url_for('statistiques') }}" class="nav-item nav-link active"><i class="fa fa-chart-bar me-2"></i>Statistics</a>
+                    <a href="{{ url_for('about_anomalies') }}" class="nav-item nav-link"><i class="fa fa-info-circle me-2"></i>About&nbsp;Anomalies</a>
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Sale & Revenue Start -->
+        <div class="container-fluid pt-4 px-4 stats-cards">
+            <div class="row g-4">
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-light rounded d-flex align-items-center justify-content-between p-4 stats-card stats-card-inner">
+                        <i class="fa fa-chart-line fa-3x text-primary"></i>
+                        <div class="ms-3">
+                            <p class="mb-2">  Today Anomalies</p>
+                            <h6 class="mb-0">{{ stats.anomalies_per_day }}</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-light rounded d-flex align-items-center justify-content-between p-4 stats-card stats-card-inner">
+                        <i class="fa fa-chart-bar fa-3x text-primary"></i>
+                        <div class="ms-3">
+                            <p class="mb-2"> Week Anomalies</p>
+                            <h6 class="mb-0">{{ stats.anomalies_per_week }}</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-light rounded d-flex align-items-center justify-content-between p-4 stats-card stats-card-inner">
+                        <i class="fa fa-chart-area fa-3x text-primary"></i>
+                        <div class="ms-3">
+                            <p class="mb-2"> Month Anomalies</p>
+                            <h6 class="mb-0">{{ stats.anomalies_per_month }}</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-light rounded d-flex align-items-center justify-content-between p-4 stats-card stats-card-inner">
+                        <i class="fa fa-chart-pie fa-3x text-primary"></i>
+                        <div class="ms-3">
+                            <p class="mb-2"> Year Anomalies</p>
+                            <h6 class="mb-0">{{ stats.anomalies_per_year }}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sale & Revenue End -->
+
+                <!-- Graphiques en ligne -->
+                <div class="container mt-5">
+                    <div class="chart-row">
+                        <div class="chart-container">
+                            <h5 class="chart-title">Anomalies by Category</h5>
+                            <canvas id="categoryChart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <h5 class="chart-title">Anomalies by Table</h5>
+                            <canvas id="tableChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+    <!-- Inclure Bootstrap JS et jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Script pour afficher les graphiques -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Graphique des anomalies par catégorie
+            const ctxCategory = document.getElementById('categoryChart').getContext('2d');
+            fetch('/get_anomalies_by_category')
+                .then(response => response.json())
+                .then(data => {
+                    const colors = [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                        'rgba(255, 159, 64, 0.6)'
+                    ];
+
+                    const backgroundColors = data.categories.map((_, index) => colors[index % colors.length]);
+                    const borderColors = data.categories.map((_, index) => colors[index % colors.length].replace('0.6', '1'));
+
+                    new Chart(ctxCategory, {
+                        type: 'pie',
+                        data: {
+                            labels: data.categories,
+                            datasets: [{
+                                label: 'Nombre d\'anomalies',
+                                data: data.counts,
+                                backgroundColor: backgroundColors,
+                                borderColor: borderColors,
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: {
+                                    position: 'top',
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                        label: function(tooltipItem) {
+                                            return tooltipItem.label + ': ' + tooltipItem.raw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+                });
+
+            // Graphique des anomalies par table
+            const ctxTable = document.getElementById('tableChart').getContext('2d');
+            fetch('/get_anomalies_by_table')
+                .then(response => response.json())
+                .then(data => {
+                    new Chart(ctxTable, {
+                        type: 'bar',
+                        data: {
+                            labels: data.tables,
+                            datasets: [{
+                                label: 'Number of anomalies',
+                                data: data.counts,
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.5)',
+                                    'rgba(54, 162, 235, 0.5)',
+                                    'rgba(255, 206, 86, 0.5)',
+                                    'rgba(75, 192, 192, 0.5)',
+                                    'rgba(153, 102, 255, 0.5)',
+                                    'rgba(255, 159, 64, 0.5)'
+                                ],
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            elements: {
+                                arc: {
+                                    borderWidth: 0.5
+                                }
+                            }
+                        }
+                    });
+                });
+        });
+        
+    
+        const toggleSidebar = document.getElementById("toggleSidebar");
+        const sidebar = document.querySelector(".sidebar");
+        const content = document.querySelector(".content");
+        const header = document.querySelector(".header");
+
+        toggleSidebar.addEventListener("click", () => {
+            sidebar.classList.toggle("hidden");
+            content.classList.toggle("expanded");
+        });
+    
+    </script>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">© 2024 NTT DATA. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
+

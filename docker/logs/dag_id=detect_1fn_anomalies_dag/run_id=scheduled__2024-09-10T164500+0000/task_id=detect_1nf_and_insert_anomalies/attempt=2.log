@@ -1,0 +1,218 @@
+[2024-09-10T17:07:18.703+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T17:07:19.047+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-10T16:45:00+00:00 [queued]>
+[2024-09-10T17:07:19.073+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-10T16:45:00+00:00 [queued]>
+[2024-09-10T17:07:19.075+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
+[2024-09-10T17:07:19.121+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): detect_1nf_and_insert_anomalies> on 2024-09-10 16:45:00+00:00
+[2024-09-10T17:07:19.141+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=30210) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T17:07:19.143+0000] {standard_task_runner.py:72} INFO - Started process 30233 to run task
+[2024-09-10T17:07:19.143+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'detect_1fn_anomalies_dag', 'detect_1nf_and_insert_anomalies', 'scheduled__2024-09-10T16:45:00+00:00', '--job-id', '2834', '--raw', '--subdir', 'DAGS_FOLDER/Dag_detect_1FN_anomaly.py', '--cfg-path', '/tmp/tmpagia2yli']
+[2024-09-10T17:07:19.150+0000] {standard_task_runner.py:105} INFO - Job 2834: Subtask detect_1nf_and_insert_anomalies
+[2024-09-10T17:07:20.250+0000] {task_command.py:467} INFO - Running <TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-10T16:45:00+00:00 [running]> on host 5f241b76205c
+[2024-09-10T17:07:21.885+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='detect_1fn_anomalies_dag' AIRFLOW_CTX_TASK_ID='detect_1nf_and_insert_anomalies' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T16:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T16:45:00+00:00'
+[2024-09-10T17:07:21.888+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T17:07:22.296+0000] {Dag_detect_1FN_anomaly.py:92} INFO - Processing table: customers
+[2024-09-10T17:07:23.254+0000] {Dag_detect_1FN_anomaly.py:99} INFO - No anomalies detected for table customers
+[2024-09-10T17:07:23.255+0000] {Dag_detect_1FN_anomaly.py:92} INFO - Processing table: transactions
+[2024-09-10T17:07:25.189+0000] {Dag_detect_1FN_anomaly.py:99} INFO - No anomalies detected for table transactions
+[2024-09-10T17:07:25.217+0000] {Dag_detect_1FN_anomaly.py:92} INFO - Processing table: products
+[2024-09-10T17:07:26.957+0000] {Dag_detect_1FN_anomaly.py:99} INFO - No anomalies detected for table products
+[2024-09-10T17:07:26.972+0000] {Dag_detect_1FN_anomaly.py:92} INFO - Processing table: orderdetails
+[2024-09-10T17:07:28.786+0000] {Dag_detect_1FN_anomaly.py:99} INFO - No anomalies detected for table orderdetails
+[2024-09-10T17:07:28.794+0000] {Dag_detect_1FN_anomaly.py:92} INFO - Processing table: productsuppliers
+[2024-09-10T17:07:30.386+0000] {Dag_detect_1FN_anomaly.py:99} INFO - No anomalies detected for table productsuppliers
+[2024-09-10T17:07:30.393+0000] {Dag_detect_1FN_anomaly.py:92} INFO - Processing table: anomalies
+[2024-09-10T17:07:31.571+0000] {Dag_detect_1FN_anomaly.py:96} INFO - Inserting 2 anomalies for table anomalies
+[2024-09-10T17:07:33.426+0000] {Dag_detect_1FN_anomaly.py:92} INFO - Processing table: log
+[2024-09-10T17:07:35.489+0000] {Dag_detect_1FN_anomaly.py:96} INFO - Inserting 6942 anomalies for table log
+[2024-09-10T17:15:36.578+0000] {job.py:229} INFO - Heartbeat recovered after 17.24 seconds
+[2024-09-10T17:21:19.942+0000] {job.py:229} INFO - Heartbeat recovered after 29.50 seconds
+[2024-09-10T17:25:40.003+0000] {job.py:229} INFO - Heartbeat recovered after 22.06 seconds
+[2024-09-10T17:30:19.237+0000] {Dag_detect_1FN_anomaly.py:102} ERROR - Une erreur s'est produite : (psycopg2.errors.IoError) could not open file "global/pg_filenode.map": Input/output error
+CONTEXT:  parallel worker
+
+[SQL: SELECT "anomalieDetected".id, "anomalieDetected"."Category", "anomalieDetected"."AnomalyType", "anomalieDetected"."Details", "anomalieDetected"."RelatedRecord" 
+FROM "anomalieDetected" 
+WHERE "anomalieDetected"."Category" = %(Category_1)s AND "anomalieDetected"."AnomalyType" = %(AnomalyType_1)s AND "anomalieDetected"."Details" = %(Details_1)s AND "anomalieDetected"."RelatedRecord" = %(RelatedRecord_1)s]
+[parameters: {'Category_1': '1NF Violation', 'AnomalyType_1': 'Non-Atomic Values', 'Details_1': 'Column \'extra\' contains non-atomic values: {"host_name": "13d1dadf4f15", "full_command": "[\'/home/airflow/.local/bin/airflow\', \'scheduler\']"}.', 'RelatedRecord_1': 'Record 6813'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:30:20.768+0000] {job.py:229} INFO - Heartbeat recovered after 17.30 seconds
+[2024-09-10T17:30:21.433+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.IoError: could not open file "global/pg_filenode.map": Input/output error
+CONTEXT:  parallel worker
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 97, in detect_and_insert_anomalies
+    raise
+          
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 78, in insert_anomalies
+    stmt_insert = anomalies_table.insert().values(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.errors.IoError) could not open file "global/pg_filenode.map": Input/output error
+CONTEXT:  parallel worker
+
+[SQL: SELECT "anomalieDetected".id, "anomalieDetected"."Category", "anomalieDetected"."AnomalyType", "anomalieDetected"."Details", "anomalieDetected"."RelatedRecord" 
+FROM "anomalieDetected" 
+WHERE "anomalieDetected"."Category" = %(Category_1)s AND "anomalieDetected"."AnomalyType" = %(AnomalyType_1)s AND "anomalieDetected"."Details" = %(Details_1)s AND "anomalieDetected"."RelatedRecord" = %(RelatedRecord_1)s]
+[parameters: {'Category_1': '1NF Violation', 'AnomalyType_1': 'Non-Atomic Values', 'Details_1': 'Column \'extra\' contains non-atomic values: {"host_name": "13d1dadf4f15", "full_command": "[\'/home/airflow/.local/bin/airflow\', \'scheduler\']"}.', 'RelatedRecord_1': 'Record 6813'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:30:25.882+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=detect_1fn_anomalies_dag, task_id=detect_1nf_and_insert_anomalies, run_id=scheduled__2024-09-10T16:45:00+00:00, execution_date=20240910T164500, start_date=20240910T170719, end_date=20240910T173025
+[2024-09-10T17:30:28.833+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-10T17:30:29.384+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 2834 for task detect_1nf_and_insert_anomalies ((psycopg2.errors.IoError) could not open file "global/pg_filenode.map": Input/output error
+CONTEXT:  parallel worker
+
+[SQL: SELECT "anomalieDetected".id, "anomalieDetected"."Category", "anomalieDetected"."AnomalyType", "anomalieDetected"."Details", "anomalieDetected"."RelatedRecord" 
+FROM "anomalieDetected" 
+WHERE "anomalieDetected"."Category" = %(Category_1)s AND "anomalieDetected"."AnomalyType" = %(AnomalyType_1)s AND "anomalieDetected"."Details" = %(Details_1)s AND "anomalieDetected"."RelatedRecord" = %(RelatedRecord_1)s]
+[parameters: {'Category_1': '1NF Violation', 'AnomalyType_1': 'Non-Atomic Values', 'Details_1': 'Column \'extra\' contains non-atomic values: {"host_name": "13d1dadf4f15", "full_command": "[\'/home/airflow/.local/bin/airflow\', \'scheduler\']"}.', 'RelatedRecord_1': 'Record 6813'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 30233)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.IoError: could not open file "global/pg_filenode.map": Input/output error
+CONTEXT:  parallel worker
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 97, in detect_and_insert_anomalies
+    raise
+          
+  File "/opt/airflow/dags/Dag_detect_1FN_anomaly.py", line 78, in insert_anomalies
+    stmt_insert = anomalies_table.insert().values(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.errors.IoError) could not open file "global/pg_filenode.map": Input/output error
+CONTEXT:  parallel worker
+
+[SQL: SELECT "anomalieDetected".id, "anomalieDetected"."Category", "anomalieDetected"."AnomalyType", "anomalieDetected"."Details", "anomalieDetected"."RelatedRecord" 
+FROM "anomalieDetected" 
+WHERE "anomalieDetected"."Category" = %(Category_1)s AND "anomalieDetected"."AnomalyType" = %(AnomalyType_1)s AND "anomalieDetected"."Details" = %(Details_1)s AND "anomalieDetected"."RelatedRecord" = %(RelatedRecord_1)s]
+[parameters: {'Category_1': '1NF Violation', 'AnomalyType_1': 'Non-Atomic Values', 'Details_1': 'Column \'extra\' contains non-atomic values: {"host_name": "13d1dadf4f15", "full_command": "[\'/home/airflow/.local/bin/airflow\', \'scheduler\']"}.', 'RelatedRecord_1': 'Record 6813'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:30:31.946+0000] {job.py:229} INFO - Heartbeat recovered after 11.26 seconds
+[2024-09-10T17:30:39.300+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-09-10T17:30:43.303+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2024-09-10T17:30:44.202+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T17:30:44.284+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

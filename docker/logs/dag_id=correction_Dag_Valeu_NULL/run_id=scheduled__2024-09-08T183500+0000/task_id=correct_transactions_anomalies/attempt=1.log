@@ -1,0 +1,4 @@
+[2024-09-08T18:40:11.727+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-08T18:40:12.740+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: correction_Dag_Valeu_NULL.correct_transactions_anomalies scheduled__2024-09-08T18:35:00+00:00 [queued]>
+[2024-09-08T18:40:12.801+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: correction_Dag_Valeu_NULL.correct_transactions_anomalies scheduled__2024-09-08T18:35:00+00:00 [queued]>
+[2024-09-08T18:40:12.804+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2

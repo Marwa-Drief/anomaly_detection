@@ -1,0 +1,20 @@
+[2024-10-23T16:09:52.247+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-23T16:09:54.516+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: correction_Dag_Negative_Value.correct_negative_values scheduled__2024-10-23T15:25:00+00:00 [queued]>
+[2024-10-23T16:09:55.484+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: correction_Dag_Negative_Value.correct_negative_values scheduled__2024-10-23T15:25:00+00:00 [queued]>
+[2024-10-23T16:09:55.488+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-23T16:09:57.816+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): correct_negative_values> on 2024-10-23 15:25:00+00:00
+[2024-10-23T16:09:58.718+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'correction_Dag_Negative_Value', 'correct_negative_values', 'scheduled__2024-10-23T15:25:00+00:00', '--job-id', '6433', '--raw', '--subdir', 'DAGS_FOLDER/Correction_dag_Negative_Value.py', '--cfg-path', '/tmp/tmpdl6x10kp']
+[2024-10-23T16:09:58.864+0000] {standard_task_runner.py:105} INFO - Job 6433: Subtask correct_negative_values
+[2024-10-23T16:09:59.888+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=15512) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-10-23T16:09:59.893+0000] {standard_task_runner.py:72} INFO - Started process 15560 to run task
+[2024-10-23T16:10:04.555+0000] {task_command.py:467} INFO - Running <TaskInstance: correction_Dag_Negative_Value.correct_negative_values scheduled__2024-10-23T15:25:00+00:00 [running]> on host 696ca67245ce
+[2024-10-23T16:10:10.939+0000] {job.py:229} INFO - Heartbeat recovered after 24.90 seconds
+[2024-10-23T16:10:12.523+0000] {local_task_job_runner.py:127} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-10-23T16:10:12.700+0000] {process_utils.py:132} INFO - Sending 15 to group 15560. PIDs of all processes in the group: [15560]
+[2024-10-23T16:10:12.804+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 15560
+[2024-10-23T16:10:12.929+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=15560, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='16:09:57') (15560) terminated with exit code -15
+[2024-10-23T16:10:13.071+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 143
+[2024-10-23T16:10:15.445+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2024-10-23T16:10:15.873+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-23T16:10:15.917+0000] {local_task_job_runner.py:218} WARNING - Heartbeat failed with Exception: 'NoneType' object has no attribute 'twophase'
+[2024-10-23T16:10:15.929+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

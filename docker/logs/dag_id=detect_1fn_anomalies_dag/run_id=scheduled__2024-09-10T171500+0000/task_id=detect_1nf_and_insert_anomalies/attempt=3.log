@@ -1,0 +1,1666 @@
+[2024-09-10T17:42:42.237+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-10T17:42:42.378+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-10T17:15:00+00:00 [queued]>
+[2024-09-10T17:42:42.393+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-10T17:15:00+00:00 [queued]>
+[2024-09-10T17:42:42.394+0000] {taskinstance.py:2865} INFO - Starting attempt 3 of 4
+[2024-09-10T17:42:42.418+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): detect_1nf_and_insert_anomalies> on 2024-09-10 17:15:00+00:00
+[2024-09-10T17:42:42.438+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=1176) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-09-10T17:42:42.439+0000] {standard_task_runner.py:72} INFO - Started process 1205 to run task
+[2024-09-10T17:42:42.438+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'detect_1fn_anomalies_dag', 'detect_1nf_and_insert_anomalies', 'scheduled__2024-09-10T17:15:00+00:00', '--job-id', '2956', '--raw', '--subdir', 'DAGS_FOLDER/Dag_detect_1FN_anomaly.py', '--cfg-path', '/tmp/tmpvufghgya']
+[2024-09-10T17:42:42.449+0000] {standard_task_runner.py:105} INFO - Job 2956: Subtask detect_1nf_and_insert_anomalies
+[2024-09-10T17:42:42.959+0000] {task_command.py:467} INFO - Running <TaskInstance: detect_1fn_anomalies_dag.detect_1nf_and_insert_anomalies scheduled__2024-09-10T17:15:00+00:00 [running]> on host 5f241b76205c
+[2024-09-10T17:42:43.656+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='detect_1fn_anomalies_dag' AIRFLOW_CTX_TASK_ID='detect_1nf_and_insert_anomalies' AIRFLOW_CTX_EXECUTION_DATE='2024-09-10T17:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-10T17:15:00+00:00'
+[2024-09-10T17:42:43.657+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-10T17:42:43.882+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: customers
+[2024-09-10T17:42:43.883+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: transactions
+[2024-09-10T17:42:43.885+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: products
+[2024-09-10T17:42:43.887+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: orderdetails
+[2024-09-10T17:42:43.890+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: productsuppliers
+[2024-09-10T17:42:44.708+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2615_vm": Input/output error
+
+[SQL: 
+            SELECT c.oid
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE (n.nspname = %(schema)s)
+            AND c.relname = %(table_name)s AND c.relkind in
+            ('r', 'v', 'm', 'f', 'p')
+        ]
+[parameters: {'schema': 'public', 'table_name': 'customers'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:44.711+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table customers: (psycopg2.errors.IoError) could not open file "base/16384/2615_vm": Input/output error
+
+[SQL: 
+            SELECT c.oid
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE (n.nspname = %(schema)s)
+            AND c.relname = %(table_name)s AND c.relkind in
+            ('r', 'v', 'm', 'f', 'p')
+        ]
+[parameters: {'schema': 'public', 'table_name': 'customers'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:44.712+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: anomalies
+[2024-09-10T17:42:44.729+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/3455": Input/output error
+
+[SQL: 
+            SELECT c.oid
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE (n.nspname = %(schema)s)
+            AND c.relname = %(table_name)s AND c.relkind in
+            ('r', 'v', 'm', 'f', 'p')
+        ]
+[parameters: {'schema': 'public', 'table_name': 'transactions'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:44.734+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table transactions: (psycopg2.errors.IoError) could not open file "base/16384/3455": Input/output error
+
+[SQL: 
+            SELECT c.oid
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE (n.nspname = %(schema)s)
+            AND c.relname = %(table_name)s AND c.relkind in
+            ('r', 'v', 'm', 'f', 'p')
+        ]
+[parameters: {'schema': 'public', 'table_name': 'transactions'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:44.736+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: log
+[2024-09-10T17:42:44.823+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2604": Input/output error
+
+[SQL: 
+            SELECT a.attname,
+              pg_catalog.format_type(a.atttypid, a.atttypmod),
+              (
+                SELECT pg_catalog.pg_get_expr(d.adbin, d.adrelid)
+                FROM pg_catalog.pg_attrdef d
+                WHERE d.adrelid = a.attrelid AND d.adnum = a.attnum
+                AND a.atthasdef
+              ) AS DEFAULT,
+              a.attnotnull,
+              a.attrelid as table_oid,
+              pgd.description as comment,
+              a.attgenerated as generated,
+                              (SELECT json_build_object(
+                    'always', a.attidentity = 'a',
+                    'start', s.seqstart,
+                    'increment', s.seqincrement,
+                    'minvalue', s.seqmin,
+                    'maxvalue', s.seqmax,
+                    'cache', s.seqcache,
+                    'cycle', s.seqcycle)
+                FROM pg_catalog.pg_sequence s
+                JOIN pg_catalog.pg_class c on s.seqrelid = c."oid"
+                WHERE c.relkind = 'S'
+                AND a.attidentity != ''
+                AND s.seqrelid = pg_catalog.pg_get_serial_sequence(
+                    a.attrelid::regclass::text, a.attname
+                )::regclass::oid
+                ) as identity_options                
+            FROM pg_catalog.pg_attribute a
+            LEFT JOIN pg_catalog.pg_description pgd ON (
+                pgd.objoid = a.attrelid AND pgd.objsubid = a.attnum)
+            WHERE a.attrelid = %(table_oid)s
+            AND a.attnum > 0 AND NOT a.attisdropped
+            ORDER BY a.attnum
+        ]
+[parameters: {'table_oid': 16434}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:44.826+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table orderdetails: (psycopg2.errors.IoError) could not open file "base/16384/2604": Input/output error
+
+[SQL: 
+            SELECT a.attname,
+              pg_catalog.format_type(a.atttypid, a.atttypmod),
+              (
+                SELECT pg_catalog.pg_get_expr(d.adbin, d.adrelid)
+                FROM pg_catalog.pg_attrdef d
+                WHERE d.adrelid = a.attrelid AND d.adnum = a.attnum
+                AND a.atthasdef
+              ) AS DEFAULT,
+              a.attnotnull,
+              a.attrelid as table_oid,
+              pgd.description as comment,
+              a.attgenerated as generated,
+                              (SELECT json_build_object(
+                    'always', a.attidentity = 'a',
+                    'start', s.seqstart,
+                    'increment', s.seqincrement,
+                    'minvalue', s.seqmin,
+                    'maxvalue', s.seqmax,
+                    'cache', s.seqcache,
+                    'cycle', s.seqcycle)
+                FROM pg_catalog.pg_sequence s
+                JOIN pg_catalog.pg_class c on s.seqrelid = c."oid"
+                WHERE c.relkind = 'S'
+                AND a.attidentity != ''
+                AND s.seqrelid = pg_catalog.pg_get_serial_sequence(
+                    a.attrelid::regclass::text, a.attname
+                )::regclass::oid
+                ) as identity_options                
+            FROM pg_catalog.pg_attribute a
+            LEFT JOIN pg_catalog.pg_description pgd ON (
+                pgd.objoid = a.attrelid AND pgd.objsubid = a.attnum)
+            WHERE a.attrelid = %(table_oid)s
+            AND a.attnum > 0 AND NOT a.attisdropped
+            ORDER BY a.attnum
+        ]
+[parameters: {'table_oid': 16434}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:44.837+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_priority_parsing_request
+[2024-09-10T17:42:44.945+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2667": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 16397}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:44.951+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table products: (psycopg2.errors.IoError) could not open file "base/16384/2667": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 16397}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:44.954+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: job
+[2024-09-10T17:42:45.072+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table productsuppliers
+[2024-09-10T17:42:45.073+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: anomalies1
+[2024-09-10T17:42:46.138+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2678": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 83847}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:46.145+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2658": Input/output error
+
+[SQL: 
+            SELECT a.attname,
+              pg_catalog.format_type(a.atttypid, a.atttypmod),
+              (
+                SELECT pg_catalog.pg_get_expr(d.adbin, d.adrelid)
+                FROM pg_catalog.pg_attrdef d
+                WHERE d.adrelid = a.attrelid AND d.adnum = a.attnum
+                AND a.atthasdef
+              ) AS DEFAULT,
+              a.attnotnull,
+              a.attrelid as table_oid,
+              pgd.description as comment,
+              a.attgenerated as generated,
+                              (SELECT json_build_object(
+                    'always', a.attidentity = 'a',
+                    'start', s.seqstart,
+                    'increment', s.seqincrement,
+                    'minvalue', s.seqmin,
+                    'maxvalue', s.seqmax,
+                    'cache', s.seqcache,
+                    'cycle', s.seqcycle)
+                FROM pg_catalog.pg_sequence s
+                JOIN pg_catalog.pg_class c on s.seqrelid = c."oid"
+                WHERE c.relkind = 'S'
+                AND a.attidentity != ''
+                AND s.seqrelid = pg_catalog.pg_get_serial_sequence(
+                    a.attrelid::regclass::text, a.attname
+                )::regclass::oid
+                ) as identity_options                
+            FROM pg_catalog.pg_attribute a
+            LEFT JOIN pg_catalog.pg_description pgd ON (
+                pgd.objoid = a.attrelid AND pgd.objsubid = a.attnum)
+            WHERE a.attrelid = %(table_oid)s
+            AND a.attnum > 0 AND NOT a.attisdropped
+            ORDER BY a.attnum
+        ]
+[parameters: {'table_oid': 98634}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:46.151+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table anomalies: (psycopg2.errors.IoError) could not open file "base/16384/2678": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 83847}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:46.156+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: slot_pool
+[2024-09-10T17:42:46.154+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table log: (psycopg2.errors.IoError) could not open file "base/16384/2658": Input/output error
+
+[SQL: 
+            SELECT a.attname,
+              pg_catalog.format_type(a.atttypid, a.atttypmod),
+              (
+                SELECT pg_catalog.pg_get_expr(d.adbin, d.adrelid)
+                FROM pg_catalog.pg_attrdef d
+                WHERE d.adrelid = a.attrelid AND d.adnum = a.attnum
+                AND a.atthasdef
+              ) AS DEFAULT,
+              a.attnotnull,
+              a.attrelid as table_oid,
+              pgd.description as comment,
+              a.attgenerated as generated,
+                              (SELECT json_build_object(
+                    'always', a.attidentity = 'a',
+                    'start', s.seqstart,
+                    'increment', s.seqincrement,
+                    'minvalue', s.seqmin,
+                    'maxvalue', s.seqmax,
+                    'cache', s.seqcache,
+                    'cycle', s.seqcycle)
+                FROM pg_catalog.pg_sequence s
+                JOIN pg_catalog.pg_class c on s.seqrelid = c."oid"
+                WHERE c.relkind = 'S'
+                AND a.attidentity != ''
+                AND s.seqrelid = pg_catalog.pg_get_serial_sequence(
+                    a.attrelid::regclass::text, a.attname
+                )::regclass::oid
+                ) as identity_options                
+            FROM pg_catalog.pg_attribute a
+            LEFT JOIN pg_catalog.pg_description pgd ON (
+                pgd.objoid = a.attrelid AND pgd.objsubid = a.attnum)
+            WHERE a.attrelid = %(table_oid)s
+            AND a.attnum > 0 AND NOT a.attisdropped
+            ORDER BY a.attnum
+        ]
+[parameters: {'table_oid': 98634}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:46.163+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: callback_request
+[2024-09-10T17:42:46.707+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2703": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        ]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:46.713+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table job: (psycopg2.errors.IoError) could not open file "base/16384/2703": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        ]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:46.735+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_code
+[2024-09-10T17:42:46.921+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dag_priority_parsing_request
+[2024-09-10T17:42:46.924+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_pickle
+[2024-09-10T17:42:48.696+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2606": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98677}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:48.705+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table callback_request: (psycopg2.errors.IoError) could not open file "base/16384/2606": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98677}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:48.721+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2579": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98666}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:48.727+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: ab_user
+[2024-09-10T17:42:48.743+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table slot_pool: (psycopg2.errors.IoError) could not open file "base/16384/2579": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98666}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:48.755+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: ab_register_user
+[2024-09-10T17:42:49.303+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/3501": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:49.309+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table dag_pickle: (psycopg2.errors.IoError) could not open file "base/16384/3501": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:49.317+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: connection
+[2024-09-10T17:42:49.313+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/1259_vm": Input/output error
+
+[SQL: 
+          SELECT r.conname,
+                pg_catalog.pg_get_constraintdef(r.oid, true) as condef,
+                n.nspname as conschema
+          FROM  pg_catalog.pg_constraint r,
+                pg_namespace n,
+                pg_class c
+
+          WHERE r.conrelid = %(table)s AND
+                r.contype = 'f' AND
+                c.oid = confrelid AND
+                n.oid = c.relnamespace
+          ORDER BY 1
+        ]
+[parameters: {'table': 98694}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:49.328+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table dag_code: (psycopg2.errors.IoError) could not open file "base/16384/1259_vm": Input/output error
+
+[SQL: 
+          SELECT r.conname,
+                pg_catalog.pg_get_constraintdef(r.oid, true) as condef,
+                n.nspname as conschema
+          FROM  pg_catalog.pg_constraint r,
+                pg_namespace n,
+                pg_class c
+
+          WHERE r.conrelid = %(table)s AND
+                r.contype = 'f' AND
+                c.oid = confrelid AND
+                n.oid = c.relnamespace
+          ORDER BY 1
+        ]
+[parameters: {'table': 98694}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:49.330+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: sla_miss
+[2024-09-10T17:42:49.637+0000] {Dag_detect_1FN_anomaly.py:88} INFO - Inserted 2 anomalies for table anomalies1
+[2024-09-10T17:42:49.646+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: variable
+[2024-09-10T17:42:51.426+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2606": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98748}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:51.436+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table ab_user: (psycopg2.errors.IoError) could not open file "base/16384/2606": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98748}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:51.438+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2665": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98772}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:51.460+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: import_error
+[2024-09-10T17:42:51.478+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table ab_register_user: (psycopg2.errors.IoError) could not open file "base/16384/2665": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98772}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:51.501+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: serialized_dag
+[2024-09-10T17:42:52.083+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2663": Input/output error
+
+[SQL: 
+            SELECT c.oid
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE (n.nspname = %(schema)s)
+            AND c.relname = %(table_name)s AND c.relkind in
+            ('r', 'v', 'm', 'f', 'p')
+        ]
+[parameters: {'schema': 'public', 'table_name': 'variable'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:52.087+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2651": Input/output error
+
+[SQL: 
+              SELECT
+                  i.relname as relname,
+                  ix.indisunique, ix.indexprs,
+                  a.attname, a.attnum, c.conrelid, ix.indkey::varchar,
+                  ix.indoption::varchar, i.reloptions, am.amname,
+                  pg_get_expr(ix.indpred, ix.indrelid),
+                  ix.indnkeyatts as indnkeyatts
+              FROM
+                  pg_class t
+                        join pg_index ix on t.oid = ix.indrelid
+                        join pg_class i on i.oid = ix.indexrelid
+                        left outer join
+                            pg_attribute a
+                            on t.oid = a.attrelid and a.attnum = ANY(ix.indkey)
+                        left outer join
+                            pg_constraint c
+                            on (ix.indrelid = c.conrelid and
+                                ix.indexrelid = c.conindid and
+                                c.contype in ('p', 'u', 'x'))
+                        left outer join
+                            pg_am am
+                            on i.relam = am.oid
+              WHERE
+                  t.relkind IN ('r', 'v', 'f', 'm', 'p')
+                  and t.oid = %(table_oid)s
+                  and ix.indisprimary = 'f'
+              ORDER BY
+                  t.relname,
+                  i.relname
+            ]
+[parameters: {'table_oid': 98784}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:52.095+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table variable: (psycopg2.errors.IoError) could not open file "base/16384/2663": Input/output error
+
+[SQL: 
+            SELECT c.oid
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE (n.nspname = %(schema)s)
+            AND c.relname = %(table_name)s AND c.relkind in
+            ('r', 'v', 'm', 'f', 'p')
+        ]
+[parameters: {'schema': 'public', 'table_name': 'variable'}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:52.105+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table connection: (psycopg2.errors.IoError) could not open file "base/16384/2651": Input/output error
+
+[SQL: 
+              SELECT
+                  i.relname as relname,
+                  ix.indisunique, ix.indexprs,
+                  a.attname, a.attnum, c.conrelid, ix.indkey::varchar,
+                  ix.indoption::varchar, i.reloptions, am.amname,
+                  pg_get_expr(ix.indpred, ix.indrelid),
+                  ix.indnkeyatts as indnkeyatts
+              FROM
+                  pg_class t
+                        join pg_index ix on t.oid = ix.indrelid
+                        join pg_class i on i.oid = ix.indexrelid
+                        left outer join
+                            pg_attribute a
+                            on t.oid = a.attrelid and a.attnum = ANY(ix.indkey)
+                        left outer join
+                            pg_constraint c
+                            on (ix.indrelid = c.conrelid and
+                                ix.indexrelid = c.conindid and
+                                c.contype in ('p', 'u', 'x'))
+                        left outer join
+                            pg_am am
+                            on i.relam = am.oid
+              WHERE
+                  t.relkind IN ('r', 'v', 'f', 'm', 'p')
+                  and t.oid = %(table_oid)s
+                  and ix.indisprimary = 'f'
+              ORDER BY
+                  t.relname,
+                  i.relname
+            ]
+[parameters: {'table_oid': 98784}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:52.114+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dataset_alias_dataset
+[2024-09-10T17:42:52.112+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dataset_alias
+[2024-09-10T17:42:52.451+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table sla_miss
+[2024-09-10T17:42:52.456+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dataset
+[2024-09-10T17:42:54.073+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/98823": Input/output error
+
+[SQL: SELECT public.import_error.id, public.import_error.timestamp, public.import_error.filename, public.import_error.stacktrace, public.import_error.processor_subdir 
+FROM public.import_error]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:54.077+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table import_error: (psycopg2.errors.IoError) could not open file "base/16384/98823": Input/output error
+
+[SQL: SELECT public.import_error.id, public.import_error.timestamp, public.import_error.filename, public.import_error.stacktrace, public.import_error.processor_subdir 
+FROM public.import_error]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:54.079+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dataset_alias_dataset_event
+[2024-09-10T17:42:54.091+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2601_vm": Input/output error
+
+[SQL: 
+              SELECT
+                  i.relname as relname,
+                  ix.indisunique, ix.indexprs,
+                  a.attname, a.attnum, c.conrelid, ix.indkey::varchar,
+                  ix.indoption::varchar, i.reloptions, am.amname,
+                  pg_get_expr(ix.indpred, ix.indrelid),
+                  ix.indnkeyatts as indnkeyatts
+              FROM
+                  pg_class t
+                        join pg_index ix on t.oid = ix.indrelid
+                        join pg_class i on i.oid = ix.indexrelid
+                        left outer join
+                            pg_attribute a
+                            on t.oid = a.attrelid and a.attnum = ANY(ix.indkey)
+                        left outer join
+                            pg_constraint c
+                            on (ix.indrelid = c.conrelid and
+                                ix.indexrelid = c.conindid and
+                                c.contype in ('p', 'u', 'x'))
+                        left outer join
+                            pg_am am
+                            on i.relam = am.oid
+              WHERE
+                  t.relkind IN ('r', 'v', 'f', 'm', 'p')
+                  and t.oid = %(table_oid)s
+                  and ix.indisprimary = 'f'
+              ORDER BY
+                  t.relname,
+                  i.relname
+            ]
+[parameters: {'table_oid': 98831}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:54.109+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table serialized_dag: (psycopg2.errors.IoError) could not open file "base/16384/2601_vm": Input/output error
+
+[SQL: 
+              SELECT
+                  i.relname as relname,
+                  ix.indisunique, ix.indexprs,
+                  a.attname, a.attnum, c.conrelid, ix.indkey::varchar,
+                  ix.indoption::varchar, i.reloptions, am.amname,
+                  pg_get_expr(ix.indpred, ix.indrelid),
+                  ix.indnkeyatts as indnkeyatts
+              FROM
+                  pg_class t
+                        join pg_index ix on t.oid = ix.indrelid
+                        join pg_class i on i.oid = ix.indexrelid
+                        left outer join
+                            pg_attribute a
+                            on t.oid = a.attrelid and a.attnum = ANY(ix.indkey)
+                        left outer join
+                            pg_constraint c
+                            on (ix.indrelid = c.conrelid and
+                                ix.indexrelid = c.conindid and
+                                c.contype in ('p', 'u', 'x'))
+                        left outer join
+                            pg_am am
+                            on i.relam = am.oid
+              WHERE
+                  t.relkind IN ('r', 'v', 'f', 'm', 'p')
+                  and t.oid = %(table_oid)s
+                  and ix.indisprimary = 'f'
+              ORDER BY
+                  t.relname,
+                  i.relname
+            ]
+[parameters: {'table_oid': 98831}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:54.113+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dataset_event
+[2024-09-10T17:42:54.692+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dataset_alias
+[2024-09-10T17:42:54.694+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_schedule_dataset_alias_reference
+[2024-09-10T17:42:54.883+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dataset_alias_dataset
+[2024-09-10T17:42:54.890+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag
+[2024-09-10T17:42:55.080+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dataset
+[2024-09-10T17:42:55.087+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_schedule_dataset_reference
+[2024-09-10T17:42:57.663+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2610": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 98623}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:57.689+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table dataset_event: (psycopg2.errors.IoError) could not open file "base/16384/2610": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 98623}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:57.692+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: task_outlet_dataset_reference
+[2024-09-10T17:42:58.197+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dataset_alias_dataset_event
+[2024-09-10T17:42:58.206+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dataset_dag_run_queue
+[2024-09-10T17:42:59.071+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/3502": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:59.076+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table dag_schedule_dataset_alias_reference: (psycopg2.errors.IoError) could not open file "base/16384/3502": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:42:59.079+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: log_template
+[2024-09-10T17:43:00.456+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dag_schedule_dataset_reference
+[2024-09-10T17:43:00.459+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_run
+[2024-09-10T17:43:01.148+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2610": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 98925}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:01.156+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table task_outlet_dataset_reference: (psycopg2.errors.IoError) could not open file "base/16384/2610": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 98925}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:01.157+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/1247": Input/output error
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:01.186+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table dag: cannot access local variable 'connection' where it is not associated with a value
+[2024-09-10T17:43:01.190+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_owner_attributes
+[2024-09-10T17:43:01.176+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_tag
+[2024-09-10T17:43:01.542+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dataset_dag_run_queue
+[2024-09-10T17:43:01.555+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: ab_permission
+[2024-09-10T17:43:01.623+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.OperationalError) connection to server at "172.19.0.3", port 5432 failed: FATAL:  could not open file "base/16384/PG_VERSION": Input/output error
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:01.629+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table dag_run: (psycopg2.OperationalError) connection to server at "172.19.0.3", port 5432 failed: FATAL:  could not open file "base/16384/PG_VERSION": Input/output error
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:01.636+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/1247": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        ]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:01.656+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table log_template: (psycopg2.errors.IoError) could not open file "base/16384/1247": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        ]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:01.660+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: ab_view_menu
+[2024-09-10T17:43:01.638+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: ab_permission_view
+[2024-09-10T17:43:03.595+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/3501": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:03.636+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table dag_tag: (psycopg2.errors.IoError) could not open file "base/16384/3501": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:03.639+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: ab_user_role
+[2024-09-10T17:43:03.828+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dag_owner_attributes
+[2024-09-10T17:43:03.835+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: ab_role
+[2024-09-10T17:43:04.420+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/3534": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:04.423+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table ab_view_menu: (psycopg2.errors.IoError) could not open file "base/16384/3534": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:04.425+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2666": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98721}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:04.443+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table ab_permission: (psycopg2.errors.IoError) could not open file "base/16384/2666": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 98721}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:04.447+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dagrun_dataset_event
+[2024-09-10T17:43:04.425+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_warning
+[2024-09-10T17:43:04.442+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2610": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 99006}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:04.495+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table ab_permission_view: (psycopg2.errors.IoError) could not open file "base/16384/2610": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 99006}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:04.502+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: trigger
+[2024-09-10T17:43:07.143+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2610": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 99025}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:07.147+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table ab_user_role: (psycopg2.errors.IoError) could not open file "base/16384/2610": Input/output error
+
+[SQL: 
+                SELECT a.attname
+                FROM pg_attribute a JOIN (
+                    SELECT unnest(ix.indkey) attnum,
+                           generate_subscripts(ix.indkey, 1) ord
+                    FROM pg_index ix
+                    WHERE ix.indrelid = %(table_oid)s AND ix.indisprimary
+                    ) k ON a.attnum=k.attnum
+                WHERE a.attrelid = %(table_oid)s
+                ORDER BY k.ord
+            ]
+[parameters: {'table_oid': 99025}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:07.150+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: task_instance
+[2024-09-10T17:43:07.166+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/3503": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:07.170+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table ab_role: (psycopg2.errors.IoError) could not open file "base/16384/3503": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               -- no enum defaults in 8.4 at least
+               -- t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema",
+               e.enumlabel as "label"
+            FROM pg_catalog.pg_type t
+                 LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+                 LEFT JOIN pg_catalog.pg_enum e ON t.oid = e.enumtypid
+            WHERE t.typtype = 'e'
+        ORDER BY "schema", "name", e.oid]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:07.172+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: dag_run_note
+[2024-09-10T17:43:07.202+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.OperationalError) connection to server at "172.19.0.3", port 5432 failed: FATAL:  could not open file "global/pg_filenode.map": Input/output error
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:07.220+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table task_instance: cannot access local variable 'connection' where it is not associated with a value
+[2024-09-10T17:43:07.224+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: ab_permission_view_role
+[2024-09-10T17:43:08.025+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/99072": Input/output error
+
+[SQL: SELECT public.dagrun_dataset_event.dag_run_id, public.dagrun_dataset_event.event_id 
+FROM public.dagrun_dataset_event]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:08.030+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table dagrun_dataset_event: (psycopg2.errors.IoError) could not open file "base/16384/99072": Input/output error
+
+[SQL: SELECT public.dagrun_dataset_event.dag_run_id, public.dagrun_dataset_event.event_id 
+FROM public.dagrun_dataset_event]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:08.031+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: rendered_task_instance_fields
+[2024-09-10T17:43:08.038+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2651": Input/output error
+
+[SQL: 
+              SELECT
+                  i.relname as relname,
+                  ix.indisunique, ix.indexprs,
+                  a.attname, a.attnum, c.conrelid, ix.indkey::varchar,
+                  ix.indoption::varchar, i.reloptions, am.amname,
+                  pg_get_expr(ix.indpred, ix.indrelid),
+                  ix.indnkeyatts as indnkeyatts
+              FROM
+                  pg_class t
+                        join pg_index ix on t.oid = ix.indrelid
+                        join pg_class i on i.oid = ix.indexrelid
+                        left outer join
+                            pg_attribute a
+                            on t.oid = a.attrelid and a.attnum = ANY(ix.indkey)
+                        left outer join
+                            pg_constraint c
+                            on (ix.indrelid = c.conrelid and
+                                ix.indexrelid = c.conindid and
+                                c.contype in ('p', 'u', 'x'))
+                        left outer join
+                            pg_am am
+                            on i.relam = am.oid
+              WHERE
+                  t.relkind IN ('r', 'v', 'f', 'm', 'p')
+                  and t.oid = %(table_oid)s
+                  and ix.indisprimary = 'f'
+              ORDER BY
+                  t.relname,
+                  i.relname
+            ]
+[parameters: {'table_oid': 98803}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:08.044+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table trigger: (psycopg2.errors.IoError) could not open file "base/16384/2651": Input/output error
+
+[SQL: 
+              SELECT
+                  i.relname as relname,
+                  ix.indisunique, ix.indexprs,
+                  a.attname, a.attnum, c.conrelid, ix.indkey::varchar,
+                  ix.indoption::varchar, i.reloptions, am.amname,
+                  pg_get_expr(ix.indpred, ix.indrelid),
+                  ix.indnkeyatts as indnkeyatts
+              FROM
+                  pg_class t
+                        join pg_index ix on t.oid = ix.indrelid
+                        join pg_class i on i.oid = ix.indexrelid
+                        left outer join
+                            pg_attribute a
+                            on t.oid = a.attrelid and a.attnum = ANY(ix.indkey)
+                        left outer join
+                            pg_constraint c
+                            on (ix.indrelid = c.conrelid and
+                                ix.indexrelid = c.conindid and
+                                c.contype in ('p', 'u', 'x'))
+                        left outer join
+                            pg_am am
+                            on i.relam = am.oid
+              WHERE
+                  t.relkind IN ('r', 'v', 'f', 'm', 'p')
+                  and t.oid = %(table_oid)s
+                  and ix.indisprimary = 'f'
+              ORDER BY
+                  t.relname,
+                  i.relname
+            ]
+[parameters: {'table_oid': 98803}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:08.053+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: task_fail
+[2024-09-10T17:43:08.052+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.OperationalError) connection to server at "172.19.0.3", port 5432 failed: FATAL:  could not open file "global/pg_filenode.map": Input/output error
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:08.061+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table rendered_task_instance_fields: cannot access local variable 'connection' where it is not associated with a value
+[2024-09-10T17:43:08.064+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: task_map
+[2024-09-10T17:43:08.131+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dag_warning
+[2024-09-10T17:43:08.134+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: task_reschedule
+[2024-09-10T17:43:09.329+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2606": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 99117}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:09.336+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table ab_permission_view_role: (psycopg2.errors.IoError) could not open file "base/16384/2606": Input/output error
+
+[SQL: 
+        SELECT conname
+           FROM  pg_catalog.pg_constraint r
+           WHERE r.conrelid = %(table_oid)s AND r.contype = 'p'
+           ORDER BY 1
+        ]
+[parameters: {'table_oid': 99117}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:09.345+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: xcom
+[2024-09-10T17:43:09.539+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_detect_1FN_anomaly.py:47 SAWarning: Skipped unsupported reflection of expression-based index idx_ab_user_username
+[2024-09-10T17:43:09.627+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table dag_run_note
+[2024-09-10T17:43:09.631+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: task_instance_note
+[2024-09-10T17:43:10.250+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2704": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        ]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:10.256+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table task_reschedule: (psycopg2.errors.IoError) could not open file "base/16384/2704": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        ]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:10.260+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: task_instance_history
+[2024-09-10T17:43:10.266+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.OperationalError) connection to server at "172.19.0.3", port 5432 failed: FATAL:  could not open file "base/16384/2601": Input/output error
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:10.285+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table xcom: cannot access local variable 'connection' where it is not associated with a value
+[2024-09-10T17:43:10.286+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: session
+[2024-09-10T17:43:10.284+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.OperationalError) connection to server at "172.19.0.3", port 5432 failed: FATAL:  could not open file "global/pg_filenode.map": Input/output error
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:10.292+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table task_instance_history: cannot access local variable 'connection' where it is not associated with a value
+[2024-09-10T17:43:10.293+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: alembic_version
+[2024-09-10T17:43:10.539+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table task_map
+[2024-09-10T17:43:10.541+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: orders
+[2024-09-10T17:43:10.692+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table task_fail
+[2024-09-10T17:43:10.693+0000] {Dag_detect_1FN_anomaly.py:83} INFO - Processing table: anomalieDetected
+[2024-09-10T17:43:12.070+0000] {logging_mixin.py:190} WARNING - /opt/airflow/dags/Dag_detect_1FN_anomaly.py:47 SAWarning: Skipped unsupported reflection of expression-based index idx_ab_user_username
+[2024-09-10T17:43:12.090+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/2657": Input/output error
+
+[SQL: 
+            SELECT a.attname,
+              pg_catalog.format_type(a.atttypid, a.atttypmod),
+              (
+                SELECT pg_catalog.pg_get_expr(d.adbin, d.adrelid)
+                FROM pg_catalog.pg_attrdef d
+                WHERE d.adrelid = a.attrelid AND d.adnum = a.attnum
+                AND a.atthasdef
+              ) AS DEFAULT,
+              a.attnotnull,
+              a.attrelid as table_oid,
+              pgd.description as comment,
+              a.attgenerated as generated,
+                              (SELECT json_build_object(
+                    'always', a.attidentity = 'a',
+                    'start', s.seqstart,
+                    'increment', s.seqincrement,
+                    'minvalue', s.seqmin,
+                    'maxvalue', s.seqmax,
+                    'cache', s.seqcache,
+                    'cycle', s.seqcycle)
+                FROM pg_catalog.pg_sequence s
+                JOIN pg_catalog.pg_class c on s.seqrelid = c."oid"
+                WHERE c.relkind = 'S'
+                AND a.attidentity != ''
+                AND s.seqrelid = pg_catalog.pg_get_serial_sequence(
+                    a.attrelid::regclass::text, a.attname
+                )::regclass::oid
+                ) as identity_options                
+            FROM pg_catalog.pg_attribute a
+            LEFT JOIN pg_catalog.pg_description pgd ON (
+                pgd.objoid = a.attrelid AND pgd.objsubid = a.attnum)
+            WHERE a.attrelid = %(table_oid)s
+            AND a.attnum > 0 AND NOT a.attisdropped
+            ORDER BY a.attnum
+        ]
+[parameters: {'table_oid': 99260}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:12.091+0000] {Dag_detect_1FN_anomaly.py:32} ERROR - Erreur de connexion à la base de données: (psycopg2.errors.IoError) could not open file "base/16384/1247": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        ]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:12.095+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table session: (psycopg2.errors.IoError) could not open file "base/16384/1247": Input/output error
+
+[SQL: 
+            SELECT t.typname as "name",
+               pg_catalog.format_type(t.typbasetype, t.typtypmod) as "attype",
+               not t.typnotnull as "nullable",
+               t.typdefault as "default",
+               pg_catalog.pg_type_is_visible(t.oid) as "visible",
+               n.nspname as "schema"
+            FROM pg_catalog.pg_type t
+               LEFT JOIN pg_catalog.pg_namespace n ON n.oid = t.typnamespace
+            WHERE t.typtype = 'd'
+        ]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:12.094+0000] {Dag_detect_1FN_anomaly.py:92} ERROR - Error processing table alembic_version: (psycopg2.errors.IoError) could not open file "base/16384/2657": Input/output error
+
+[SQL: 
+            SELECT a.attname,
+              pg_catalog.format_type(a.atttypid, a.atttypmod),
+              (
+                SELECT pg_catalog.pg_get_expr(d.adbin, d.adrelid)
+                FROM pg_catalog.pg_attrdef d
+                WHERE d.adrelid = a.attrelid AND d.adnum = a.attnum
+                AND a.atthasdef
+              ) AS DEFAULT,
+              a.attnotnull,
+              a.attrelid as table_oid,
+              pgd.description as comment,
+              a.attgenerated as generated,
+                              (SELECT json_build_object(
+                    'always', a.attidentity = 'a',
+                    'start', s.seqstart,
+                    'increment', s.seqincrement,
+                    'minvalue', s.seqmin,
+                    'maxvalue', s.seqmax,
+                    'cache', s.seqcache,
+                    'cycle', s.seqcycle)
+                FROM pg_catalog.pg_sequence s
+                JOIN pg_catalog.pg_class c on s.seqrelid = c."oid"
+                WHERE c.relkind = 'S'
+                AND a.attidentity != ''
+                AND s.seqrelid = pg_catalog.pg_get_serial_sequence(
+                    a.attrelid::regclass::text, a.attname
+                )::regclass::oid
+                ) as identity_options                
+            FROM pg_catalog.pg_attribute a
+            LEFT JOIN pg_catalog.pg_description pgd ON (
+                pgd.objoid = a.attrelid AND pgd.objsubid = a.attnum)
+            WHERE a.attrelid = %(table_oid)s
+            AND a.attnum > 0 AND NOT a.attisdropped
+            ORDER BY a.attnum
+        ]
+[parameters: {'table_oid': 99260}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:12.161+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table task_instance_note
+[2024-09-10T17:43:12.436+0000] {Dag_detect_1FN_anomaly.py:90} INFO - No anomalies detected for table orders
+[2024-09-10T17:43:14.171+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.IoError: could not open file "base/16384/98660": Input/output error
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 207, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 335, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.errors.IoError) could not open file "base/16384/98660": Input/output error
+
+[SQL: SELECT job.id AS job_id, job.dag_id AS job_dag_id, job.state AS job_state, job.job_type AS job_job_type, job.start_date AS job_start_date, job.end_date AS job_end_date, job.latest_heartbeat AS job_latest_heartbeat, job.executor_class AS job_executor_class, job.hostname AS job_hostname, job.unixname AS job_unixname 
+FROM job 
+WHERE job.id = %(pk_1)s]
+[parameters: {'pk_1': 2956}]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:43:14.227+0000] {job.py:245} ERROR - Job heartbeat failed with error. Scheduler may go into unhealthy state
+[2024-09-10T17:43:19.461+0000] {job.py:229} INFO - Heartbeat recovered after 12.99 seconds
+[2024-09-10T17:45:20.213+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 207, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 335, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "***" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:45:20.418+0000] {job.py:254} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-09-10T17:45:27.798+0000] {job.py:229} INFO - Heartbeat recovered after 116.11 seconds
+[2024-09-10T17:47:04.898+0000] {job.py:229} INFO - Heartbeat recovered after 97.16 seconds
+[2024-09-10T17:48:37.068+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 207, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 335, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "***" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-09-10T17:49:19.397+0000] {job.py:254} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-09-10T17:49:19.497+0000] {local_task_job_runner.py:266} INFO - Task exited with return code -9For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#LocalTaskJob-killed
+[2024-09-10T17:49:20.594+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-10T17:49:20.600+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

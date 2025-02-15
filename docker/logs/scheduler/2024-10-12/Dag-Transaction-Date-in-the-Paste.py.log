@@ -1,0 +1,343 @@
+[2024-10-12T20:42:03.727+0000] {processor.py:186} INFO - Started process (PID=288) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:42:03.729+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:42:03.732+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:42:03.731+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:42:04.591+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:42:05.060+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:42:05.059+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:42:05.129+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:42:05.129+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:40:00+00:00, run_after=2024-10-12 20:45:00+00:00
+[2024-10-12T20:42:05.187+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.472 seconds
+[2024-10-12T20:42:35.500+0000] {processor.py:186} INFO - Started process (PID=374) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:42:35.502+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:42:35.505+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:42:35.504+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:42:36.191+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:42:36.312+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:42:36.312+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:42:36.378+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:42:36.378+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:40:00+00:00, run_after=2024-10-12 20:45:00+00:00
+[2024-10-12T20:42:36.415+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.923 seconds
+[2024-10-12T20:43:07.302+0000] {processor.py:186} INFO - Started process (PID=461) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:43:07.303+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:43:07.306+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:43:07.305+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:43:08.194+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:43:08.339+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:43:08.338+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:43:08.391+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:43:08.390+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:40:00+00:00, run_after=2024-10-12 20:45:00+00:00
+[2024-10-12T20:43:08.439+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.146 seconds
+[2024-10-12T20:43:39.401+0000] {processor.py:186} INFO - Started process (PID=544) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:43:39.403+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:43:39.405+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:43:39.404+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:43:40.233+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:43:40.393+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:43:40.392+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:43:40.463+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:43:40.462+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:40:00+00:00, run_after=2024-10-12 20:45:00+00:00
+[2024-10-12T20:43:40.511+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.120 seconds
+[2024-10-12T20:44:11.994+0000] {processor.py:186} INFO - Started process (PID=634) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:44:11.996+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:44:11.998+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:44:11.998+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:44:12.730+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:44:12.889+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:44:12.887+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:44:12.950+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:44:12.950+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:40:00+00:00, run_after=2024-10-12 20:45:00+00:00
+[2024-10-12T20:44:12.995+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.012 seconds
+[2024-10-12T20:44:43.353+0000] {processor.py:186} INFO - Started process (PID=719) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:44:43.355+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:44:43.357+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:44:43.356+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:44:44.071+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:44:44.223+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:44:44.221+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:44:44.299+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:44:44.297+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:40:00+00:00, run_after=2024-10-12 20:45:00+00:00
+[2024-10-12T20:44:44.366+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.021 seconds
+[2024-10-12T20:45:53.722+0000] {processor.py:186} INFO - Started process (PID=847) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:45:53.724+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:45:53.728+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:45:53.727+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:45:54.634+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:45:54.777+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:45:54.776+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:45:54.823+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:45:54.822+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:45:00+00:00, run_after=2024-10-12 20:50:00+00:00
+[2024-10-12T20:45:54.866+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.158 seconds
+[2024-10-12T20:46:25.395+0000] {processor.py:186} INFO - Started process (PID=932) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:46:25.401+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:46:25.403+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:46:25.403+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:46:26.068+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:46:26.268+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:46:26.267+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:46:26.332+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:46:26.332+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:45:00+00:00, run_after=2024-10-12 20:50:00+00:00
+[2024-10-12T20:46:26.385+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.000 seconds
+[2024-10-12T20:46:57.417+0000] {processor.py:186} INFO - Started process (PID=1016) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:46:57.419+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:46:57.420+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:46:57.420+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:46:58.475+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:46:58.742+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:46:58.741+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:46:58.832+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:46:58.832+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:45:00+00:00, run_after=2024-10-12 20:50:00+00:00
+[2024-10-12T20:46:58.907+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.497 seconds
+[2024-10-12T20:47:39.134+0000] {processor.py:186} INFO - Started process (PID=1171) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:47:39.140+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:47:39.144+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:47:39.143+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:47:40.038+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:47:40.157+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:47:40.156+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:47:40.221+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:47:40.219+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:45:00+00:00, run_after=2024-10-12 20:50:00+00:00
+[2024-10-12T20:47:40.271+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.149 seconds
+[2024-10-12T20:48:11.092+0000] {processor.py:186} INFO - Started process (PID=1256) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:48:11.096+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:48:11.100+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:48:11.099+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:48:11.694+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:48:11.839+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:48:11.838+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:48:11.899+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:48:11.899+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:45:00+00:00, run_after=2024-10-12 20:50:00+00:00
+[2024-10-12T20:48:11.946+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.878 seconds
+[2024-10-12T20:48:42.742+0000] {processor.py:186} INFO - Started process (PID=1341) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:48:42.744+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:48:42.748+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:48:42.747+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:48:43.332+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:48:43.489+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:48:43.488+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:48:43.568+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:48:43.567+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:45:00+00:00, run_after=2024-10-12 20:50:00+00:00
+[2024-10-12T20:48:43.613+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.885 seconds
+[2024-10-12T20:49:14.395+0000] {processor.py:186} INFO - Started process (PID=1426) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:49:14.397+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:49:14.400+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:49:14.400+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:49:14.918+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:49:15.080+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:49:15.079+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:49:15.160+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:49:15.160+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:45:00+00:00, run_after=2024-10-12 20:50:00+00:00
+[2024-10-12T20:49:15.199+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.815 seconds
+[2024-10-12T20:49:46.253+0000] {processor.py:186} INFO - Started process (PID=1516) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:49:46.255+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:49:46.257+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:49:46.256+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:49:46.693+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:49:46.838+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:49:46.838+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:49:46.889+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:49:46.889+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:45:00+00:00, run_after=2024-10-12 20:50:00+00:00
+[2024-10-12T20:49:46.946+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.702 seconds
+[2024-10-12T20:50:30.600+0000] {processor.py:186} INFO - Started process (PID=1638) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:50:30.603+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:50:30.606+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:50:30.605+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:50:31.499+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:50:31.669+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:50:31.666+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:50:31.754+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:50:31.752+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:50:00+00:00, run_after=2024-10-12 20:55:00+00:00
+[2024-10-12T20:50:31.798+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.224 seconds
+[2024-10-12T20:52:04.605+0000] {processor.py:186} INFO - Started process (PID=1786) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:52:04.607+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:52:04.609+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:52:04.609+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:52:05.067+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:52:05.242+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:52:05.241+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:52:05.294+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:52:05.294+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:50:00+00:00, run_after=2024-10-12 20:55:00+00:00
+[2024-10-12T20:52:05.343+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.745 seconds
+[2024-10-12T20:52:35.629+0000] {processor.py:186} INFO - Started process (PID=1869) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:52:35.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:52:35.639+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:52:35.638+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:52:36.161+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:52:36.328+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:52:36.326+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:52:36.378+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:52:36.378+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:50:00+00:00, run_after=2024-10-12 20:55:00+00:00
+[2024-10-12T20:52:36.419+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.802 seconds
+[2024-10-12T20:53:06.771+0000] {processor.py:186} INFO - Started process (PID=1954) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:53:06.772+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:53:06.775+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:53:06.774+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:53:07.286+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:53:07.455+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:53:07.454+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:53:07.513+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:53:07.512+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:50:00+00:00, run_after=2024-10-12 20:55:00+00:00
+[2024-10-12T20:53:07.554+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.793 seconds
+[2024-10-12T20:53:37.731+0000] {processor.py:186} INFO - Started process (PID=2039) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:53:37.734+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:53:37.738+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:53:37.737+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:53:38.411+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:53:38.612+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:53:38.610+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:53:38.678+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:53:38.678+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:50:00+00:00, run_after=2024-10-12 20:55:00+00:00
+[2024-10-12T20:53:38.733+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.023 seconds
+[2024-10-12T20:54:09.050+0000] {processor.py:186} INFO - Started process (PID=2123) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:54:09.053+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:54:09.055+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:54:09.054+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:54:09.474+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:54:09.688+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:54:09.687+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:54:09.768+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:54:09.767+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:50:00+00:00, run_after=2024-10-12 20:55:00+00:00
+[2024-10-12T20:54:09.827+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.785 seconds
+[2024-10-12T20:54:40.018+0000] {processor.py:186} INFO - Started process (PID=2209) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:54:40.021+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:54:40.025+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:54:40.024+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:54:40.499+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:54:40.629+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:54:40.629+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:54:40.674+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:54:40.674+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:50:00+00:00, run_after=2024-10-12 20:55:00+00:00
+[2024-10-12T20:54:40.716+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.721 seconds
+[2024-10-12T20:55:13.250+0000] {processor.py:186} INFO - Started process (PID=2334) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:55:13.256+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:55:13.258+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:55:13.258+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:55:13.760+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:55:13.946+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:55:13.946+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:55:14.013+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:55:14.013+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:55:14.081+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.839 seconds
+[2024-10-12T20:55:44.365+0000] {processor.py:186} INFO - Started process (PID=2421) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:55:44.366+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:55:44.368+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:55:44.368+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:55:44.822+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:55:45.015+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:55:45.014+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:55:45.071+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:55:45.070+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:55:45.115+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.758 seconds
+[2024-10-12T20:56:15.309+0000] {processor.py:186} INFO - Started process (PID=2504) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:56:15.311+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:56:15.316+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:56:15.315+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:56:15.894+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:56:16.117+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:56:16.115+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:56:16.176+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:56:16.175+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:56:16.240+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.939 seconds
+[2024-10-12T20:56:47.220+0000] {processor.py:186} INFO - Started process (PID=2589) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:56:47.222+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:56:47.224+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:56:47.224+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:56:47.749+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:56:47.956+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:56:47.955+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:56:48.021+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:56:48.020+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:56:48.066+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.856 seconds
+[2024-10-12T20:57:18.602+0000] {processor.py:186} INFO - Started process (PID=2679) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:57:18.603+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:57:18.605+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:57:18.605+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:57:19.117+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:57:19.301+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:57:19.300+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:57:19.365+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:57:19.365+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:57:19.414+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.823 seconds
+[2024-10-12T20:57:49.715+0000] {processor.py:186} INFO - Started process (PID=2764) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:57:49.716+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:57:49.720+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:57:49.718+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:57:50.288+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:57:50.467+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:57:50.466+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:57:50.546+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:57:50.546+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:57:50.596+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.890 seconds
+[2024-10-12T20:58:21.290+0000] {processor.py:186} INFO - Started process (PID=2856) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:58:21.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:58:21.295+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:58:21.294+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:58:21.808+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:58:21.969+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:58:21.968+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:58:22.033+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:58:22.033+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:58:22.097+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.819 seconds
+[2024-10-12T20:58:52.929+0000] {processor.py:186} INFO - Started process (PID=2934) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:58:52.931+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:58:52.932+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:58:52.932+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:58:53.342+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:58:53.570+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:58:53.570+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:58:53.624+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:58:53.623+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:58:53.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.741 seconds
+[2024-10-12T20:59:24.235+0000] {processor.py:186} INFO - Started process (PID=3014) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:59:24.237+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:59:24.239+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:59:24.239+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:59:24.690+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:59:24.822+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:59:24.821+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:59:24.869+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:59:24.869+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:59:24.907+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.683 seconds
+[2024-10-12T20:59:55.389+0000] {processor.py:186} INFO - Started process (PID=3099) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:59:55.391+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T20:59:55.393+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:59:55.392+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:59:55.945+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T20:59:56.087+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:59:56.086+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T20:59:56.139+0000] {logging_mixin.py:190} INFO - [2024-10-12T20:59:56.138+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 20:55:00+00:00, run_after=2024-10-12 21:00:00+00:00
+[2024-10-12T20:59:56.179+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.799 seconds
+[2024-10-12T21:02:19.021+0000] {processor.py:186} INFO - Started process (PID=3331) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:02:19.025+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:02:19.042+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:02:19.041+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:02:20.293+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:02:21.139+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:02:21.136+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:02:21.328+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:02:21.328+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:00:00+00:00, run_after=2024-10-12 21:05:00+00:00
+[2024-10-12T21:02:21.430+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 2.445 seconds
+[2024-10-12T21:02:51.622+0000] {processor.py:186} INFO - Started process (PID=3423) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:02:51.624+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:02:51.627+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:02:51.626+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:02:52.230+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:02:52.434+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:02:52.434+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:02:52.487+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:02:52.486+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:00:00+00:00, run_after=2024-10-12 21:05:00+00:00
+[2024-10-12T21:02:52.538+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.927 seconds
+[2024-10-12T21:03:22.702+0000] {processor.py:186} INFO - Started process (PID=3508) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:03:22.705+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:03:22.709+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:03:22.708+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:03:23.326+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:03:23.468+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:03:23.467+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:03:23.530+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:03:23.530+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:00:00+00:00, run_after=2024-10-12 21:05:00+00:00
+[2024-10-12T21:03:23.593+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.899 seconds
+[2024-10-12T21:03:53.945+0000] {processor.py:186} INFO - Started process (PID=3589) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:03:53.947+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:03:53.950+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:03:53.949+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:03:54.471+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:03:54.657+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:03:54.656+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:03:54.745+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:03:54.745+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:00:00+00:00, run_after=2024-10-12 21:05:00+00:00
+[2024-10-12T21:03:54.820+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.885 seconds
+[2024-10-12T21:04:25.271+0000] {processor.py:186} INFO - Started process (PID=3674) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:04:25.273+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:04:25.275+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:04:25.275+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:04:25.821+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:04:25.971+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:04:25.970+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:04:26.072+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:04:26.071+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:00:00+00:00, run_after=2024-10-12 21:05:00+00:00
+[2024-10-12T21:04:26.132+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.877 seconds
+[2024-10-12T21:04:56.389+0000] {processor.py:186} INFO - Started process (PID=3759) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:04:56.391+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:04:56.393+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:04:56.393+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:04:56.863+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:04:57.015+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:04:57.014+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:04:57.066+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:04:57.066+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:00:00+00:00, run_after=2024-10-12 21:05:00+00:00
+[2024-10-12T21:04:57.129+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.754 seconds
+[2024-10-12T21:05:31.465+0000] {processor.py:186} INFO - Started process (PID=3887) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:05:31.470+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:05:31.477+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:05:31.475+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:05:32.467+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:05:32.975+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:05:32.974+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:05:33.217+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:05:33.216+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:05:00+00:00, run_after=2024-10-12 21:10:00+00:00
+[2024-10-12T21:05:33.277+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.836 seconds
+[2024-10-12T21:06:03.942+0000] {processor.py:186} INFO - Started process (PID=3986) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:06:03.948+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:06:03.950+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:06:03.950+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:06:04.539+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:06:04.761+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:06:04.760+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:06:04.834+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:06:04.833+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:05:00+00:00, run_after=2024-10-12 21:10:00+00:00
+[2024-10-12T21:06:04.902+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.974 seconds
+[2024-10-12T21:06:35.290+0000] {processor.py:186} INFO - Started process (PID=4071) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:06:35.291+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:06:35.296+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:06:35.295+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:06:35.853+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:06:36.020+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:06:36.020+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:06:36.085+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:06:36.085+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:05:00+00:00, run_after=2024-10-12 21:10:00+00:00
+[2024-10-12T21:06:36.142+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.873 seconds
+[2024-10-12T21:07:06.342+0000] {processor.py:186} INFO - Started process (PID=4156) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:07:06.345+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:07:06.347+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:07:06.347+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:07:06.773+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:07:06.958+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:07:06.957+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:07:07.036+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:07:07.036+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:05:00+00:00, run_after=2024-10-12 21:10:00+00:00
+[2024-10-12T21:07:07.117+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.787 seconds
+[2024-10-12T21:07:37.687+0000] {processor.py:186} INFO - Started process (PID=4252) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:07:37.689+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:07:37.692+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:07:37.692+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:07:38.349+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:07:38.518+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:07:38.517+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:07:38.581+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:07:38.580+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:05:00+00:00, run_after=2024-10-12 21:10:00+00:00
+[2024-10-12T21:07:38.625+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.952 seconds
+[2024-10-12T21:08:08.818+0000] {processor.py:186} INFO - Started process (PID=4341) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:08:08.825+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:08:08.827+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:08:08.827+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:08:09.293+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:08:09.441+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:08:09.441+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:08:09.510+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:08:09.510+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:05:00+00:00, run_after=2024-10-12 21:10:00+00:00
+[2024-10-12T21:08:09.573+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.767 seconds
+[2024-10-12T21:08:39.980+0000] {processor.py:186} INFO - Started process (PID=4426) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:08:39.982+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:08:39.985+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:08:39.984+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:08:40.574+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:08:40.746+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:08:40.745+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:08:40.827+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:08:40.827+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:05:00+00:00, run_after=2024-10-12 21:10:00+00:00
+[2024-10-12T21:08:40.877+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.908 seconds
+[2024-10-12T21:09:11.121+0000] {processor.py:186} INFO - Started process (PID=4511) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:09:11.124+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:09:11.126+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:09:11.126+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:09:11.598+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:09:11.745+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:09:11.745+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:09:11.809+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:09:11.809+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:05:00+00:00, run_after=2024-10-12 21:10:00+00:00
+[2024-10-12T21:09:12.339+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.228 seconds
+[2024-10-12T21:09:42.748+0000] {processor.py:186} INFO - Started process (PID=4596) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:09:42.749+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:09:42.751+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:09:42.751+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:09:43.125+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:09:43.268+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:09:43.268+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:09:43.314+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:09:43.314+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:05:00+00:00, run_after=2024-10-12 21:10:00+00:00
+[2024-10-12T21:09:43.359+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.619 seconds
+[2024-10-12T21:10:14.612+0000] {processor.py:186} INFO - Started process (PID=4719) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:10:14.615+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:10:14.619+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:10:14.618+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:10:15.385+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:10:15.618+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:10:15.616+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:10:15.705+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:10:15.704+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:10:00+00:00, run_after=2024-10-12 21:15:00+00:00
+[2024-10-12T21:10:15.758+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 1.159 seconds
+[2024-10-12T21:10:45.977+0000] {processor.py:186} INFO - Started process (PID=4806) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:10:45.979+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:10:45.981+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:10:45.981+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:10:46.385+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:10:46.528+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:10:46.528+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:10:46.764+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:10:46.764+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:10:00+00:00, run_after=2024-10-12 21:15:00+00:00
+[2024-10-12T21:10:46.800+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.833 seconds
+[2024-10-12T21:11:17.700+0000] {processor.py:186} INFO - Started process (PID=4894) to work on /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:11:17.701+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py for tasks to queue
+[2024-10-12T21:11:17.703+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:11:17.703+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:11:18.117+0000] {processor.py:925} INFO - DAG(s) 'detect_transaction_date_anomalies_dag' retrieved from /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py
+[2024-10-12T21:11:18.237+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:11:18.237+0000] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-10-12T21:11:18.279+0000] {logging_mixin.py:190} INFO - [2024-10-12T21:11:18.278+0000] {dag.py:4156} INFO - Setting next_dagrun for detect_transaction_date_anomalies_dag to 2024-10-12 21:10:00+00:00, run_after=2024-10-12 21:15:00+00:00
+[2024-10-12T21:11:18.484+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Dag-Transaction-Date-in-the-Paste.py took 0.793 seconds

@@ -1,0 +1,4 @@
+[2024-09-11T00:06:48.913+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-11T00:06:49.475+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Dag_NegativeQuantity_andTotalAmount.run_anomaly_detection scheduled__2024-09-10T23:55:00+00:00 [queued]>
+[2024-09-11T00:06:49.513+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Dag_NegativeQuantity_andTotalAmount.run_anomaly_detection scheduled__2024-09-10T23:55:00+00:00 [queued]>
+[2024-09-11T00:06:49.515+0000] {taskinstance.py:2865} INFO - Starting attempt 2 of 2
