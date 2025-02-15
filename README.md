@@ -80,28 +80,14 @@ Power BI : Ouvrir powerbi_dashboard.pbix et cliquer sur "Actualiser"
 
 ✅ Conteneurisation avec Docker pour un déploiement simplifié
 
-🛠️ Résolution des Problèmes
 
-🔹 Les services ne démarrent pas ?
-
-Vérifie si Docker est bien lancé et exécute :
-
-docker-compose ps
-
-🔹 Connexion impossible à PgAdmin ?
-
-Assure-toi que PostgreSQL tourne bien avec :
-
-
-docker logs postgres_container
-
-🔹 Un DAG ne s’exécute pas dans Airflow ?
-
-Connecte-toi à Airflow (http://localhost:8089) et clique sur Trigger DAG.
 
 📜 Auteurs
+
 👩‍💻 Marwa Drief
+
 👨‍💻 Walid Aadi
+
 👨‍💻 Mohcine Manssouri
 
 📍 Projet réalisé dans le cadre d'un stage chez NTT DATA.
